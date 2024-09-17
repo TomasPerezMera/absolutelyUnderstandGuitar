@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+body {
+    background-color: #030104;
+    
+}
+
+.headerImage {
+    width: 100vw;
+}
+
+.nav-item a:hover {
+    color: #dc3545;
+}
+
+.scottyImg {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.mainText {
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    color:white;
+    width: 100%;
+}
+
+.aboutText {
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    color:white;
+}
+
+.videosText{
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    color:white;
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.programImage {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.programText {
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    color:white;
+    text-align: center;
+    width: 98%;
+    margin: 5px;
+}
+
+.scottyImages {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.scottyText {
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    color:white;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #dc3545;
+}
+
+p a:hover {
+    color: #dc3545;
+}
+
+/*Display Grid*/
+.container {  display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    grid-template-rows: 0.4fr 1.9fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "encabezado encabezado"
+        "imagen text"
+        "footer footer";
+}
+.encabezado { grid-area: encabezado; }
+.footer { grid-area: footer; }
+.imagen { grid-area: imagen; }
+.text { grid-area: text; }
+
+/*Media Queries*/
+@media (max-width: 1024px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1.6fr 0.4fr;
+        gap: 0px 0px;
+        height: auto;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "encabezado"
+            "imagen"
+            "text"
+            "footer";}
+    .encabezado {
+        width: 85%;
+    }
+    .scottyImg {
+                display: inline-block;
+                width: 100%;
+                vertical-align: top;
+                margin: 10px;
+            }
+    .mainText {
+        text-align: center;
+        width: 90%;
+    }
+    .titleContainer {
+        text-align: center;
+        width: 90%;
+    }
+    .aboutText {
+        text-align: center;
+    }
+    .footer {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1.2fr 2.2fr 0.3fr;
+        gap: 0px 0px;
+        height: auto;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "encabezado"
+            "imagen"
+            "text"
+            "footer";}
+    .encabezado {
+        width: 90%;
+    }
+    .scottyImg {
+                display: inline-block;
+                width: 100%;
+                vertical-align: top;
+                margin: 10px;
+            }
+    .mainText {
+        text-align: center;
+        width: 90%;
+    }
+    .titleContainer {
+        text-align: center;
+        width: 90%;
+    }
+    .aboutText {
+        text-align: center;
+    }
+    .footer {
+        width: 90%;
+        text-align: center;
+    }
+}
