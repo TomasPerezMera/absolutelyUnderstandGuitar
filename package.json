@@ -1,0 +1,11 @@
+{
+  "name": "absolutelyunderstandguitar",
+  "version": "1.0.0",
+  "description": "This is a fan-made project featuring the Absolutely Understand Guitar series by Scotty West, which can be found at https://www.absolutelyunderstandguitar.com . No copyright infringement is intended and the page is for training purposes only.-",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

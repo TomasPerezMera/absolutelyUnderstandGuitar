@@ -1,0 +1,214 @@
+/*Partials y Variables*/
+
+@import "global";
+@import "about";
+@import "program";
+@import "scotty";
+@import "videos";
+
+$fondo: #030104;
+$rojo: #dc3545;
+$naranja: #ffc107;
+
+/*Styling of the Main webpage*/
+
+.indexGrid {  display: grid;
+    grid-template-columns: minmax(clamp(200px, 20vw, 1fr), 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "indexImagen titleContainer"
+    "indexImagen texto1"
+    "texto2 texto2"
+    "footer footer"; 
+    max-width: 90vw;
+    margin: 20px;
+    padding: 20px;
+}
+.header { grid-area: header; }
+.indexImagen { grid-area: indexImagen; }
+.titleContainer { grid-area: titleContainer; }
+.texto1 { grid-area: texto1; }
+.texto2 { grid-area: texto2; }
+.footer { grid-area: footer; }
+
+.indexImagen {
+    display: flex;
+    width: 100%;
+    max-width: 50vw;
+    justify-content: center;
+    align-items: center;
+    img .scottyImg {
+        width: auto;
+        max-width: 100%;        
+        max-height: 70vh;
+        height: auto;
+        margin: 10px;
+        object-fit: contain;
+    }
+}
+
+.titleContainer {
+    width: 100%;   
+    height: auto;
+    max-height: 20vh;
+    padding: 5px 0;
+    margin: 0;
+    .titulo {
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        color: $rojo;
+        height: 100%;
+        text-align: center;
+        max-width: 60%;
+        white-space: normal;
+        margin: 0;
+    }
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    max-height: 90vh; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    .textContainer {
+        width: 100%;
+        height: auto;
+        p {
+            font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+            color:white;
+            width: 100%;    
+            padding: 5px;
+            line-height: 1.5;
+            font-size: clamp(1rem, 1.2vw, 1.1rem);
+            overflow-wrap: break-word;
+            word-break: break-word;
+            margin-bottom: 10px;
+            margin: 5px 0;
+        }
+    }
+}
+.texto2 {
+    @extend .texto1;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 10px;
+    line-height: 1.5;    
+}
+
+p a {
+    transition: color 0.3s ease;
+}
+p a:hover {
+    color: #dc3545;
+}
+
+/*Media Queries*/
+
+@media (max-width: 900px) {
+    .indexGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 10px;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+            "header"
+            "titleContainer"
+            "indexImagen"
+            "texto1"
+            "texto2"
+            "footer";
+    }
+    .header { grid-area: header; }
+    .indexImagen { grid-area: indexImagen; }
+    .texto1 { grid-area: texto1; }
+    .texto2 { grid-area: texto2; }
+    .footer { 
+        grid-area: footer;
+        align-self: end; 
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .titleContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        .titulo {
+            text-align: center;
+            max-width: 100%;
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            margin: 0;
+        }
+    }
+    .texto1, .texto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%; 
+        max-height: 90vh;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-grow: 1;
+        overflow-y: auto;
+        .textContainer {
+            p {
+                overflow-wrap: break-word;
+                word-break: break-word;
+                font-size: clamp(1rem, 1.2vw, 1.1rem);
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .indexImagen {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .indexGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        grid-template-areas:
+            "header"
+            "titleContainer"
+            "indexImagen"
+            "texto1"
+            "texto2"
+            "footer";
+    }    
+    .texto1, .texto2 {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    .indexImagen {
+        max-width: 100%;
+    }
+    .footer {
+        align-self: flex-end;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
