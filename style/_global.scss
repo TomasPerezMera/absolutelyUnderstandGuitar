@@ -9,17 +9,12 @@ $link: #0d6efd;
     box-sizing: border-box;
 }
 
-/* Overflow X
-html {
-    overflow-x: hidden;
-}
-*/
-
 body {
     background-color: $fondo;
     width: minmax(600px, 1000px);
     margin: 0 auto;
     padding: 20px;
+    height: 100%;
 }
 
 h1 {
@@ -71,10 +66,9 @@ h1 {
     width: 80%;
     color: $link;
     text-align: center;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: color 1s ease;
 }
 
 .footer a:hover {
     color: $rojo;
-    transform: scale(1.2);
 }

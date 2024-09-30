@@ -1,12 +1,68 @@
 /*Styling of the Scotty Bio webpage*/
 
-.scottyImages {
+.scottyGrid {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "encabezado"
+        "scottyI1"
+        "scottyT1"
+        "scottyT2"
+        "scottyCarousel"
+        "scottyT3"
+        "footer";
+}
+.encabezado { grid-area: encabezado; }
+.scottyT1 { grid-area: scottyT1; }
+.scottyT2 { grid-area: scottyT2; }
+.scottyI1 { grid-area: scottyI1; }
+.scottyCarousel { grid-area: scottyCarousel; }
+.scottyT3 { grid-area: scottyT3; }
+.footer { grid-area: footer; }
+
+
+.scottyI1 {
     display: flex;
     justify-content: center;
     margin: 20px;
+    transition: 2s ease;
+    width: 100%;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
-.scottyText {
+.scottyT1, .scottyT2, .scottyT3  {
     font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
     color:white;
+}
+
+#carousel {
+    max-width: 70vw; 
+    margin: auto; 
+    padding: 30px;
+}
+
+.carousel-inner img {
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    transition: color 3s ease;
+    &:hover {
+        color: $rojo;
+    }
 }

@@ -5,16 +5,12 @@
   box-sizing: border-box;
 }
 
-/* Overflow X
-html {
-    overflow-x: hidden;
-}
-*/
 body {
   background-color: #030104;
   width: minmax(600px, 1000px);
   margin: 0 auto;
   padding: 20px;
+  height: 100%;
 }
 
 h1 {
@@ -68,21 +64,137 @@ h1 {
   width: 80%;
   color: #0d6efd;
   text-align: center;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: color 1s ease;
 }
 
 .footer a:hover {
   color: #dc3545;
-  transform: scale(1.2);
 }
 
 /*Styling of the About webpage*/
-.aboutText {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  color: white;
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-auto-flow: row;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "encabezado" "titulo" "foto1" "texto1" "texto2" "foto2" "footer";
 }
 
+.encabezado {
+  grid-area: encabezado;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.texto1, .texto2 {
+  grid-area: texto1;
+}
+
+.texto2 {
+  grid-area: texto2;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.texto1, .texto2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.texto1 p, .texto2 p {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  max-width: 90vw;
+  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.foto1, .foto2 {
+  transition: 2s ease;
+  width: 100%;
+}
+.foto1:hover, .foto2:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .foto1, .foto2 {
+    display: flex;
+    width: auto;
+    max-width: 90vw;
+    align-self: center;
+  }
+  .texto1, .texto2 {
+    align-items: stretch;
+    width: 100%;
+    max-height: none;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .texto1 p, .texto2 p {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(0.3rem, 2vw, 1.6rem);
+    padding: 20px;
+    margin: 10px 0;
+    white-space: normal;
+  }
+}
 /*Styling of the Program webpage*/
+.programGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "encabezado" "programImage" "programText" "custom-table" "footer";
+}
+
+.encabezado {
+  grid-area: encabezado;
+}
+
+.programImage {
+  grid-area: programImage;
+}
+
+.programText {
+  grid-area: programText;
+}
+
+.custom-table {
+  grid-area: custom-table;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 .programImage {
   display: flex;
   justify-content: center;
@@ -97,42 +209,187 @@ h1 {
   margin: 5px;
 }
 
+.programImage {
+  transition: 2s ease;
+  width: 100%;
+}
+.programImage:hover {
+  transform: scale(1.2);
+}
+
+.custom-table {
+  color: white;
+}
+.custom-table caption {
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  align-self: center;
+}
+
 /*Styling of the Scotty Bio webpage*/
-.scottyImages {
+.scottyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "encabezado" "scottyI1" "scottyT1" "scottyT2" "scottyCarousel" "scottyT3" "footer";
+}
+
+.encabezado {
+  grid-area: encabezado;
+}
+
+.scottyT1 {
+  grid-area: scottyT1;
+}
+
+.scottyT2 {
+  grid-area: scottyT2;
+}
+
+.scottyI1 {
+  grid-area: scottyI1;
+}
+
+.scottyCarousel {
+  grid-area: scottyCarousel;
+}
+
+.scottyT3 {
+  grid-area: scottyT3;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.scottyI1 {
   display: flex;
   justify-content: center;
   margin: 20px;
+  transition: 2s ease;
+  width: 100%;
+}
+.scottyI1:hover {
+  transform: scale(1.2);
 }
 
-.scottyText {
+.scottyT1, .scottyT2, .scottyT3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   color: white;
 }
 
+#carousel {
+  max-width: 70vw;
+  margin: auto;
+  padding: 30px;
+}
+
+.carousel-inner img {
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  transition: color 3s ease;
+}
+.footer:hover {
+  color: #dc3545;
+}
+
 /*Styling of the Videos webpage*/
-.videosText {
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "encabezado" "videoT1" "video1" "videoT2" "video2" "videoT3" "video3" "footer";
+}
+
+.encabezado {
+  grid-area: encabezado;
+}
+
+.videoT1 {
+  grid-area: videoT1;
+}
+
+.video1 {
+  grid-area: video1;
+}
+
+.videoT2 {
+  grid-area: videoT2;
+}
+
+.video2 {
+  grid-area: video2;
+}
+
+.videoT3 {
+  grid-area: videoT3;
+}
+
+.video3 {
+  grid-area: video3;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.videoT1, .videoT2, .videoT3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   color: white;
   text-align: center;
 }
 
-.videos {
+.video1, .video2, .video3 {
   display: flex;
   justify-content: center;
   margin: 20px;
 }
 
+.footer {
+  width: 100%;
+  align-self: center;
+}
+
 /*Styling of the Main webpage*/
+.gridParent {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
 .indexGrid {
   display: grid;
   grid-template-columns: minmax(clamp(200px, 20vw, 1fr), 1fr);
   grid-template-rows: auto;
   gap: 5px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "indexImagen titleContainer" "indexImagen texto1" "texto2 texto2" "footer footer";
+  grid-template-areas: "header header" "indexImagen titleContainer" "indexImagen texto1" "texto2 texto2";
   max-width: 90vw;
   margin: 20px;
   padding: 20px;
+  flex-grow: 1;
+  overflow-wrap: break-word;
 }
 
 .header {
@@ -155,10 +412,6 @@ h1 {
   grid-area: texto2;
 }
 
-.footer {
-  grid-area: footer;
-}
-
 .indexImagen {
   display: flex;
   width: 100%;
@@ -176,6 +429,8 @@ h1 {
 }
 
 .titleContainer {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   max-height: 20vh;
@@ -218,15 +473,15 @@ h1 {
   width: 100%;
   padding: 5px;
   line-height: 1.5;
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.2rem, 1.2vw, 1.4rem);
   overflow-wrap: break-word;
   word-break: break-word;
   margin-bottom: 10px;
   margin: 5px 0;
 }
 
-.texto2 {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+.texto2 p {
+  font-size: clamp(1rem, 1vw, 1rem);
   margin-bottom: 10px;
   line-height: 1.5;
 }
@@ -239,15 +494,28 @@ p a:hover {
   color: #dc3545;
 }
 
+.footer {
+  align-self: end;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
 /*Media Queries*/
 @media (max-width: 900px) {
+  .gridParent {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   .indexGrid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto;
     gap: 10px;
     width: 100%;
-    height: 100vh;
-    grid-template-areas: "header" "titleContainer" "indexImagen" "texto1" "texto2" "footer";
+    grid-template-areas: "header" "titleContainer" "indexImagen" "texto1" "texto2";
   }
   .header {
     grid-area: header;
@@ -261,13 +529,6 @@ p a:hover {
   .texto2 {
     grid-area: texto2;
   }
-  .footer {
-    grid-area: footer;
-    align-self: end;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-  }
   .titleContainer {
     display: flex;
     justify-content: center;
@@ -277,7 +538,7 @@ p a:hover {
   .titleContainer .titulo {
     text-align: center;
     max-width: 100%;
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     margin: 0;
   }
   .texto1, .texto2 {
@@ -285,7 +546,7 @@ p a:hover {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    max-height: 90vh;
+    min-height: 70vh;
     padding: 20px;
     box-sizing: border-box;
     flex-grow: 1;
@@ -294,12 +555,20 @@ p a:hover {
   .texto1 .textContainer p, .texto2 .textContainer p {
     overflow-wrap: break-word;
     word-break: break-word;
-    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
     margin-bottom: 10px;
     line-height: 1.5;
   }
   .indexImagen {
-    max-width: 100%;
+    max-width: 60%;
+  }
+  .footer {
+    align-self: end;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
   }
 }
 @media (max-width: 800px) {
@@ -307,7 +576,7 @@ p a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     height: auto;
-    grid-template-areas: "header" "titleContainer" "indexImagen" "texto1" "texto2" "footer";
+    grid-template-areas: "header" "titleContainer" "indexImagen" "texto1" "texto2";
   }
   .texto1, .texto2 {
     display: flex;
@@ -320,10 +589,12 @@ p a:hover {
     max-width: 100%;
   }
   .footer {
-    align-self: flex-end;
+    align-self: end;
+    bottom: 0;
     padding: 10px;
     text-align: center;
     width: 100%;
+    margin-top: auto;
   }
 }
 
