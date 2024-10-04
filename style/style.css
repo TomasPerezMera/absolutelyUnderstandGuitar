@@ -17,13 +17,19 @@ body {
   height: 100%;
 }
 
+.header .headerImage {
+  width: 100%;
+  text-align: center;
+}
 .header .headerImage img {
   max-width: 100%;
   height: auto;
 }
 .header h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-size: clamp(3rem, 8vw, 10rem);
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
   color: white;
   text-align: center;
@@ -31,10 +37,12 @@ body {
   height: auto;
 }
 .header h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: clamp(2.5rem, 6vw, 8rem);
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   color: #dc3545;
   font-style: italic;
-  font-size: clamp(2.5rem, 6vw, 8rem);
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -424,21 +432,42 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "encabezado" "videoT1" "video1" "videoT2" "video2" "videoT3" "video3" "footer";
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas: "header" "hr1" "videoT1" "video1" "hr2" "videoT2" "video2" "hr3" "videoT3" "video3" "hr4" "footer";
 }
 
-.encabezado {
-  grid-area: encabezado;
+.header {
+  grid-area: header;
 }
 
-.videoT1 {
+.hr1 {
+  grid-area: hr1;
+}
+
+.videoT1, .videoT3, .videoT2 {
   grid-area: videoT1;
+  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-size: clamp(1.2rem, 2vw, 3.5rem);
+  color: #ffc107;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.video1 {
+.video1, .video3, .video2 {
   grid-area: video1;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+.hr2 {
+  grid-area: hr2;
 }
 
 .videoT2 {
@@ -449,6 +478,10 @@ hr {
   grid-area: video2;
 }
 
+.hr3 {
+  grid-area: hr3;
+}
+
 .videoT3 {
   grid-area: videoT3;
 }
@@ -457,25 +490,12 @@ hr {
   grid-area: video3;
 }
 
+.hr4 {
+  grid-area: hr4;
+}
+
 .footer {
   grid-area: footer;
-}
-
-.videoT1, .videoT2, .videoT3 {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  color: white;
-  text-align: center;
-}
-
-.video1, .video2, .video3 {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.footer {
-  width: 100%;
-  align-self: center;
 }
 
 /*Styling of the Main webpage*/

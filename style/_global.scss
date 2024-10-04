@@ -23,14 +23,18 @@ body {
 
 .header {
     .headerImage {
+        width: 100%;
+        text-align: center;
         img {
             max-width: 100%;
             height: auto;
         }
     }
     h1 {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Trebuchet MS, sans-serif;
         font-size: clamp(3rem, 8vw, 10rem);
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         margin-top: 2rem;
         color:white;
         text-align: center;
@@ -38,10 +42,12 @@ body {
         height: auto;
     }
     h2 {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Trebuchet MS, sans-serif;
+        font-size: clamp(2.5rem, 6vw, 8rem);
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         color: $rojo;
         font-style: italic;
-        font-size: clamp(2.5rem, 6vw, 8rem);
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 1rem;
