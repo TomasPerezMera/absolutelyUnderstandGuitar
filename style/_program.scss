@@ -1,56 +1,98 @@
 /*Styling of the Program webpage*/
 
+$rojo2: #63181f;
+$naranja2: #8f6d06;
+
+
 .programGrid {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    grid-template-rows: auto;
+    gap: 100px;
     grid-template-areas:
-        "encabezado"
+        "header"
+        "hr1"
         "programImage"
+        "hr2"
         "programText"
+        "hr3"
+        "tableTitle"
         "custom-table"
+        "hr4"
         "footer";
 }
-.encabezado { grid-area: encabezado; }
-.programImage { grid-area: programImage; }
-.programText { grid-area: programText; }
-.custom-table { grid-area: custom-table; }
-.footer { grid-area: footer; }
-
-
-.programImage {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.programText {
-    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-    color:white;
+.header { grid-area: header; }
+.hr1 { grid-area: hr1; }
+.programImage { grid-area: programImage;
     text-align: center;
-    width: 98%;
-    margin: 5px;
-}
-
-
-.programImage {
-    transition: 2s ease;
-    width: 100%;
-    &:hover {
-        transform: scale(1.2);
+    margin: auto;
+    img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: 2s ease;
+        width: auto;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
-
-.custom-table {
-    color: white;
-    caption {
+.hr2 { grid-area: hr2; }
+.programText { grid-area: programText;
+    p {
+        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+        max-width: 90vw;
+        font-size: clamp(1.5rem, 5vh, 6rem);
+        color:white;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+    span {
+        color: $naranja;
+    }
+}
+.hr3 { grid-area: hr3; }
+.tableTitle { grid-area: tableTitle; 
+    p {
+        font-size: clamp(2rem, 5vh, 7rem);
+        color: $naranja;
         text-align: center;
         font-weight: bold;
     }
 }
-
-.footer {
+.table { grid-area: table; 
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                th {
+                    background-color: $rojo2;
+                    color: white;
+                    text-align: center;
+                }
+                td {
+                    background-color: $rojo2;
+                    color: white;
+                    text-align: center;
+                }
+            }
+            &:nth-child(even) {
+                th {
+                    background-color: $naranja2;
+                    color: white;
+                    text-align: center;
+                }
+                td {
+                    background-color: $naranja2;
+                    color: white;
+                    text-align: center;
+                }
+            }            
+        }    
+    }
+}
+.hr4 { grid-area: hr4; }
+.footer { grid-area: footer; 
     width: 100%;
     align-self: center;
 }

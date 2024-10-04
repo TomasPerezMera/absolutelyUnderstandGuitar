@@ -35,12 +35,16 @@
     }
 }
 .hr2 { grid-area: hr2; }
-.aboutFoto1 { grid-area: aboutFoto1; 
-    transition: 2s ease;
+.aboutFoto1 { grid-area: aboutFoto1;
+    text-align: center;
+    margin: auto;    
     width: 100%;
-    &:hover {
-        transform: scale(1.2);
-    }
+    img {
+        transition: 2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }    
 }
 .hr3 { grid-area: hr3; }
 .aboutTexto1 { grid-area: aboutTexto1; 

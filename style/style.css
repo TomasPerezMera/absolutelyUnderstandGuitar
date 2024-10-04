@@ -148,10 +148,14 @@ hr {
 
 .aboutFoto1, .aboutFoto2 {
   grid-area: aboutFoto1;
-  transition: 2s ease;
+  text-align: center;
+  margin: auto;
   width: 100%;
 }
-.aboutFoto1:hover, .aboutFoto2:hover {
+.aboutFoto1 img, .aboutFoto2 img {
+  transition: 2s ease;
+}
+.aboutFoto1 img:hover, .aboutFoto2 img:hover {
   transform: scale(1.2);
 }
 
@@ -235,63 +239,100 @@ hr {
 .programGrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "encabezado" "programImage" "programText" "custom-table" "footer";
+  grid-template-rows: auto;
+  gap: 100px;
+  grid-template-areas: "header" "hr1" "programImage" "hr2" "programText" "hr3" "tableTitle" "custom-table" "hr4" "footer";
 }
 
-.encabezado {
-  grid-area: encabezado;
+.header {
+  grid-area: header;
+}
+
+.hr1 {
+  grid-area: hr1;
 }
 
 .programImage {
   grid-area: programImage;
+  text-align: center;
+  margin: auto;
+}
+.programImage img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 2s ease;
+  width: auto;
+}
+.programImage img:hover {
+  transform: scale(1.2);
+}
+
+.hr2 {
+  grid-area: hr2;
 }
 
 .programText {
   grid-area: programText;
 }
-
-.custom-table {
-  grid-area: custom-table;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.programImage {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.programText {
+.programText p {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  max-width: 90vw;
+  font-size: clamp(1.5rem, 5vh, 6rem);
   color: white;
+  padding: 20px;
+  margin: 10px;
   text-align: center;
-  width: 98%;
-  margin: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.programText span {
+  color: #ffc107;
 }
 
-.programImage {
-  transition: 2s ease;
-  width: 100%;
-}
-.programImage:hover {
-  transform: scale(1.2);
+.hr3 {
+  grid-area: hr3;
 }
 
-.custom-table {
-  color: white;
+.tableTitle {
+  grid-area: tableTitle;
 }
-.custom-table caption {
+.tableTitle p {
+  font-size: clamp(2rem, 5vh, 7rem);
+  color: #ffc107;
   text-align: center;
   font-weight: bold;
 }
 
+.table {
+  grid-area: table;
+}
+.table tbody tr:nth-child(odd) th {
+  background-color: #63181f;
+  color: white;
+  text-align: center;
+}
+.table tbody tr:nth-child(odd) td {
+  background-color: #63181f;
+  color: white;
+  text-align: center;
+}
+.table tbody tr:nth-child(even) th {
+  background-color: #8f6d06;
+  color: white;
+  text-align: center;
+}
+.table tbody tr:nth-child(even) td {
+  background-color: #8f6d06;
+  color: white;
+  text-align: center;
+}
+
+.hr4 {
+  grid-area: hr4;
+}
+
 .footer {
+  grid-area: footer;
   width: 100%;
   align-self: center;
 }
