@@ -12,228 +12,148 @@ $naranja: #ffc107;
 
 /*Styling of the Main webpage*/
 
-.gridParent {
-    display: flex;
-    flex-direction: column;
-    min-height: 90vh;
-}
-
-.indexGrid {  display: grid;
-    grid-template-columns: minmax(clamp(200px, 20vw, 1fr), 1fr);
+.indexGrid {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-auto-rows: auto;
     gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "header header"
-    "indexImagen titleContainer"
-    "indexImagen texto1"
-    "texto2 texto2";
-    max-width: 90vw;
     margin: 20px;
     padding: 20px;
-    flex-grow: 1;
     overflow-wrap: break-word;
+    grid-template-areas:
+        "header"
+        "mainGrid"
+        "texto2"
+        "footer";
 }
 .header { grid-area: header; }
-.indexImagen { grid-area: indexImagen; }
-.titleContainer { grid-area: titleContainer; }
-.texto1 { grid-area: texto1; }
-.texto2 { grid-area: texto2; }
-
-.indexImagen {
-    display: flex;
-    width: 100%;
-    max-width: 50vw;
-    justify-content: center;
-    align-items: center;
-    img .scottyImg {
-        width: auto;
-        max-width: 100%;
-        max-height: 70vh;
-        height: auto;
-        margin: 10px;
-        object-fit: contain;
-    }
-}
-
-.titleContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;   
-    height: auto;
-    max-height: 20vh;
-    padding: 5px 0;
-    margin: 0;    
-    .titulo {
-        font-size: clamp(1.2rem, 2vw, 1.6rem);
-        color: $rojo;
-        height: 100%;
-        text-align: center;
-        max-width: 60%;
-        white-space: normal;
-        margin: 0;
-    }
-}
-
-.texto1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto;
-    max-height: 90vh; 
-    margin-top: 0;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    width: 100%;
-    padding: 10px 0;
-    box-sizing: border-box;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 70%;
-    .textContainer {
-        width: 100%;
-        height: auto;
-        p {
-            font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-            color:white;
-            width: 100%;    
-            padding: 5px;
-            line-height: 1.5;
-            font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-            overflow-wrap: break-word;
-            word-break: break-word;
-            margin-bottom: 10px;
-            margin: 5px 0;
-        }
-    }
-}
-.texto2 {
-    @extend .texto1;
-    p {
-        font-size: clamp(1rem, 1vw, 1rem);
-        margin-bottom: 10px;
-        line-height: 1.5;   
-    }
-}
-
-p a {
-    transition: color 0.3s ease;
-}
-p a:hover {
-    color: #dc3545;
-}
-
-.footer {
-    align-self: end;
-    bottom: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    margin-top: auto;
-}
-
-/*Media Queries*/
-
-@media (max-width: 900px) {
-    .gridParent {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    .indexGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-        width: 100%;
-        grid-template-areas:
-            "header"
-            "titleContainer"
-            "indexImagen"
-            "texto1"
-            "texto2"
-    }
-    .header { grid-area: header; }
-    .indexImagen { grid-area: indexImagen; }
-    .texto1 { grid-area: texto1; }
-    .texto2 { grid-area: texto2; }
-    .titleContainer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 10px 0;
-        .titulo {
-            text-align: center;
+.mainGrid { grid-area: mainGrid;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin: 20px;
+    padding: 50px;
+    grid-template-areas:
+        "indexImagen titleContainer"
+        "indexImagen texto1";
+    .indexImagen { grid-area: indexImagen;
+        position: sticky;
+        align-self: start;
+        top: 20px;
+        img {
             max-width: 100%;
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
-            margin: 0;
+            height: auto;
         }
     }
-    .texto1, .texto2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        min-height: 70vh;
-        padding: 20px;
-        box-sizing: border-box;
-        flex-grow: 1;
-        overflow-y: auto;
+    .titleContainer { grid-area: titleContainer;
+        justify-content: center;
+        p {
+            font-weight: bold;
+            color: $rojo;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-size: clamp(1.2rem, 2vw, 6rem);            
+            height: 100%;
+            text-align: center;
+            }
+        }
+    .texto1 { grid-area: texto1; 
+        overflow: visible;
         .textContainer {
             p {
-                overflow-wrap: break-word;
-                word-break: break-word;
-                font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+                font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+                color:white;
+                width: 100%;    
+                padding: 5px;
+                line-height: 2;
+                font-size: clamp(0.4rem, 2vw, 4rem);
                 margin-bottom: 10px;
-                line-height: 1.5;
             }
         }
     }
-
-    .indexImagen {
-        max-width: 60%;
-    }
-    .footer {
-        align-self: end;
-        bottom: 0;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        margin-top: auto;
+}
+.texto2 { grid-area: texto2; 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+    p {
+        color: white;
+        font-size: clamp(1rem, 2vw, 4rem);
+        margin: 40px 40px;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.5s ease;
+            &:hover {
+                color: #dc3545;
+            }
+        }
     }
 }
+.footer { grid-area: footer; }
 
 
-@media (max-width: 800px) {
+/*Media Queries - A mejorar font sizes, page width/centering issues*/
+
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+        max-width: 100vw;
+    }
     .indexGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
-        grid-template-areas:
-            "header"
-            "titleContainer"
-            "indexImagen"
-            "texto1"
-            "texto2"
-    }    
-    .texto1, .texto2 {
-        display: flex;
-        width: 100%;
-        padding: 20px;
-        max-height: 90vh;
-        overflow-y: auto;
+        margin: 0 10px;
+
     }
-    .indexImagen {
-        max-width: 100%;
-    }
-    .footer {
-        align-self: end;
-        bottom: 0;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        margin-top: auto;
-    }
+    .mainGrid { grid-area: mainGrid;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-auto-columns: auto;
+            gap: 10px;
+            margin: 20px;
+            padding: 30px;
+            grid-template-areas:
+                "indexImagen"
+                "titleContainer"
+                "texto1";
+            .indexImagen { 
+                grid-area: indexImagen;
+                position: static;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .titleContainer { 
+                grid-area: titleContainer;
+                justify-content: center;
+                p {
+                    font-weight: bold;
+                    color: $rojo;
+                    font-weight: bold;
+                    font-size: clamp(1.2rem, 4vw, 3.5rem);
+                    text-align: center;
+                    }
+                }
+            .texto1 { 
+                grid-area: texto1; 
+                overflow: visible;
+                .textContainer {
+                    p {
+                        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+                        color:white;
+                        width: 100%;    
+                        padding: 5px;
+                        line-height: 1.5;
+                        font-size: clamp(1rem, 2vw, 1.6rem);
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
 }
-
-

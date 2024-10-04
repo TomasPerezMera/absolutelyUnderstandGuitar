@@ -17,18 +17,62 @@ body {
     height: 100%;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    text-align: center;
-    flex-wrap: wrap;
+.header {
+    .headerImage {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(3rem, 8vw, 10rem);
+        margin-top: 2rem;
+        color:white;
+        text-align: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-style: italic;
+        font-size: clamp(2.5rem, 6vw, 8rem);
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
 }
 
 .naviBar {
     width: 80%;
     margin: 0 auto;
     background-color: #030104;
+    nav {
+        button {
+            background-color: $fondo;
+            border-color: $naranja;
+        }
+        #navbarContent {
+            a {
+                font-size: clamp(2rem, 2vw, 6rem);
+            }
+        }
+        .navbar-nav {
+            flex-wrap: wrap;
+            .nav-link {
+                color: #ffc107;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: #dc3545;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
 }
+
 .navbar-toggler {
     display: flex;
     justify-content: center;
@@ -38,37 +82,30 @@ h1 {
 
 .headerImage {
     width: auto;
-    max-width: 500px;
-    margin: 0 auto;
-}
-.headerImage img {
-    width: 100%;
-    height: auto;
-}
-
-.navbar-nav {
-    flex-wrap: wrap; 
-}
-
-.navbar-nav .nav-link {
-    color: #ffc107;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #dc3545;
-    transform: scale(1.2);
+    margin: 10px auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .footer {
-    display: inline-block;
-    height: 2.5rem;
-    width: 80%;
-    color: $link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
     text-align: center;
-    transition: color 1s ease;
-}
-
-.footer a:hover {
-    color: $rojo;
+    margin-top: auto;
+    a {
+        color: $link;
+        font-size: clamp(1rem, 2vw, 4rem);
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.5s ease;  
+        &:hover {
+            transform: scale(1.2);
+            color: $rojo;
+        }
+    }
 }
