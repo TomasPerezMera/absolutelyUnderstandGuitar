@@ -9,6 +9,10 @@ $link: #0d6efd;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $fondo;
     width: minmax(600px, 1000px);
