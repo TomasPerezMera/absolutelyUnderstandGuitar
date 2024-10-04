@@ -2,81 +2,101 @@
 
 .aboutGrid {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    grid-auto-flow: row;
+    grid-template-rows: auto auto auto auto auto auto 1fr auto 1fr auto auto;
+    gap: 20px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-areas:
-        "encabezado"
-        "titulo"
-        "foto1"
-        "texto1"
-        "texto2"
-        "foto2"
+        "header"
+        "hr1"
+        "aboutTitle"
+        "hr2"
+        "aboutFoto1"
+        "hr3"
+        "aboutTexto1"
+        "hr4"
+        "aboutTexto2"
+        "hr5"
+        "aboutFoto2"
+        "hr6"
         "footer";
 }
-.encabezado { grid-area: encabezado; }
-.titulo { grid-area: titulo; }
-.foto1 { grid-area: foto1; }
-.texto1 { grid-area: texto1; }
-.texto2 { grid-area: texto2; }
-.foto2 { grid-area: foto2; }
-.footer { grid-area: footer; }
-
-
-.texto1, .texto2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    max-height: 100%;
-    width: 100%;
-    padding: 10px;
+.header { grid-area: header; }
+.hr1 { grid-area: hr1; }
+.aboutTitle { grid-area: aboutTitle; 
     p {
-        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        max-width: 90vw;
-        font-size: clamp(0.8rem, 2vw, 1.6rem);
-        color:white;
-        padding: 20px;
-        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(2rem, 4vw, 10rem);
+        margin-top: 2rem;
+        color: $naranja;
         text-align: center;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-        word-break: break-word;
+        flex-wrap: wrap;
+        height: auto;
     }
-    
 }
-
-.foto1, .foto2 {
+.hr2 { grid-area: hr2; }
+.aboutFoto1 { grid-area: aboutFoto1; 
     transition: 2s ease;
     width: 100%;
     &:hover {
         transform: scale(1.2);
     }
 }
+.hr3 { grid-area: hr3; }
+.aboutTexto1 { grid-area: aboutTexto1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    p {
+        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+        max-width: 90vw;
+        font-size: clamp(1.5rem, 5vh, 6rem);
+        color:white;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+    span {
+        color: $naranja;
+        font-weight: bold;
+    }
+}
+.hr4 { grid-area: hr4; }
+.aboutTexto2 { grid-area: aboutTexto2; 
+    @extend .aboutTexto1
+}
+.hr5 { grid-area: hr5; }
+.aboutFoto2 { grid-area: aboutFoto2; 
+    @extend .aboutFoto1;
+}
+.hr6 { grid-area: hr6; }
+.footer { grid-area: footer; }
 
 
 @media (max-width: 900px) {
-    .foto1, .foto2 {
+    .aboutFoto1, .aboutFoto2 {
         display: flex;
         width: auto;
+        height: auto;
         max-width: 90vw;
         align-self: center;
     }
     .texto1, .texto2 {
-        align-items: stretch;
+        align-items: center;
         width: 100%;
         max-height: none;
-        padding: 10px;
+        padding: 20px;
         flex-grow: 1;
-        flex-shrink: 0;
         p {
             width: 100%;
-            max-width: none;
-            font-size: clamp(0.3rem, 2vw, 1.6rem);
+            text-align: center;
+            font-size: clamp(1rem, 2vh, 4rem);
             padding: 20px;
-            margin: 10px 0;
             white-space: normal;
         }
     }

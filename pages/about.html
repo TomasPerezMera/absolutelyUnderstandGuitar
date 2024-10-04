@@ -6,6 +6,7 @@
     <meta name="description" content="Absolutely Understand Guitar is a program created by Scotty West and aimed at guitar players and musicians of all levels who wish to expand their knowledge and abilities of music theory and guitar playing. This is a fan made page of the project. We are in the program description subpage.">
     <title>Absolutely Understand Guitar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezado">
+<div class="aboutGrid">
+    <header class="header">
         <div class="headerImage">
             <img src="https://www.absolutelyunderstandguitar.com/templates/aug_dual_sidebar_2016_v3/images/header.png" alt="headerImage">
         </div>
-        <h1 class="display-2">Absolutely Understand Guitar</h1>
-        <h2 class="display-6 text-light text-center"><em>A Fan Tribute Page</em></h2>
+        <h1>Absolutely Understand Guitar</h1>
+        <h2>A Fan Tribute Page</h2>
         <div class="naviBar">
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,31 +40,42 @@
             </nav>
         </div>        
     </header>
-    <h2 class="titulo text-warning text-center">
+    <hr class="hr1">
+    <h2 class="aboutTitle" data-aos="zoom-in">
         <p>
             The Most Comprehensive and Well Organized <br> Guitar Instruction Program Available Anywhere
         </p>
-    </h2>    
-    <div class="foto1">
+    </h2>
+    <hr class="hr2">
+    <div class="aboutFoto1" data-aos="zoom-in">
         <img src="/absolutelyUnderstandGuitar/images/banner.jpg" class="img-fluid rounded mx-auto d-block" alt="Scotty Banner">
     </div>
-    <div class="texto1">
+    <hr class="hr3">
+    <div class="aboutTexto1" data-aos="fade-up">
         <p>
-            Look at all you get with our <span class="text-warning fw-bold">video guitar instruction package</span>!
+            Look at all you get with our <span>video guitar instruction package</span>!
             Scotty's guitar instruction videos teach you to actually "think" on your guitar. If a picture is worth a thousand words, these 32-1 hour-long guitar instruction videos are absolutely priceless! Close-ups of guitar chord and scale finger positions, multiple camera angles and large, easy-to-read graphics make Scotty's visual method of guitar instruction unbeatable.
         </p>
     </div>
-    <div class="texto2">
+    <hr class="hr4">
+    <div class="aboutTexto2" data-aos="fade-up">
         <p>
-            Scotty's <span class="fw-bold">"music as language"</span> approach to guitar instruction is the key. You understand guitar better when Scotty shows you how to do it and then explains how it all works right there on your screen! It's like having world class private guitar instruction right in your own home.
+            Scotty's <span>"music as language"</span> approach to guitar instruction is the key. You understand guitar better when Scotty shows you how to do it and then explains how it all works right there on your screen! It's like having world class private guitar instruction right in your own home.
         </p>
     </div>
-    <div class="foto2">        
+    <hr class="hr5">
+    <div class="aboutFoto2" data-aos="zoom-in">
         <img src="/absolutelyUnderstandGuitar/images/scotty3.jpg" class="img-fluid rounded mx-auto d-block" alt="Picture of Scotty">
     </div>
+    <hr class="hr6">
     <footer class="footer">
         <a href="#top">Go To Top</a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

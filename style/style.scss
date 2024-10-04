@@ -23,11 +23,15 @@ $naranja: #ffc107;
     overflow-wrap: break-word;
     grid-template-areas:
         "header"
+        "hr1"
         "mainGrid"
-        "texto2"
+        "hr2"
+        "indexTexto2"
+        "hr3"
         "footer";
 }
 .header { grid-area: header; }
+.hr1 { grid-area: hr1; }
 .mainGrid { grid-area: mainGrid;
     display: grid;
     grid-template-columns: auto auto;
@@ -38,7 +42,7 @@ $naranja: #ffc107;
     padding: 50px;
     grid-template-areas:
         "indexImagen titleContainer"
-        "indexImagen texto1";
+        "indexImagen indexTexto1";
     .indexImagen { grid-area: indexImagen;
         position: sticky;
         align-self: start;
@@ -60,7 +64,7 @@ $naranja: #ffc107;
             text-align: center;
             }
         }
-    .texto1 { grid-area: texto1; 
+    .indexTexto1 { grid-area: indexTexto1; 
         overflow: visible;
         .textContainer {
             p {
@@ -75,7 +79,8 @@ $naranja: #ffc107;
         }
     }
 }
-.texto2 { grid-area: texto2; 
+.hr2 { grid-area: hr2; }
+.indexTexto2 { grid-area: indexTexto2; 
     display: flex;
     flex-direction: column;
     height: auto;
@@ -94,19 +99,20 @@ $naranja: #ffc107;
         }
     }
 }
+.hr3 { grid-area: hr3; }
 .footer { grid-area: footer; }
 
 
-/*Media Queries - A mejorar font sizes, page width/centering issues*/
+/*Media Queries - A mejorar: font sizes, page width/centering issues*/
 
 @media (max-width: 900px) {
     body {
         width: 100%;
-        max-width: 100vw;
+        max-width: 90vw;
+        align-items: center;
     }
     .indexGrid {
         margin: 0 10px;
-
     }
     .mainGrid { grid-area: mainGrid;
             display: grid;
@@ -119,7 +125,7 @@ $naranja: #ffc107;
             grid-template-areas:
                 "indexImagen"
                 "titleContainer"
-                "texto1";
+                "indexTexto1";
             .indexImagen { 
                 grid-area: indexImagen;
                 position: static;
@@ -140,8 +146,8 @@ $naranja: #ffc107;
                     text-align: center;
                     }
                 }
-            .texto1 { 
-                grid-area: texto1; 
+            .indexTexto1 { 
+                grid-area: indexTexto1; 
                 overflow: visible;
                 .textContainer {
                     p {

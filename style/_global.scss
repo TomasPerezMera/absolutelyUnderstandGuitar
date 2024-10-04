@@ -35,7 +35,7 @@ body {
     }
     h2 {
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: $rojo;
         font-style: italic;
         font-size: clamp(2.5rem, 6vw, 8rem);
         text-align: center;
@@ -87,6 +87,14 @@ body {
         width: 100%;
         height: auto;
     }
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to left, $naranja, $rojo);
+    margin: 40px auto;
+    border: none;
 }
 
 .footer {
