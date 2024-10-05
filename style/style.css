@@ -211,7 +211,8 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 /*Styling of the About webpage*/
@@ -341,7 +342,8 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 /*Styling of the Program webpage*/
@@ -453,7 +455,11 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .table {
+    overflow-x: auto;
   }
 }
 /*Styling of the Scotty Bio webpage*/
@@ -577,7 +583,8 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 /*Styling of the Videos webpage*/
@@ -603,14 +610,22 @@ hr {
   grid-area: videoT1;
 }
 .videoT1 p, .videoT3 p, .videoT2 p {
+  text-align: center;
+}
+.videoT1 p a, .videoT3 p a, .videoT2 p a {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   font-size: clamp(1.2rem, 2vw, 3.5rem);
   color: #ffc107;
   font-weight: bolder;
-  text-align: center;
   text-decoration: underline;
   margin-top: 10px;
   margin-bottom: 30px;
+  display: inline-block;
+  transition: all 1s ease;
+}
+.videoT1 p a:hover, .videoT3 p a:hover, .videoT2 p a:hover {
+  color: #dc3545;
+  transform: scale(1.2);
 }
 
 .video1, .video3, .video2 {
@@ -640,6 +655,9 @@ hr {
 .videoT3 {
   grid-area: videoT3;
 }
+.videoT3 p a span {
+  font-style: italic;
+}
 
 .video3 {
   grid-area: video3;
@@ -660,7 +678,8 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 /*Styling of the Main webpage*/
@@ -820,7 +839,8 @@ hr {
 }
 @media (max-width: 480px) {
   body {
-    width: 480px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 

@@ -165,6 +165,7 @@ $naranja: #ffc107;
 
 @media (max-width: 480px) {
     body {
-        width: 480px;
+        box-sizing: border-box;
+        width: 100%;
     }
 }
