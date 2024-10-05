@@ -1,6 +1,6 @@
 # Absolutely Understand Guitar
 
-### Hello! This is a fan-made project featuring the **Absolutely Understand Guitar** video series by *Scotty West*, which can be found at https://www.absolutelyunderstandguitar.com . 
+### Hello! This is a fan-made project featuring the **Absolutely Understand Guitar** video series by *Scotty West*, which can be found at https://www.absolutelyunderstandguitar.com .
 
 Here's a page breakdown of the project;
 * [Homepage](https://tomasperezmera.github.io/absolutelyUnderstandGuitar/index.html)
