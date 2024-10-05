@@ -37,17 +37,17 @@
 .hr2 { grid-area: hr2; }
 .aboutFoto1 { grid-area: aboutFoto1;
     text-align: center;
-    margin: auto;    
+    margin: auto;
     width: 100%;
     img {
         transition: 2s ease;
         &:hover {
             transform: scale(1.2);
         }
-    }    
+    }
 }
 .hr3 { grid-area: hr3; }
-.aboutTexto1 { grid-area: aboutTexto1; 
+.aboutTexto1 { grid-area: aboutTexto1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,11 +71,11 @@
     }
 }
 .hr4 { grid-area: hr4; }
-.aboutTexto2 { grid-area: aboutTexto2; 
+.aboutTexto2 { grid-area: aboutTexto2;
     @extend .aboutTexto1
 }
 .hr5 { grid-area: hr5; }
-.aboutFoto2 { grid-area: aboutFoto2; 
+.aboutFoto2 { grid-area: aboutFoto2;
     @extend .aboutFoto1;
 }
 .hr6 { grid-area: hr6; }

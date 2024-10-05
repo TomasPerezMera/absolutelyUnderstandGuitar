@@ -1,6 +1,7 @@
 /*Partials y Variables*/
 
 @import "global";
+@import "page404";
 @import "about";
 @import "program";
 @import "scotty";
@@ -57,7 +58,6 @@ $naranja: #ffc107;
         p {
             font-weight: bold;
             color: $rojo;
-            font-size: 1.5rem;
             font-weight: bold;
             font-size: clamp(1.2rem, 2vw, 6rem);            
             height: 100%;

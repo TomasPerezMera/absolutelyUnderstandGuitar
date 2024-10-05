@@ -1,0 +1,86 @@
+/*404 Page Styling*/
+
+.grid404 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap: 5px;
+    margin: 20px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    grid-template-areas:
+        "header"
+        "hr1"
+        "title404"
+        "hr2"
+        "scotty404"
+        "caption404"
+        "hr3"
+        "footer";
+}
+.header { grid-area: header; }
+.hr1 { grid-area: hr1; }
+.title404 { grid-area: title404;
+    justify-content: center;
+        h2 {
+            font-weight: bold;
+            color: $rojo;
+            font-weight: bold;
+            font-size: clamp(3rem, 2vw, 6rem);            
+            height: 100%;
+            text-align: center;
+            }
+}
+.hr2 { grid-area: hr2; }
+.scotty404 { grid-area: scotty404; 
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    img {
+        width: 50%;
+        transition: 2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+.caption404 { grid-area: caption404; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 0.10em;
+    p {
+        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+        max-width: 90vw;
+        font-size: clamp(1.5rem, 5vh, 6rem);
+        color:white;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+}
+.hr3 { grid-area: hr3; }
+.footer { grid-area: footer; }
+
+@media (max-width: 1024px) {
+    .title404 {
+        font-size: calc(1.5em + 1vmin);
+    }
+    .caption404 {
+        p {
+            font-size: calc(0.75em + 1vmin);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+}
