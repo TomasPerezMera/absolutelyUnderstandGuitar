@@ -96,3 +96,17 @@ $naranja2: #8f6d06;
     width: 100%;
     align-self: center;
 }
+
+@media (max-width: 1024px) {
+    .programText {
+        p {
+            font-size: calc(0.75em + 1vmin);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+}

@@ -15,7 +15,7 @@
         "hr3"
         "scottyT2"
         "hr4"
-        "scottyCarousel"
+        "carousel"
         "hr5"
         "scottyT3"
         "hr6"
@@ -41,7 +41,8 @@
     align-items: center;
     height: auto;
     width: 100%;
-    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
     p {
         font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
         font-size: clamp(2rem, 5vh, 6rem);
@@ -58,37 +59,16 @@
     @extend .scottyT1;
 }
 .hr4 { grid-area: hr4; }
-.scottyCarousel { grid-area: scottyCarousel; 
-    #carousel {
-        max-width: 70vw;
-        height: auto;
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border: 2px solid red !important;
-        .carousel-inner {
-            display: flex;
-            position: relative;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid blue !important;
-            .carousel-item {
-                border: 2px solid green !important;
-                img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    margin: auto;
-                    transition: 2s ease;
-                    border: 2px solid purple !important;
-                    &:hover {
-                        transform: scale(1.2);
-                    }
-                }
+.carousel { grid-area: carousel;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 25px;
+    .carousel-inner {
+        .carousel-item {
+            img {     
+                height: auto;
+                margin:auto;
             }
-            
         }
     }
 }
@@ -103,7 +83,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            a {
+                color: $link;
+                text-decoration: none;
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: scale(1.2);
+                    color: $rojo;
+                }
+            }
     }
 }
 .hr6 { grid-area: hr6; }
 .footer { grid-area: footer; }
+
+@media (max-width: 1024px) {
+    .scottyT1 {
+        p {
+            font-size: calc(0.75em + 1vmin);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+}

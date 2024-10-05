@@ -105,10 +105,9 @@ $naranja: #ffc107;
 
 /*Media Queries - A mejorar: font sizes, page width/centering issues*/
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     body {
         width: 100%;
-        max-width: 90vw;
         align-items: center;
     }
     .indexGrid {
@@ -142,7 +141,7 @@ $naranja: #ffc107;
                     font-weight: bold;
                     color: $rojo;
                     font-weight: bold;
-                    font-size: clamp(1.2rem, 4vw, 3.5rem);
+                    font-size: calc(0.75em + 1vmin);
                     text-align: center;
                     }
                 }
@@ -156,10 +155,16 @@ $naranja: #ffc107;
                         width: 100%;    
                         padding: 5px;
                         line-height: 1.5;
-                        font-size: clamp(1rem, 2vw, 1.6rem);
+                        font-size: calc(0.75em + 1vmin);
                         margin-bottom: 10px;
                     }
                 }
             }
         }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
 }

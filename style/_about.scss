@@ -90,7 +90,7 @@
         max-width: 90vw;
         align-self: center;
     }
-    .texto1, .texto2 {
+    .aboutTexto1, .aboutTexto2 {
         align-items: center;
         width: 100%;
         max-height: none;
@@ -99,9 +99,15 @@
         p {
             width: 100%;
             text-align: center;
-            font-size: clamp(1rem, 2vh, 4rem);
+            font-size: calc(0.75em + 1vmin);
             padding: 20px;
             white-space: normal;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
     }
 }

@@ -23,14 +23,16 @@
 .header { grid-area: header; }
 .hr1 { grid-area: hr1; }
 .videoT1 { grid-area: videoT1; 
-    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-    font-size: clamp(1.2rem, 2vw, 3.5rem);
-    color: $naranja;
-    font-weight: bolder;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    p {
+        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+        font-size: clamp(1.2rem, 2vw, 3.5rem);
+        color: $naranja;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 .video1 { grid-area: video1;
     display: flex;
@@ -54,3 +56,17 @@
 }
 .hr4 { grid-area: hr4; }
 .footer { grid-area: footer; }
+
+@media (max-width: 1024px) {
+    .videoT1 {
+        p {
+            font-size: calc(0.75em + 1vmin);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+}
