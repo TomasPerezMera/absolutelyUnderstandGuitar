@@ -351,80 +351,126 @@ hr {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 20px;
-  grid-auto-flow: row;
-  grid-template-areas: "encabezado" "scottyI1" "scottyT1" "scottyT2" "scottyCarousel" "scottyT3" "footer";
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas: "header" "hr1" "scottyI1" "hr2" "scottyT1" "hr3" "scottyT2" "hr4" "scottyCarousel" "hr5" "scottyT3" "hr6" "footer";
 }
 
-.encabezado {
-  grid-area: encabezado;
+.header {
+  grid-area: header;
 }
 
-.scottyT1 {
+.hr1 {
+  grid-area: hr1;
+}
+
+.scottyI1 {
+  grid-area: scottyI1;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.scottyI1 img {
+  max-width: 100%;
+  height: auto;
+  transition: 2s ease;
+}
+.scottyI1 img:hover {
+  transform: scale(1.2);
+}
+
+.hr2 {
+  grid-area: hr2;
+}
+
+.scottyT1, .scottyT3, .scottyT2 {
   grid-area: scottyT1;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+}
+.scottyT1 p, .scottyT3 p, .scottyT2 p {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-size: clamp(2rem, 5vh, 6rem);
+  color: white;
+  font-style: italic;
+}
+.scottyT1 span, .scottyT3 span, .scottyT2 span {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.hr3 {
+  grid-area: hr3;
 }
 
 .scottyT2 {
   grid-area: scottyT2;
 }
 
-.scottyI1 {
-  grid-area: scottyI1;
+.hr4 {
+  grid-area: hr4;
 }
 
 .scottyCarousel {
   grid-area: scottyCarousel;
 }
+.scottyCarousel #carousel {
+  max-width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid red !important;
+}
+.scottyCarousel #carousel .carousel-inner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue !important;
+}
+.scottyCarousel #carousel .carousel-inner .carousel-item {
+  border: 2px solid green !important;
+}
+.scottyCarousel #carousel .carousel-inner .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+  transition: 2s ease;
+  border: 2px solid purple !important;
+}
+.scottyCarousel #carousel .carousel-inner .carousel-item img:hover {
+  transform: scale(1.2);
+}
+
+.hr5 {
+  grid-area: hr5;
+}
 
 .scottyT3 {
   grid-area: scottyT3;
 }
-
-.footer {
-  grid-area: footer;
+.scottyT3 span {
+  color: #ffc107;
+  font-weight: bolder;
 }
-
-.scottyI1 {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  transition: 2s ease;
-  width: 100%;
-}
-.scottyI1:hover {
-  transform: scale(1.2);
-}
-
-.scottyT1, .scottyT2, .scottyT3 {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  color: white;
-}
-
-#carousel {
-  max-width: 70vw;
-  margin: auto;
-  padding: 30px;
-}
-
-.carousel-inner img {
-  height: auto;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.footer {
+.scottyT3 .scottyLink {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: end;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  margin-top: auto;
-  transition: color 3s ease;
 }
-.footer:hover {
-  color: #dc3545;
+
+.hr6 {
+  grid-area: hr6;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 /*Styling of the Videos webpage*/

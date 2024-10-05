@@ -25,20 +25,21 @@
 .hr1 { grid-area: hr1; }
 .scottyI1 { grid-area: scottyI1;
     text-align: center;
-    margin: 20px;
-    transition: 2s ease;
-    height: auto;
-    width: 100%;
-    &:hover {
-        transform: scale(1.2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: 2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 .hr2 { grid-area: hr2; }
 .scottyT1 { grid-area: scottyT1;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 20px;
     p {
@@ -46,6 +47,10 @@
         font-size: clamp(2rem, 5vh, 6rem);
         color:white;
         font-style: italic;
+    }
+    span {
+        color: $naranja;
+        font-weight: bold;
     }
 }
 .hr3 { grid-area: hr3; }
@@ -55,20 +60,50 @@
 .hr4 { grid-area: hr4; }
 .scottyCarousel { grid-area: scottyCarousel; 
     #carousel {
-        max-width: 70vw; 
-        margin: auto; 
-        padding: 30px;
-    }
-    .carousel-inner img {
+        max-width: 70vw;
         height: auto;
-        max-height: 100%;
-        object-fit: cover;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid red !important;
+        .carousel-inner {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid blue !important;
+            .carousel-item {
+                border: 2px solid green !important;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    margin: auto;
+                    transition: 2s ease;
+                    border: 2px solid purple !important;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            
+        }
     }
 }
 .hr5 { grid-area: hr5; }
 .scottyT3 { grid-area: scottyT3; 
     @extend .scottyT1;
+    span {
+        color: $naranja;
+        font-weight: bolder;
+    }
+    .scottyLink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
 }
 .hr6 { grid-area: hr6; }
 .footer { grid-area: footer; }
-
