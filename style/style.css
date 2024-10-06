@@ -16,6 +16,9 @@ body {
   margin-right: 2vw;
   height: 100%;
 }
+body .text-danger {
+  color: #dc3545;
+}
 
 .header .headerImage {
   width: 100%;
@@ -41,7 +44,7 @@ body {
   font-size: clamp(2.5rem, 6vw, 8rem);
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  color: #dc3545;
+  color: #e60127;
   font-style: italic;
   text-align: center;
   margin-top: 2rem;
@@ -69,7 +72,7 @@ body {
   transition: all 0.5s ease;
 }
 .naviBar nav .navbar-nav .nav-link:hover {
-  color: #dc3545;
+  color: #e60127;
   transform: scale(1.2);
 }
 
@@ -105,6 +108,7 @@ hr {
   padding: 10px;
   text-align: center;
   margin-top: auto;
+  margin-bottom: 20px;
 }
 .footer a {
   color: #0d6efd;
@@ -288,10 +292,6 @@ hr {
   overflow-wrap: break-word;
   word-break: break-word;
 }
-.aboutTexto1 span, .aboutTexto2 span {
-  color: #ffc107;
-  font-weight: bold;
-}
 
 .hr4 {
   grid-area: hr4;
@@ -351,8 +351,11 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 100px;
-  grid-template-areas: "header" "hr1" "programImage" "hr2" "programText" "hr3" "tableTitle" "custom-table" "hr4" "footer";
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  overflow-wrap: break-word;
+  grid-template-areas: "header" "hr1" "programImage" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
 }
 
 .header {
@@ -367,6 +370,7 @@ hr {
   grid-area: programImage;
   text-align: center;
   margin: auto;
+  max-width: 70vw;
 }
 .programImage img {
   margin-top: 10px;
@@ -396,9 +400,6 @@ hr {
   overflow-wrap: break-word;
   word-break: break-word;
 }
-.programText span {
-  color: #ffc107;
-}
 
 .hr3 {
   grid-area: hr3;
@@ -412,28 +413,39 @@ hr {
   color: #ffc107;
   text-align: center;
   font-weight: bold;
+  text-decoration: underline;
+  transition: all 1s ease;
+}
+.tableTitle p:hover {
+  color: #dc3545;
 }
 
 .table {
   grid-area: table;
 }
+.table tbody tr:nth-child(odd) {
+  font-size: clamp(2rem, 5vh, 4rem);
+}
 .table tbody tr:nth-child(odd) th {
-  background-color: #63181f;
+  background-color: #5c0211;
   color: white;
   text-align: center;
 }
 .table tbody tr:nth-child(odd) td {
-  background-color: #63181f;
+  background-color: #5c0211;
   color: white;
   text-align: center;
 }
+.table tbody tr:nth-child(even) {
+  font-size: clamp(2rem, 5vh, 4rem);
+}
 .table tbody tr:nth-child(even) th {
-  background-color: #8f6d06;
+  background-color: #896805;
   color: white;
   text-align: center;
 }
 .table tbody tr:nth-child(even) td {
-  background-color: #8f6d06;
+  background-color: #896805;
   color: white;
   text-align: center;
 }
@@ -467,9 +479,12 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px;
-  width: 100%;
-  min-height: 100vh;
+  grid-auto-rows: auto;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
   grid-template-areas: "header" "hr1" "scottyI1" "hr2" "scottyT1" "hr3" "scottyT2" "hr4" "carousel" "hr5" "scottyT3" "hr6" "footer";
 }
 
@@ -486,6 +501,8 @@ hr {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .scottyI1 img {
   max-width: 100%;
@@ -502,21 +519,18 @@ hr {
 
 .scottyT1, .scottyT3, .scottyT2 {
   grid-area: scottyT1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   align-items: center;
   height: auto;
-  width: 100%;
-  margin: 10px;
-  box-sizing: border-box;
 }
 .scottyT1 p, .scottyT3 p, .scottyT2 p {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  font-size: clamp(2rem, 5vh, 6rem);
+  font-size: clamp(1rem, 2vw, 4rem);
+  margin: 40px 40px;
   color: white;
   font-style: italic;
-}
-.scottyT1 span, .scottyT3 span, .scottyT2 span {
-  color: #ffc107;
-  font-weight: bold;
 }
 
 .hr3 {
@@ -549,14 +563,11 @@ hr {
 .scottyT3 {
   grid-area: scottyT3;
 }
-.scottyT3 span {
-  color: #ffc107;
-  font-weight: bolder;
-}
 .scottyT3 .scottyLink {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
 }
 .scottyT3 .scottyLink a {
   color: #0d6efd;
@@ -565,7 +576,7 @@ hr {
 }
 .scottyT3 .scottyLink a:hover {
   transform: scale(1.2);
-  color: #dc3545;
+  color: #e60127;
 }
 
 .hr6 {
@@ -588,13 +599,14 @@ hr {
   }
 }
 /*Styling of the Videos webpage*/
-.videoGrid {
+.videosGrid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px;
-  width: 100%;
-  min-height: 100vh;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  overflow-wrap: break-word;
   grid-template-areas: "header" "hr1" "videoT1" "video1" "hr2" "videoT2" "video2" "hr3" "videoT3" "video3" "hr4" "footer";
 }
 
@@ -614,7 +626,7 @@ hr {
 }
 .videoT1 p a, .videoT3 p a, .videoT2 p a {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  font-size: clamp(1.2rem, 2vw, 3.5rem);
+  font-size: clamp(1.5rem, 2vw, 5rem);
   color: #ffc107;
   font-weight: bolder;
   text-decoration: underline;
@@ -624,7 +636,7 @@ hr {
   transition: all 1s ease;
 }
 .videoT1 p a:hover, .videoT3 p a:hover, .videoT2 p a:hover {
-  color: #dc3545;
+  color: #e60127;
   transform: scale(1.2);
 }
 

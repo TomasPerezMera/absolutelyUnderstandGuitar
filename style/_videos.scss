@@ -1,11 +1,12 @@
 /*Styling of the Videos webpage*/
 
-.videoGrid {  display: grid;
+.videosGrid {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 20px;
-    width: 100%;
-    min-height: 100vh;
+    gap: 5px;
+    margin: 20px;
+    padding: 20px;
+    overflow-wrap: break-word;
     grid-template-areas:
         "header"
         "hr1"
@@ -27,7 +28,7 @@
         text-align: center;
         a {
             font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-            font-size: clamp(1.2rem, 2vw, 3.5rem);
+            font-size: clamp(1.5rem, 2vw, 5rem);
             color: $naranja;
             font-weight: bolder;
             text-decoration: underline;
@@ -36,7 +37,7 @@
             display: inline-block;
             transition: all 1s ease;
             &:hover {
-                color: #dc3545;
+                color: #e60127;
                 transform: scale(1.2);
             }
         }

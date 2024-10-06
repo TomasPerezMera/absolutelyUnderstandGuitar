@@ -3,9 +3,12 @@
 .scottyGrid {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 20px;
-    width: 100%;
-    min-height: 100vh;
+    grid-auto-rows: auto;
+    gap: 5px;
+    margin: 20px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
     grid-template-areas:
         "header"
         "hr1"
@@ -27,6 +30,8 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     img {
         max-width: 100%;
         height: auto;
@@ -38,20 +43,17 @@
 }
 .hr2 { grid-area: hr2; }
 .scottyT1 { grid-area: scottyT1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     align-items: center;
     height: auto;
-    width: 100%;
-    margin: 10px;
-    box-sizing: border-box;
     p {
         font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        font-size: clamp(2rem, 5vh, 6rem);
+        font-size: clamp(1rem, 2vw, 4rem);
+        margin: 40px 40px;
         color:white;
         font-style: italic;
-    }
-    span {
-        color: $naranja;
-        font-weight: bold;
     }
 }
 .hr3 { grid-area: hr3; }
@@ -75,21 +77,18 @@
 .hr5 { grid-area: hr5; }
 .scottyT3 { grid-area: scottyT3; 
     @extend .scottyT1;
-    span {
-        color: $naranja;
-        font-weight: bolder;
-    }
     .scottyLink {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 0px;
             a {
                 color: $link;
                 text-decoration: none;
                 transition: all 0.5s ease;
                 &:hover {
                     transform: scale(1.2);
-                    color: $rojo;
+                    color: #e60127;
                 }
             }
     }

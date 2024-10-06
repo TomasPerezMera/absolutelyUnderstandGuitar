@@ -1,13 +1,15 @@
 /*Styling of the Program webpage*/
-
-$rojo2: #63181f;
-$naranja2: #8f6d06;
+$rojo2: #5c0211;
+$naranja2: #896805;
 
 
 .programGrid {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 100px;
+    gap: 5px;
+    margin: 20px;
+    padding: 20px;
+    overflow-wrap: break-word;
     grid-template-areas:
         "header"
         "hr1"
@@ -16,7 +18,7 @@ $naranja2: #8f6d06;
         "programText"
         "hr3"
         "tableTitle"
-        "custom-table"
+        "table"
         "hr4"
         "footer";
 }
@@ -25,6 +27,7 @@ $naranja2: #8f6d06;
 .programImage { grid-area: programImage;
     text-align: center;
     margin: auto;
+    max-width: 70vw;
     img {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -48,9 +51,6 @@ $naranja2: #8f6d06;
         overflow-wrap: break-word;
         word-break: break-word;
     }
-    span {
-        color: $naranja;
-    }
 }
 .hr3 { grid-area: hr3; }
 .tableTitle { grid-area: tableTitle; 
@@ -59,12 +59,18 @@ $naranja2: #8f6d06;
         color: $naranja;
         text-align: center;
         font-weight: bold;
+        text-decoration: underline;
+        transition: all 1s ease;
+        &:hover {
+            color: $rojo;
+        }
     }
 }
 .table { grid-area: table; 
     tbody {
         tr {
             &:nth-child(odd) {
+                font-size: clamp(2rem, 5vh, 4rem);
                 th {
                     background-color: $rojo2;
                     color: white;
@@ -77,6 +83,7 @@ $naranja2: #8f6d06;
                 }
             }
             &:nth-child(even) {
+                font-size: clamp(2rem, 5vh, 4rem);
                 th {
                     background-color: $naranja2;
                     color: white;
