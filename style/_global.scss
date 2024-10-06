@@ -1,4 +1,4 @@
-$fondo: #030104;
+$fondo: #000000;
 $rojo: #dc3545;
 $naranja: #ffc107;
 $link: #0d6efd;
@@ -62,7 +62,7 @@ body {
 .naviBar {
     width: 80%;
     margin: 0 auto;
-    background-color: #030104;
+    background-color: #000000;
     nav {
         button {
             background-color: $fondo;
@@ -126,9 +126,14 @@ hr {
         text-decoration: none;
         display: inline-block;
         transition: all 0.5s ease;
-        &:hover {
-            transform: scale(1.2);
-            color: $rojo;
+        cursor: pointer;
+        img {
+            width: 50%;
+            height: auto;
+            transition: transform 0.5s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

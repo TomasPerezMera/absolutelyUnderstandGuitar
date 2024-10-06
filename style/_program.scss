@@ -13,7 +13,7 @@ $naranja2: #896805;
     grid-template-areas:
         "header"
         "hr1"
-        "programImage"
+        "programCarousel"
         "hr2"
         "programText"
         "hr3"
@@ -24,17 +24,19 @@ $naranja2: #896805;
 }
 .header { grid-area: header; }
 .hr1 { grid-area: hr1; }
-.programImage { grid-area: programImage;
-    text-align: center;
-    margin: auto;
-    max-width: 70vw;
-    img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        transition: 2s ease;
-        width: auto;
-        &:hover {
-            transform: scale(1.2);
+.programCarousel { grid-area: programImage;
+    .carousel {
+        margin: auto;
+        box-sizing: border-box;
+        padding: 25px;
+        .carousel-inner {
+            .carousel-item {
+                margin: auto;
+                img {
+                    height:auto;
+                    margin:auto;
+                }
+            }
         }
     }
 }
@@ -99,10 +101,7 @@ $naranja2: #896805;
     }
 }
 .hr4 { grid-area: hr4; }
-.footer { grid-area: footer; 
-    width: 100%;
-    align-self: center;
-}
+.footer { grid-area: footer; }
 
 @media (max-width: 1024px) {
     .programText {

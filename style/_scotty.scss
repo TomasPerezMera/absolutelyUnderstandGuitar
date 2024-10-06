@@ -18,7 +18,7 @@
         "hr3"
         "scottyT2"
         "hr4"
-        "carousel"
+        "scottyCarousel"
         "hr5"
         "scottyT3"
         "hr6"
@@ -61,15 +61,18 @@
     @extend .scottyT1;
 }
 .hr4 { grid-area: hr4; }
-.carousel { grid-area: carousel;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 25px;
-    .carousel-inner {
-        .carousel-item {
-            img {     
-                height: auto;
-                margin:auto;
+.scottyCarousel { grid-area: scottyCarousel;
+    .carousel {
+        margin: auto;
+        box-sizing: border-box;
+        padding: 25px;
+        .carousel-inner {
+            .carousel-item {
+                margin: auto;
+                img {
+                    height:auto;
+                    margin:auto;
+                }
             }
         }
     }

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #030104;
+  background-color: #000000;
   width: minmax(600px, 1000px);
   margin-left: 2vw;
   margin-right: 2vw;
@@ -55,10 +55,10 @@ body .text-danger {
 .naviBar {
   width: 80%;
   margin: 0 auto;
-  background-color: #030104;
+  background-color: #000000;
 }
 .naviBar nav button {
-  background-color: #030104;
+  background-color: #000000;
   border-color: #ffc107;
 }
 .naviBar nav #navbarContent a {
@@ -116,10 +116,15 @@ hr {
   text-decoration: none;
   display: inline-block;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
-.footer a:hover {
+.footer a img {
+  width: 50%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.footer a img:hover {
   transform: scale(1.2);
-  color: #dc3545;
 }
 
 /*404 Page Styling*/
@@ -356,7 +361,7 @@ hr {
   margin: 20px;
   padding: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "hr1" "programImage" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
+  grid-template-areas: "header" "hr1" "programCarousel" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
 }
 
 .header {
@@ -367,20 +372,20 @@ hr {
   grid-area: hr1;
 }
 
-.programImage {
+.programCarousel {
   grid-area: programImage;
-  text-align: center;
+}
+.programCarousel .carousel {
   margin: auto;
-  max-width: 70vw;
+  box-sizing: border-box;
+  padding: 25px;
 }
-.programImage img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: 2s ease;
-  width: auto;
+.programCarousel .carousel .carousel-inner .carousel-item {
+  margin: auto;
 }
-.programImage img:hover {
-  transform: scale(1.2);
+.programCarousel .carousel .carousel-inner .carousel-item img {
+  height: auto;
+  margin: auto;
 }
 
 .hr2 {
@@ -457,8 +462,6 @@ hr {
 
 .footer {
   grid-area: footer;
-  width: 100%;
-  align-self: center;
 }
 
 @media (max-width: 1024px) {
@@ -486,7 +489,7 @@ hr {
   padding: 20px;
   overflow-wrap: break-word;
   box-sizing: border-box;
-  grid-template-areas: "header" "hr1" "scottyI1" "hr2" "scottyT1" "hr3" "scottyT2" "hr4" "carousel" "hr5" "scottyT3" "hr6" "footer";
+  grid-template-areas: "header" "hr1" "scottyI1" "hr2" "scottyT1" "hr3" "scottyT2" "hr4" "scottyCarousel" "hr5" "scottyT3" "hr6" "footer";
 }
 
 .header {
@@ -546,13 +549,18 @@ hr {
   grid-area: hr4;
 }
 
-.carousel {
-  grid-area: carousel;
+.scottyCarousel {
+  grid-area: scottyCarousel;
+}
+.scottyCarousel .carousel {
   margin: auto;
   box-sizing: border-box;
   padding: 25px;
 }
-.carousel .carousel-inner .carousel-item img {
+.scottyCarousel .carousel .carousel-inner .carousel-item {
+  margin: auto;
+}
+.scottyCarousel .carousel .carousel-inner .carousel-item img {
   height: auto;
   margin: auto;
 }
@@ -796,7 +804,7 @@ hr {
   grid-area: footer;
 }
 
-/*Media Queries - A mejorar: font sizes, page width/centering issues*/
+/*Media Queries*/
 @media (max-width: 1024px) {
   body {
     width: 100%;

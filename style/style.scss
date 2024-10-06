@@ -101,8 +101,7 @@ $naranja: #ffc107;
 .hr3 { grid-area: hr3; }
 .footer { grid-area: footer; }
 
-
-/*Media Queries - A mejorar: font sizes, page width/centering issues*/
+/*Media Queries*/
 
 @media (max-width: 1024px) {
     body {
@@ -113,53 +112,53 @@ $naranja: #ffc107;
         margin: 0 10px;
     }
     .mainGrid { grid-area: mainGrid;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
-            grid-auto-columns: auto;
-            gap: 10px;
-            margin: 20px;
-            padding: 30px;
-            grid-template-areas:
-                "indexImagen"
-                "titleContainer"
-                "indexTexto1";
-            .indexImagen { 
-                grid-area: indexImagen;
-                position: static;
-                img {
-                    max-width: 100%;
-                    height: auto;
-                    object-fit: cover;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-auto-columns: auto;
+        gap: 10px;
+        margin: 20px;
+        padding: 30px;
+        grid-template-areas:
+            "indexImagen"
+            "titleContainer"
+            "indexTexto1";
+        .indexImagen { 
+            grid-area: indexImagen;
+            position: static;
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .titleContainer { 
+            grid-area: titleContainer;
+            justify-content: center;
+            p {
+                font-weight: bold;
+                color: $rojo;
+                font-weight: bold;
+                font-size: calc(0.75em + 1vmin);
+                text-align: center;
                 }
             }
-            .titleContainer { 
-                grid-area: titleContainer;
-                justify-content: center;
+        .indexTexto1 { 
+            grid-area: indexTexto1; 
+            overflow: visible;
+            .textContainer {
                 p {
-                    font-weight: bold;
-                    color: $rojo;
-                    font-weight: bold;
+                    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+                    color:white;
+                    width: 100%;    
+                    padding: 5px;
+                    line-height: 1.5;
                     font-size: calc(0.75em + 1vmin);
-                    text-align: center;
-                    }
-                }
-            .indexTexto1 { 
-                grid-area: indexTexto1; 
-                overflow: visible;
-                .textContainer {
-                    p {
-                        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-                        color:white;
-                        width: 100%;    
-                        padding: 5px;
-                        line-height: 1.5;
-                        font-size: calc(0.75em + 1vmin);
-                        margin-bottom: 10px;
-                    }
+                    margin-bottom: 10px;
                 }
             }
         }
+    }
 }
 
 @media (max-width: 480px) {
