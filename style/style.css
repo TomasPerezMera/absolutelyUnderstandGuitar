@@ -37,6 +37,7 @@ body .text-danger {
   color: white;
   text-align: center;
   flex-wrap: wrap;
+  overflow-wrap: break-word;
   height: auto;
 }
 .header h2 {
@@ -50,6 +51,7 @@ body .text-danger {
   margin-top: 2rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  overflow-wrap: break-word;
 }
 
 .naviBar {
@@ -121,7 +123,7 @@ hr {
 .footer a img {
   width: 50%;
   height: auto;
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
 }
 .footer a img:hover {
   transform: scale(1.2);
@@ -222,6 +224,8 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*Styling of the About webpage*/
@@ -233,7 +237,7 @@ hr {
   margin: 20px;
   padding: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "hr1" "aboutTitle" "hr2" "aboutFoto1" "hr3" "aboutTexto1" "hr4" "aboutTexto2" "hr5" "aboutFoto2" "hr6" "footer";
+  grid-template-areas: "header" "hr1" "aboutTitle" "hr2" "aboutBanner" "hr3" "aboutTexto1" "hr4" "aboutTexto2" "hr5" "aboutFoto2" "hr6" "footer";
 }
 
 .header {
@@ -261,16 +265,16 @@ hr {
   grid-area: hr2;
 }
 
-.aboutFoto1, .aboutFoto2 {
-  grid-area: aboutFoto1;
+.aboutBanner, .aboutFoto2 {
+  grid-area: aboutBanner;
   text-align: center;
   margin: auto;
-  width: 100%;
+  width: 90%;
 }
-.aboutFoto1 img, .aboutFoto2 img {
+.aboutBanner img, .aboutFoto2 img {
   transition: 2s ease;
 }
-.aboutFoto1 img:hover, .aboutFoto2 img:hover {
+.aboutBanner img:hover, .aboutFoto2 img:hover {
   transform: scale(1.2);
 }
 
@@ -324,7 +328,7 @@ hr {
 }
 
 @media (max-width: 900px) {
-  .aboutFoto1, .aboutFoto2 {
+  .aboutBanner, .aboutFoto2 {
     display: flex;
     width: auto;
     height: auto;
@@ -350,6 +354,8 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*Styling of the Program webpage*/
@@ -373,19 +379,28 @@ hr {
 }
 
 .programCarousel {
-  grid-area: programImage;
+  grid-area: programCarousel;
 }
 .programCarousel .carousel {
   margin: auto;
-  box-sizing: border-box;
   padding: 25px;
+  max-width: 100%;
+}
+.programCarousel .carousel .carousel-inner {
+  width: 100%;
+  height: auto;
 }
 .programCarousel .carousel .carousel-inner .carousel-item {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .programCarousel .carousel .carousel-inner .carousel-item img {
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  margin: auto;
+  object-fit: contain;
 }
 
 .hr2 {
@@ -428,6 +443,7 @@ hr {
 
 .table {
   grid-area: table;
+  max-width: 100%;
 }
 .table tbody tr:nth-child(odd) {
   font-size: clamp(2rem, 5vh, 4rem);
@@ -473,9 +489,16 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .table {
-    overflow-x: auto;
+  .carousel {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .carousel-inner .carousel-item img {
+    max-width: 100%;
+    height: auto;
   }
 }
 /*Styling of the Scotty Bio webpage*/
@@ -605,6 +628,8 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*Styling of the Videos webpage*/
@@ -701,6 +726,8 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*Styling of the Main webpage*/
@@ -862,6 +889,8 @@ hr {
   body {
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

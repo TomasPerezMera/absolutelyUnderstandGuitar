@@ -24,17 +24,24 @@ $naranja2: #896805;
 }
 .header { grid-area: header; }
 .hr1 { grid-area: hr1; }
-.programCarousel { grid-area: programImage;
+.programCarousel { grid-area: programCarousel;
     .carousel {
         margin: auto;
-        box-sizing: border-box;
         padding: 25px;
+        max-width: 100%;
         .carousel-inner {
+            width: 100%;
+            height: auto;
             .carousel-item {
-                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 img {
-                    height:auto;
-                    margin:auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: auto;
+                    object-fit: contain;
                 }
             }
         }
@@ -69,6 +76,7 @@ $naranja2: #896805;
     }
 }
 .table { grid-area: table; 
+    max-width: 100%;
     tbody {
         tr {
             &:nth-child(odd) {
@@ -115,8 +123,20 @@ $naranja2: #896805;
     body {
         box-sizing: border-box;
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
     }
-    .table {
-        overflow-x: auto;
+    .carousel {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .carousel-inner {
+        .carousel-item {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 }

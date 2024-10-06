@@ -43,6 +43,7 @@ body {
         color:white;
         text-align: center;
         flex-wrap: wrap;
+        overflow-wrap: break-word;
         height: auto;
     }
     h2 {
@@ -56,6 +57,7 @@ body {
         margin-top: 2rem;
         margin-bottom: 1rem;
         flex-wrap: wrap;
+        overflow-wrap: break-word;
     }
 }
 
@@ -130,7 +132,7 @@ hr {
         img {
             width: 50%;
             height: auto;
-            transition: transform 0.5s ease;
+            transition: transform 1s ease;
             &:hover {
                 transform: scale(1.2);
             }

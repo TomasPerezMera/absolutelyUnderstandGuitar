@@ -12,7 +12,7 @@
         "hr1"
         "aboutTitle"
         "hr2"
-        "aboutFoto1"
+        "aboutBanner"
         "hr3"
         "aboutTexto1"
         "hr4"
@@ -36,10 +36,10 @@
     }
 }
 .hr2 { grid-area: hr2; }
-.aboutFoto1 { grid-area: aboutFoto1;
+.aboutBanner { grid-area: aboutBanner;
     text-align: center;
     margin: auto;
-    width: 100%;
+    width: 90%;
     img {
         transition: 2s ease;
         &:hover {
@@ -73,14 +73,14 @@
 }
 .hr5 { grid-area: hr5; }
 .aboutFoto2 { grid-area: aboutFoto2;
-    @extend .aboutFoto1;
+    @extend .aboutBanner
 }
 .hr6 { grid-area: hr6; }
 .footer { grid-area: footer; }
 
 
 @media (max-width: 900px) {
-    .aboutFoto1, .aboutFoto2 {
+    .aboutBanner, .aboutFoto2 {
         display: flex;
         width: auto;
         height: auto;
@@ -107,5 +107,8 @@
     body {
         box-sizing: border-box;
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
     }
 }
