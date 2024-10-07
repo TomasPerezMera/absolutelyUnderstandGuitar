@@ -6,20 +6,17 @@
     grid-auto-rows: auto;
     gap: 5px;
     margin: 20px;
-    padding: 20px;
     overflow-wrap: break-word;
     grid-template-areas:
         "header"
-        "hr1"
         "title404"
-        "hr2"
+        "hr1"
         "scotty404"
         "caption404"
-        "hr3"
+        "hr2"
         "footer";
 }
 .header { grid-area: header; }
-.hr1 { grid-area: hr1; }
 .title404 { grid-area: title404;
     justify-content: center;
         h2 {
@@ -31,7 +28,7 @@
             text-align: center;
             }
 }
-.hr2 { grid-area: hr2; }
+.hr1 { grid-area: hr1; }
 .scotty404 { grid-area: scotty404; 
     text-align: center;
     margin: auto;
@@ -65,7 +62,7 @@
         word-break: break-word;
     }
 }
-.hr3 { grid-area: hr3; }
+.hr2 { grid-area: hr2; }
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {

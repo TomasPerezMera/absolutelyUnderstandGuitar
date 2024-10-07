@@ -25,60 +25,66 @@ body {
     }
 }
 
+hr {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to left, $naranja, $rojo);
+    margin: 40px auto;
+    border: none;
+}
+
 .header {
     .headerImage {
         width: 100%;
-        text-align: center;
         img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
     }
     h1 {
         font-family: Trebuchet MS, sans-serif;
-        font-size: clamp(3rem, 8vw, 10rem);
+        font-size: clamp(4rem, 4vw, 7rem);
         letter-spacing: 0.05em;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-        margin-top: 2rem;
         color:white;
         text-align: center;
         flex-wrap: wrap;
         overflow-wrap: break-word;
         height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     h2 {
         font-family: Trebuchet MS, sans-serif;
-        font-size: clamp(2.5rem, 6vw, 8rem);
+        font-size: clamp(2rem, 4vw, 5rem);
         letter-spacing: 0.05em;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         color: $rojo-fuerte;
         font-style: italic;
         text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
         overflow-wrap: break-word;
     }
+    hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
-.naviBar {
+nav {
     width: 80%;
     margin: 0 auto;
-    background-color: #000000;
-    nav {
-        button {
-            background-color: $fondo;
-            border-color: $naranja;
-        }
-        #navbarContent {
-            a {
-                font-size: clamp(2rem, 2vw, 6rem);
-            }
-        }
+    background-color: $fondo;
+    .navbar-toggler {
+        background-color: $fondo;
+        border-color: $naranja;
+    }
+    #navbarContent {
         .navbar-nav {
             flex-wrap: wrap;
             .nav-link {
-                color: #ffc107;
+                font-size: clamp(1rem, 2vw, 1.5rem);
+                color: $naranja;
                 transition: all 0.5s ease;
                 &:hover {
                     color: $rojo-fuerte;
@@ -87,30 +93,12 @@ body {
             }
         }
     }
-}
-
-.navbar-toggler {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.headerImage {
-    width: auto;
-    margin: 10px auto;
-    img {
-        width: 100%;
-        height: auto;
+    .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-
-hr {
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(to left, $naranja, $rojo);
-    margin: 40px auto;
-    border: none;
 }
 
 .footer {
@@ -136,6 +124,37 @@ hr {
             &:hover {
                 transform: scale(1.2);
             }
+        }
+    }
+}
+
+/*Global Media Queries*/
+
+
+@media (max-width: 1024px) {
+    * {
+        margin: 5px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        margin: 2vw;
+        padding: 0;
+    }
+    html {
+        /*global font-size declaration!! To use rem units off of!*/
+        background-color: $fondo;
+    }
+    body {
+        background-color: $fondo;
+        width: minmax(300px, 480px);
+        margin-left: 2vw;
+        margin-right: 2vw;
+        height: 100%;
+        .text-danger {
+            color: $rojo ;
         }
     }
 }

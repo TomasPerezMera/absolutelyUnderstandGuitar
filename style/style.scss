@@ -19,11 +19,9 @@ $naranja: #ffc107;
     grid-auto-rows: auto;
     gap: 5px;
     margin: 20px;
-    padding: 20px;
     overflow-wrap: break-word;
     grid-template-areas:
         "header"
-        "hr1"
         "mainGrid"
         "hr2"
         "indexTexto2"
@@ -65,16 +63,14 @@ $naranja: #ffc107;
         }
     .indexTexto1 { grid-area: indexTexto1; 
         overflow: visible;
-        .textContainer {
-            p {
-                font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-                color:white;
-                width: 100%;    
-                padding: 5px;
-                line-height: 2;
-                font-size: clamp(0.4rem, 2vw, 4rem);
-                margin-bottom: 10px;
-            }
+        p {
+            font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+            color:white;
+            width: 100%;    
+            padding: 5px;
+            line-height: 2;
+            font-size: clamp(0.4rem, 2vw, 4rem);
+            margin-bottom: 10px;
         }
     }
 }

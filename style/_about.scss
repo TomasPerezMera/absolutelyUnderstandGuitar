@@ -5,11 +5,9 @@
     grid-template-rows: auto auto auto auto auto auto 1fr auto 1fr auto auto;
     gap: 5px;
     margin: 20px;
-    padding: 20px;
     overflow-wrap: break-word;
     grid-template-areas:
         "header"
-        "hr1"
         "aboutTitle"
         "hr2"
         "aboutBanner"
