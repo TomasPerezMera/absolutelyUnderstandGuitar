@@ -286,7 +286,7 @@ nav .navbar-toggler {
   transition: 2s ease;
 }
 .aboutBanner img:hover, .aboutFoto2 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .hr3 {
