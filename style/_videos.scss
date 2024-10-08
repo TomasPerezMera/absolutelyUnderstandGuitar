@@ -10,32 +10,30 @@
         "header"
         "videoT1"
         "video1"
-        "hr2"
+        "hr1"
         "videoT2"
         "video2"
-        "hr3"
+        "hr2"
         "videoT3"
         "video3"
-        "hr4"
+        "hr3"
         "footer";
 }
 .header { grid-area: header; }
-.hr1 { grid-area: hr1; }
 .videoT1 { grid-area: videoT1; 
-    p {
+    h2 {
         text-align: center;
         a {
             font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-            font-size: clamp(1.5rem, 2vw, 5rem);
+            font-size: clamp(2rem, 2vw, 4rem);
             color: $naranja;
-            font-weight: bolder;
+            font-weight: bold;
             text-decoration: underline;
-            margin-top: 10px;
-            margin-bottom: 30px;
+            margin: 20px auto;
             display: inline-block;
             transition: all 1s ease;
             &:hover {
-                color: #e60127;
+                color: $rojo-fuerte;
                 transform: scale(1.2);
             }
         }
@@ -47,14 +45,14 @@
     margin: 20px;
     padding-bottom: 10px;
 }
-.hr2 { grid-area: hr2; }
+.hr1 { grid-area: hr1; }
 .videoT2 { grid-area: videoT2; 
     @extend .videoT1;
 }
 .video2 { grid-area: video2; 
     @extend .video1;
 }
-.hr3 { grid-area: hr3; }
+.hr2 { grid-area: hr2; }
 .videoT3 { grid-area: videoT3; 
     @extend .videoT1;
     p {
@@ -68,7 +66,7 @@
 .video3 { grid-area: video3; 
     @extend .video1;
 }
-.hr4 { grid-area: hr4; }
+.hr3 { grid-area: hr3; }
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {
@@ -82,9 +80,5 @@
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        
     }
 }

@@ -11,25 +11,21 @@
     grid-template-areas:
         "header"
         "scottyI1"
-        "hr2"
+        "hr1"
         "scottyT1"
-        "hr3"
+        "hr2"
         "scottyT2"
-        "hr4"
+        "hr3"
         "scottyCarousel"
-        "hr5"
+        "hr4"
         "scottyT3"
-        "hr6"
+        "hr5"
         "footer";
 }
 .header { grid-area: header; }
-.hr1 { grid-area: hr1; }
 .scottyI1 { grid-area: scottyI1;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 50px auto 20px;
     img {
         max-width: 100%;
         height: auto;
@@ -39,7 +35,7 @@
         }
     }
 }
-.hr2 { grid-area: hr2; }
+.hr1 { grid-area: hr1; }
 .scottyT1 { grid-area: scottyT1;
     display: flex;
     flex-direction: column;
@@ -54,16 +50,15 @@
         font-style: italic;
     }
 }
-.hr3 { grid-area: hr3; }
+.hr2 { grid-area: hr2; }
 .scottyT2 { grid-area: scottyT2; 
     @extend .scottyT1;
 }
-.hr4 { grid-area: hr4; }
+.hr3 { grid-area: hr3; }
 .scottyCarousel { grid-area: scottyCarousel;
     .carousel {
-        margin: auto;
         box-sizing: border-box;
-        padding: 25px;
+        max-width: 50%;
         .carousel-inner {
             .carousel-item {
                 margin: auto;
@@ -75,7 +70,10 @@
         }
     }
 }
-.hr5 { grid-area: hr5; }
+#scottyCarousel {
+    margin: 10px;
+}
+.hr4 { grid-area: hr4; }
 .scottyT3 { grid-area: scottyT3; 
     @extend .scottyT1;
     .scottyLink {
@@ -94,7 +92,7 @@
             }
     }
 }
-.hr6 { grid-area: hr6; }
+.hr5 { grid-area: hr5; }
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {

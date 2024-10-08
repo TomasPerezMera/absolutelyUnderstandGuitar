@@ -6,9 +6,11 @@ $naranja2: #896805;
 .programGrid {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-auto-rows: auto;
     gap: 5px;
     margin: 20px;
     overflow-wrap: break-word;
+    box-sizing: border-box;
     grid-template-areas:
         "header"
         "programCarousel"
@@ -24,83 +26,74 @@ $naranja2: #896805;
 .hr1 { grid-area: hr1; }
 .programCarousel { grid-area: programCarousel;
     .carousel {
-        margin: auto;
-        padding: 25px;
-        max-width: 100%;
+        box-sizing: border-box;
+        max-width: 50%;
         .carousel-inner {
-            width: 100%;
-            height: auto;
             .carousel-item {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
+                margin: auto;
                 img {
-                    margin-left: auto;
-                    margin-right: auto;
-                    height: auto;
-                    object-fit: contain;
+                    height:auto;
+                    margin:auto;
                 }
             }
         }
     }
+}
+#programCarousel {
+    margin: 40px 0px 0px;
 }
 .hr2 { grid-area: hr2; }
 .programText { grid-area: programText;
     p {
-        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        max-width: 90vw;
-        font-size: clamp(1.5rem, 5vh, 6rem);
-        color:white;
-        padding: 20px;
         margin: 10px;
-        text-align: center;
-        overflow-wrap: break-word;
-        word-break: break-word;
     }
 }
 .hr3 { grid-area: hr3; }
-.tableTitle { grid-area: tableTitle; 
-    p {
-        font-size: clamp(2rem, 5vh, 7rem);
-        color: $naranja;
-        text-align: center;
-        font-weight: bold;
-        text-decoration: underline;
-        transition: all 1s ease;
-        &:hover {
-            color: $rojo;
-        }
-    }
+.tableTitle { grid-area: tableTitle;
+            font-size: clamp(2rem, 3vh, 5rem);
+            color: $naranja;
+            margin: 0px auto 25px auto;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;            
+            &:hover {
+                transition: color ease;
+                color: $rojo;
+            }
 }
 .table { grid-area: table; 
-    max-width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
     tbody {
         tr {
             &:nth-child(odd) {
-                font-size: clamp(2rem, 5vh, 4rem);
+                font-size: clamp(1.5rem, 2vh, 3rem);
                 th {
                     background-color: $rojo2;
                     color: white;
                     text-align: center;
+                    vertical-align: middle;
                 }
                 td {
                     background-color: $rojo2;
                     color: white;
                     text-align: center;
+                    vertical-align: middle;
                 }
             }
             &:nth-child(even) {
-                font-size: clamp(2rem, 5vh, 4rem);
+                font-size: clamp(1.5rem, 2vh, 3rem);
                 th {
                     background-color: $naranja2;
                     color: white;
                     text-align: center;
+                    vertical-align: middle;
                 }
                 td {
                     background-color: $naranja2;
                     color: white;
                     text-align: center;
+                    vertical-align: middle;
                 }
             }            
         }    
@@ -120,9 +113,6 @@ $naranja2: #896805;
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
         
     }
     .carousel {

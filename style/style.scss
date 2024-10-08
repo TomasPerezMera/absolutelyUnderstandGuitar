@@ -23,13 +23,12 @@ $naranja: #ffc107;
     grid-template-areas:
         "header"
         "mainGrid"
-        "hr2"
+        "hr1"
         "indexTexto2"
-        "hr3"
+        "hr2"
         "footer";
 }
 .header { grid-area: header; }
-.hr1 { grid-area: hr1; }
 .mainGrid { grid-area: mainGrid;
     display: grid;
     grid-template-columns: auto auto;
@@ -51,18 +50,15 @@ $naranja: #ffc107;
         }
     }
     .titleContainer { grid-area: titleContainer;
-        justify-content: center;
-        p {
+            justify-content: center;
             font-weight: bold;
             color: $rojo;
             font-weight: bold;
             font-size: clamp(1.2rem, 2vw, 6rem);            
             height: 100%;
             text-align: center;
-            }
         }
-    .indexTexto1 { grid-area: indexTexto1; 
-        overflow: visible;
+    .indexTexto1 { grid-area: indexTexto1;
         p {
             font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
             color:white;
@@ -72,9 +68,12 @@ $naranja: #ffc107;
             font-size: clamp(0.4rem, 2vw, 4rem);
             margin-bottom: 10px;
         }
+        h3 {
+            @extend p
+        }
     }
 }
-.hr2 { grid-area: hr2; }
+.hr1 { grid-area: hr1; }
 .indexTexto2 { grid-area: indexTexto2; 
     display: flex;
     flex-direction: column;
@@ -94,7 +93,7 @@ $naranja: #ffc107;
         }
     }
 }
-.hr3 { grid-area: hr3; }
+.hr2 { grid-area: hr2; }
 .footer { grid-area: footer; }
 
 /*Media Queries*/
@@ -105,7 +104,7 @@ $naranja: #ffc107;
         align-items: center;
     }
     .indexGrid {
-        margin: 0 10px;
+        margin: 0 auto;
     }
     .mainGrid { grid-area: mainGrid;
         display: grid;
@@ -113,8 +112,7 @@ $naranja: #ffc107;
         grid-template-rows: auto auto auto;
         grid-auto-columns: auto;
         gap: 10px;
-        margin: 20px;
-        padding: 30px;
+        margin: 20px auto;
         grid-template-areas:
             "indexImagen"
             "titleContainer"
@@ -122,6 +120,7 @@ $naranja: #ffc107;
         .indexImagen { 
             grid-area: indexImagen;
             position: static;
+            margin: 5px auto;
             img {
                 max-width: 100%;
                 height: auto;

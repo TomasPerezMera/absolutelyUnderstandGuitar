@@ -19,6 +19,16 @@ body {
 body .text-danger {
   color: #dc3545;
 }
+body p, body .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 body h3 {
+  font-size: clamp(1.5rem, 2vw, 4rem);
+  font-family: "Verdana", "Geneva", sans-serif;
+  max-width: 90vw;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
 hr {
   width: 80%;
@@ -29,7 +39,8 @@ hr {
 }
 
 .header .headerImage {
-  width: 100%;
+  margin: 30px auto;
+  width: 60%;
 }
 .header .headerImage img {
   width: 100%;
@@ -37,25 +48,24 @@ hr {
 }
 .header h1 {
   font-family: Trebuchet MS, sans-serif;
-  font-size: clamp(4rem, 4vw, 7rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(4.5rem, 4vw, 7rem);
+  letter-spacing: 0.1em;
   color: white;
   text-align: center;
   flex-wrap: wrap;
   overflow-wrap: break-word;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 .header h2 {
   font-family: Trebuchet MS, sans-serif;
-  font-size: clamp(2rem, 4vw, 5rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(3rem, 4vw, 5rem);
+  letter-spacing: 0.1em;
   color: #e60127;
   font-style: italic;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   overflow-wrap: break-word;
 }
@@ -97,23 +107,20 @@ nav .navbar-toggler {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px auto;
 }
 .footer a {
   color: #0d6efd;
   font-size: clamp(1rem, 2vw, 4rem);
   text-decoration: none;
   display: inline-block;
-  transition: all 0.5s ease;
   cursor: pointer;
 }
 .footer a img {
-  width: 50%;
+  width: 80%;
   height: auto;
-  transition: transform 1s ease;
+  transition: transform 2s ease;
 }
 .footer a img:hover {
   transform: scale(1.2);
@@ -121,29 +128,89 @@ nav .navbar-toggler {
 
 /*Global Media Queries*/
 @media (max-width: 1024px) {
-  * {
-    margin: 5px;
-    padding: 0;
+  html {
+    background-color: #000000;
+    margin: 2vh 2vw;
+  }
+  body {
+    background-color: #000000;
+    width: minmax(500px, 1024px);
+    margin: 0px 2vw;
+    height: 100%;
+  }
+  hr {
+    margin: 10px auto;
+  }
+  .header .headerImage {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .header .headerImage img {
+    width: 100%;
+    height: auto;
+  }
+  .header h1 {
+    font-size: clamp(2.5rem, 2vw, 5rem);
+    letter-spacing: 0.1em;
+    margin: 15px 0;
+  }
+  .header h2 {
+    font-size: clamp(2rem, 2vw, 3.5rem);
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .header hr {
+    margin: 15px auto;
+  }
+  p, .mainGrid .indexTexto1 h3 {
+    font-size: clamp(1.5rem, 2vw, 4rem);
+  }
+  .footer a img {
+    width: 80%;
   }
 }
 @media (max-width: 480px) {
-  * {
-    margin: 2vw;
-    padding: 0;
-  }
   html {
-    /*global font-size declaration!! To use rem units off of!*/
     background-color: #000000;
+    margin: 4vh 4vw;
   }
   body {
     background-color: #000000;
     width: minmax(300px, 480px);
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin: 0px 2vw;
     height: 100%;
   }
-  body .text-danger {
-    color: #dc3545;
+  hr {
+    margin: 10px auto;
+  }
+  .header .headerImage {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .header .headerImage img {
+    width: 100%;
+    height: auto;
+  }
+  .header h1 {
+    font-size: clamp(2.5rem, 2vw, 5rem);
+    letter-spacing: 0.1em;
+    margin: 15px 0;
+  }
+  .header h2 {
+    font-size: clamp(2rem, 2vw, 3.5rem);
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .header hr {
+    margin: 15px auto;
+  }
+  p, .mainGrid .indexTexto1 h3 {
+    font-size: clamp(1.5rem, 2vw, 4rem);
+  }
+  .footer a img {
+    width: 80%;
   }
 }
 /*404 Page Styling*/
@@ -165,6 +232,7 @@ nav .navbar-toggler {
 .title404 {
   grid-area: title404;
   justify-content: center;
+  margin: 40px auto 20px;
 }
 .title404 h2 {
   font-weight: bold;
@@ -204,7 +272,7 @@ nav .navbar-toggler {
   padding: 20px;
   letter-spacing: 0.1em;
 }
-.caption404 p {
+.caption404 p, .caption404 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .caption404 h3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   max-width: 90vw;
   font-size: clamp(1.5rem, 5vh, 6rem);
@@ -228,16 +296,13 @@ nav .navbar-toggler {
   .title404 {
     font-size: calc(1.5em + 1vmin);
   }
-  .caption404 p {
+  .caption404 p, .caption404 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .caption404 h3 {
     font-size: calc(0.75em + 1vmin);
   }
 }
 @media (max-width: 480px) {
   body {
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 /*Styling of the About webpage*/
@@ -248,7 +313,7 @@ nav .navbar-toggler {
   gap: 5px;
   margin: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "aboutTitle" "hr2" "aboutBanner" "hr3" "aboutTexto1" "hr4" "aboutTexto2" "hr5" "aboutFoto2" "hr6" "footer";
+  grid-template-areas: "header" "aboutTitle" "hr1" "aboutBanner" "hr2" "aboutTexto1" "hr3" "aboutTexto2" "hr4" "aboutFoto2" "hr5" "footer";
 }
 
 .header {
@@ -262,7 +327,7 @@ nav .navbar-toggler {
 .aboutTitle {
   grid-area: aboutTitle;
 }
-.aboutTitle p {
+.aboutTitle p, .aboutTitle .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .aboutTitle h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(2rem, 4vw, 10rem);
   margin-top: 2rem;
@@ -302,7 +367,7 @@ nav .navbar-toggler {
   width: 100%;
   padding: 20px;
 }
-.aboutTexto1 p, .aboutTexto2 p {
+.aboutTexto1 p, .aboutTexto1 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .aboutTexto1 h3, .aboutTexto2 p, .aboutTexto2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .aboutTexto2 h3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   max-width: 90vw;
   font-size: clamp(1.5rem, 5vh, 6rem);
@@ -330,10 +395,6 @@ nav .navbar-toggler {
   grid-area: aboutFoto2;
 }
 
-.hr6 {
-  grid-area: hr6;
-}
-
 .footer {
   grid-area: footer;
 }
@@ -353,7 +414,7 @@ nav .navbar-toggler {
     padding: 20px;
     flex-grow: 1;
   }
-  .aboutTexto1 p, .aboutTexto2 p {
+  .aboutTexto1 p, .aboutTexto1 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .aboutTexto1 h3, .aboutTexto2 p, .aboutTexto2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .aboutTexto2 h3 {
     width: 100%;
     text-align: center;
     font-size: calc(0.75em + 1vmin);
@@ -364,9 +425,6 @@ nav .navbar-toggler {
 @media (max-width: 480px) {
   body {
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 /*Styling of the Program webpage*/
@@ -374,9 +432,11 @@ nav .navbar-toggler {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  grid-auto-rows: auto;
   gap: 5px;
   margin: 20px;
   overflow-wrap: break-word;
+  box-sizing: border-box;
   grid-template-areas: "header" "programCarousel" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
 }
 
@@ -392,25 +452,19 @@ nav .navbar-toggler {
   grid-area: programCarousel;
 }
 .programCarousel .carousel {
-  margin: auto;
-  padding: 25px;
-  max-width: 100%;
-}
-.programCarousel .carousel .carousel-inner {
-  width: 100%;
-  height: auto;
+  box-sizing: border-box;
+  max-width: 50%;
 }
 .programCarousel .carousel .carousel-inner .carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin: auto;
 }
 .programCarousel .carousel .carousel-inner .carousel-item img {
-  margin-left: auto;
-  margin-right: auto;
   height: auto;
-  object-fit: contain;
+  margin: auto;
+}
+
+#programCarousel {
+  margin: 40px 0px 0px;
 }
 
 .hr2 {
@@ -420,16 +474,8 @@ nav .navbar-toggler {
 .programText {
   grid-area: programText;
 }
-.programText p {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  max-width: 90vw;
-  font-size: clamp(1.5rem, 5vh, 6rem);
-  color: white;
-  padding: 20px;
+.programText p, .programText .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .programText h3 {
   margin: 10px;
-  text-align: center;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .hr3 {
@@ -438,48 +484,52 @@ nav .navbar-toggler {
 
 .tableTitle {
   grid-area: tableTitle;
-}
-.tableTitle p {
-  font-size: clamp(2rem, 5vh, 7rem);
+  font-size: clamp(2rem, 3vh, 5rem);
   color: #ffc107;
+  margin: 0px auto 25px auto;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
-  transition: all 1s ease;
 }
-.tableTitle p:hover {
+.tableTitle:hover {
+  transition: color ease;
   color: #dc3545;
 }
 
 .table {
   grid-area: table;
-  max-width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
 }
 .table tbody tr:nth-child(odd) {
-  font-size: clamp(2rem, 5vh, 4rem);
+  font-size: clamp(1.5rem, 2vh, 3rem);
 }
 .table tbody tr:nth-child(odd) th {
   background-color: #5c0211;
   color: white;
   text-align: center;
+  vertical-align: middle;
 }
 .table tbody tr:nth-child(odd) td {
   background-color: #5c0211;
   color: white;
   text-align: center;
+  vertical-align: middle;
 }
 .table tbody tr:nth-child(even) {
-  font-size: clamp(2rem, 5vh, 4rem);
+  font-size: clamp(1.5rem, 2vh, 3rem);
 }
 .table tbody tr:nth-child(even) th {
   background-color: #896805;
   color: white;
   text-align: center;
+  vertical-align: middle;
 }
 .table tbody tr:nth-child(even) td {
   background-color: #896805;
   color: white;
   text-align: center;
+  vertical-align: middle;
 }
 
 .hr4 {
@@ -491,16 +541,13 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
-  .programText p {
+  .programText p, .programText .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .programText h3 {
     font-size: calc(0.75em + 1vmin);
   }
 }
 @media (max-width: 480px) {
   body {
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
   .carousel {
     padding: 15px;
@@ -521,24 +568,17 @@ nav .navbar-toggler {
   margin: 20px;
   overflow-wrap: break-word;
   box-sizing: border-box;
-  grid-template-areas: "header" "scottyI1" "hr2" "scottyT1" "hr3" "scottyT2" "hr4" "scottyCarousel" "hr5" "scottyT3" "hr6" "footer";
+  grid-template-areas: "header" "scottyI1" "hr1" "scottyT1" "hr2" "scottyT2" "hr3" "scottyCarousel" "hr4" "scottyT3" "hr5" "footer";
 }
 
 .header {
   grid-area: header;
 }
 
-.hr1 {
-  grid-area: hr1;
-}
-
 .scottyI1 {
   grid-area: scottyI1;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 50px auto 20px;
 }
 .scottyI1 img {
   max-width: 100%;
@@ -549,8 +589,8 @@ nav .navbar-toggler {
   transform: scale(1.2);
 }
 
-.hr2 {
-  grid-area: hr2;
+.hr1 {
+  grid-area: hr1;
 }
 
 .scottyT1, .scottyT3, .scottyT2 {
@@ -561,7 +601,7 @@ nav .navbar-toggler {
   align-items: center;
   height: auto;
 }
-.scottyT1 p, .scottyT3 p, .scottyT2 p {
+.scottyT1 p, .scottyT1 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT1 h3, .scottyT3 p, .scottyT3 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT3 h3, .scottyT2 p, .scottyT2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT2 h3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   font-size: clamp(1rem, 2vw, 4rem);
   margin: 40px 40px;
@@ -569,25 +609,24 @@ nav .navbar-toggler {
   font-style: italic;
 }
 
-.hr3 {
-  grid-area: hr3;
+.hr2 {
+  grid-area: hr2;
 }
 
 .scottyT2 {
   grid-area: scottyT2;
 }
 
-.hr4 {
-  grid-area: hr4;
+.hr3 {
+  grid-area: hr3;
 }
 
 .scottyCarousel {
   grid-area: scottyCarousel;
 }
 .scottyCarousel .carousel {
-  margin: auto;
   box-sizing: border-box;
-  padding: 25px;
+  max-width: 50%;
 }
 .scottyCarousel .carousel .carousel-inner .carousel-item {
   margin: auto;
@@ -597,8 +636,12 @@ nav .navbar-toggler {
   margin: auto;
 }
 
-.hr5 {
-  grid-area: hr5;
+#scottyCarousel {
+  margin: 10px;
+}
+
+.hr4 {
+  grid-area: hr4;
 }
 
 .scottyT3 {
@@ -620,8 +663,8 @@ nav .navbar-toggler {
   color: #e60127;
 }
 
-.hr6 {
-  grid-area: hr6;
+.hr5 {
+  grid-area: hr5;
 }
 
 .footer {
@@ -629,7 +672,7 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
-  .scottyT1 p, .scottyT2 p, .scottyT3 p {
+  .scottyT1 p, .scottyT1 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT1 h3, .scottyT2 p, .scottyT2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT2 h3, .scottyT3 p, .scottyT3 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .scottyT3 h3 {
     font-size: calc(0.75em + 1vmin);
   }
 }
@@ -649,35 +692,30 @@ nav .navbar-toggler {
   gap: 5px;
   margin: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "videoT1" "video1" "hr2" "videoT2" "video2" "hr3" "videoT3" "video3" "hr4" "footer";
+  grid-template-areas: "header" "videoT1" "video1" "hr1" "videoT2" "video2" "hr2" "videoT3" "video3" "hr3" "footer";
 }
 
 .header {
   grid-area: header;
 }
 
-.hr1 {
-  grid-area: hr1;
-}
-
 .videoT1, .videoT3, .videoT2 {
   grid-area: videoT1;
 }
-.videoT1 p, .videoT3 p, .videoT2 p {
+.videoT1 h2, .videoT3 h2, .videoT2 h2 {
   text-align: center;
 }
-.videoT1 p a, .videoT3 p a, .videoT2 p a {
+.videoT1 h2 a, .videoT3 h2 a, .videoT2 h2 a {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
-  font-size: clamp(1.5rem, 2vw, 5rem);
+  font-size: clamp(2rem, 2vw, 4rem);
   color: #ffc107;
-  font-weight: bolder;
+  font-weight: bold;
   text-decoration: underline;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 20px auto;
   display: inline-block;
   transition: all 1s ease;
 }
-.videoT1 p a:hover, .videoT3 p a:hover, .videoT2 p a:hover {
+.videoT1 h2 a:hover, .videoT3 h2 a:hover, .videoT2 h2 a:hover {
   color: #e60127;
   transform: scale(1.2);
 }
@@ -690,8 +728,8 @@ nav .navbar-toggler {
   padding-bottom: 10px;
 }
 
-.hr2 {
-  grid-area: hr2;
+.hr1 {
+  grid-area: hr1;
 }
 
 .videoT2 {
@@ -702,14 +740,14 @@ nav .navbar-toggler {
   grid-area: video2;
 }
 
-.hr3 {
-  grid-area: hr3;
+.hr2 {
+  grid-area: hr2;
 }
 
 .videoT3 {
   grid-area: videoT3;
 }
-.videoT3 p a span {
+.videoT3 p a span, .videoT3 .mainGrid .indexTexto1 h3 a span, .mainGrid .indexTexto1 .videoT3 h3 a span {
   font-style: italic;
 }
 
@@ -717,8 +755,8 @@ nav .navbar-toggler {
   grid-area: video3;
 }
 
-.hr4 {
-  grid-area: hr4;
+.hr3 {
+  grid-area: hr3;
 }
 
 .footer {
@@ -726,16 +764,13 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
-  .videoT1 p, .videoT2 p, .videoT3 p {
+  .videoT1 p, .videoT1 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .videoT1 h3, .videoT2 p, .videoT2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .videoT2 h3, .videoT3 p, .videoT3 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .videoT3 h3 {
     font-size: calc(0.75em + 1vmin);
   }
 }
 @media (max-width: 480px) {
   body {
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 /*Styling of the Main webpage*/
@@ -747,15 +782,11 @@ nav .navbar-toggler {
   gap: 5px;
   margin: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "mainGrid" "hr2" "indexTexto2" "hr3" "footer";
+  grid-template-areas: "header" "mainGrid" "hr1" "indexTexto2" "hr2" "footer";
 }
 
 .header {
   grid-area: header;
-}
-
-.hr1 {
-  grid-area: hr1;
 }
 
 .mainGrid {
@@ -782,8 +813,6 @@ nav .navbar-toggler {
 .mainGrid .titleContainer {
   grid-area: titleContainer;
   justify-content: center;
-}
-.mainGrid .titleContainer p {
   font-weight: bold;
   color: #dc3545;
   font-weight: bold;
@@ -793,9 +822,8 @@ nav .navbar-toggler {
 }
 .mainGrid .indexTexto1 {
   grid-area: indexTexto1;
-  overflow: visible;
 }
-.mainGrid .indexTexto1 p {
+.mainGrid .indexTexto1 p, .mainGrid .indexTexto1 h3 {
   font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   color: white;
   width: 100%;
@@ -804,9 +832,8 @@ nav .navbar-toggler {
   font-size: clamp(0.4rem, 2vw, 4rem);
   margin-bottom: 10px;
 }
-
-.hr2 {
-  grid-area: hr2;
+.hr1 {
+  grid-area: hr1;
 }
 
 .indexTexto2 {
@@ -816,22 +843,22 @@ nav .navbar-toggler {
   height: auto;
   overflow: visible;
 }
-.indexTexto2 p {
+.indexTexto2 p, .indexTexto2 .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .indexTexto2 h3 {
   color: white;
   font-size: clamp(1rem, 2vw, 4rem);
   margin: 40px 40px;
 }
-.indexTexto2 p a {
+.indexTexto2 p a, .indexTexto2 .mainGrid .indexTexto1 h3 a, .mainGrid .indexTexto1 .indexTexto2 h3 a {
   text-decoration: none;
   display: inline-block;
   transition: all 0.5s ease;
 }
-.indexTexto2 p a:hover {
+.indexTexto2 p a:hover, .indexTexto2 .mainGrid .indexTexto1 h3 a:hover, .mainGrid .indexTexto1 .indexTexto2 h3 a:hover {
   color: #dc3545;
 }
 
-.hr3 {
-  grid-area: hr3;
+.hr2 {
+  grid-area: hr2;
 }
 
 .footer {
@@ -845,7 +872,7 @@ nav .navbar-toggler {
     align-items: center;
   }
   .indexGrid {
-    margin: 0 10px;
+    margin: 0 auto;
   }
   .mainGrid {
     grid-area: mainGrid;
@@ -854,13 +881,13 @@ nav .navbar-toggler {
     grid-template-rows: auto auto auto;
     grid-auto-columns: auto;
     gap: 10px;
-    margin: 20px;
-    padding: 30px;
+    margin: 20px auto;
     grid-template-areas: "indexImagen" "titleContainer" "indexTexto1";
   }
   .mainGrid .indexImagen {
     grid-area: indexImagen;
     position: static;
+    margin: 5px auto;
   }
   .mainGrid .indexImagen img {
     max-width: 100%;
@@ -871,7 +898,7 @@ nav .navbar-toggler {
     grid-area: titleContainer;
     justify-content: center;
   }
-  .mainGrid .titleContainer p {
+  .mainGrid .titleContainer p, .mainGrid .titleContainer .indexTexto1 h3, .mainGrid .indexTexto1 .titleContainer h3 {
     font-weight: bold;
     color: #dc3545;
     font-weight: bold;
@@ -882,7 +909,7 @@ nav .navbar-toggler {
     grid-area: indexTexto1;
     overflow: visible;
   }
-  .mainGrid .indexTexto1 .textContainer p {
+  .mainGrid .indexTexto1 .textContainer p, .mainGrid .indexTexto1 .textContainer h3 {
     font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
     color: white;
     width: 100%;

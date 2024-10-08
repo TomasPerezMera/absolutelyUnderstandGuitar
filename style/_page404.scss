@@ -19,6 +19,7 @@
 .header { grid-area: header; }
 .title404 { grid-area: title404;
     justify-content: center;
+    margin: 40px auto 20px;
         h2 {
             font-weight: bold;
             color: $rojo;
@@ -79,9 +80,6 @@
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
         
     }
 }

@@ -9,15 +9,15 @@
     grid-template-areas:
         "header"
         "aboutTitle"
-        "hr2"
+        "hr1"
         "aboutBanner"
-        "hr3"
+        "hr2"
         "aboutTexto1"
-        "hr4"
+        "hr3"
         "aboutTexto2"
-        "hr5"
+        "hr4"
         "aboutFoto2"
-        "hr6"
+        "hr5"
         "footer";
 }
 .header { grid-area: header; }
@@ -73,7 +73,6 @@
 .aboutFoto2 { grid-area: aboutFoto2;
     @extend .aboutBanner
 }
-.hr6 { grid-area: hr6; }
 .footer { grid-area: footer; }
 
 
@@ -104,9 +103,5 @@
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        
     }
 }
