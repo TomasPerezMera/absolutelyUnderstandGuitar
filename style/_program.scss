@@ -95,8 +95,8 @@ $naranja2: #896805;
                     text-align: center;
                     vertical-align: middle;
                 }
-            }            
-        }    
+            }
+        }
     }
 }
 .hr4 { grid-area: hr4; }
@@ -106,6 +106,20 @@ $naranja2: #896805;
     .programText {
         p {
             font-size: calc(0.75em + 1vmin);
+        }
+    }
+    .table {
+        max-width: 95%;
+        margin: 0 auto;
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    font-size: calc(0.75em + 1vmin);
+                }
+                &:nth-child(even) {
+                    font-size: calc(0.75em + 1vmin);
+                }            
+            }
         }
     }
 }

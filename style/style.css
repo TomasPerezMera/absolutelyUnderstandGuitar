@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Partials y Variables*/
 * {
   margin: 0;
@@ -126,7 +127,9 @@ nav .navbar-toggler {
   transform: scale(1.2);
 }
 
-/*Global Media Queries*/
+/*Global Media Queries
+They BOTH apply as they cascade; escribí primero 1024, y sólo ajustamos para móvil después!!
+*/
 @media (max-width: 1024px) {
   html {
     background-color: #000000;
@@ -542,6 +545,16 @@ nav .navbar-toggler {
 
 @media (max-width: 1024px) {
   .programText p, .programText .mainGrid .indexTexto1 h3, .mainGrid .indexTexto1 .programText h3 {
+    font-size: calc(0.75em + 1vmin);
+  }
+  .table {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .table tbody tr:nth-child(odd) {
+    font-size: calc(0.75em + 1vmin);
+  }
+  .table tbody tr:nth-child(even) {
     font-size: calc(0.75em + 1vmin);
   }
 }

@@ -135,7 +135,9 @@ nav {
     }
 }
 
-/*Global Media Queries*/
+/*Global Media Queries
+They BOTH apply as they cascade; escribí primero 1024, y sólo ajustamos para móvil después!!
+*/
 
 
 @media (max-width: 1024px) {
