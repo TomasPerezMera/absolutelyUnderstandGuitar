@@ -103,11 +103,6 @@ $naranja2: #896805;
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {
-    .programText {
-        p {
-            font-size: calc(0.75em + 1vmin);
-        }
-    }
     .table {
         max-width: 95%;
         margin: 0 auto;
@@ -125,12 +120,8 @@ $naranja2: #896805;
 }
 
 @media (max-width: 480px) {
-    body {
-        box-sizing: border-box;
-        
-    }
     .carousel {
-        padding: 15px;
+        margin: 10px auto;
         max-width: 100%;
     }
     .carousel-inner {

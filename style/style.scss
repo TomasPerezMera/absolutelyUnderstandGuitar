@@ -36,14 +36,12 @@ $naranja: #ffc107;
     grid-auto-rows: auto;
     gap: 10px;
     margin: 20px;
-    padding: 50px;
     grid-template-areas:
         "indexImagen titleContainer"
         "indexImagen indexTexto1";
     .indexImagen { grid-area: indexImagen;
         position: sticky;
         align-self: start;
-        top: 20px;
         img {
             max-width: 100%;
             height: auto;
@@ -54,24 +52,15 @@ $naranja: #ffc107;
             font-weight: bold;
             color: $rojo;
             font-weight: bold;
-            font-size: clamp(1.2rem, 2vw, 6rem);            
+            font-size: clamp(2rem, 2vw, 6rem);            
             height: 100%;
             text-align: center;
         }
     .indexTexto1 { grid-area: indexTexto1;
-        p {
-            font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-            color:white;
-            width: 100%;    
-            padding: 5px;
-            line-height: 2;
-            font-size: clamp(0.4rem, 2vw, 4rem);
-            margin-bottom: 10px;
         }
         h3 {
             @extend p
         }
-    }
 }
 .hr1 { grid-area: hr1; }
 .indexTexto2 { grid-area: indexTexto2; 
@@ -80,9 +69,6 @@ $naranja: #ffc107;
     height: auto;
     overflow: visible;
     p {
-        color: white;
-        font-size: clamp(1rem, 2vw, 4rem);
-        margin: 40px 40px;
         a {
             text-decoration: none;
             display: inline-block;
@@ -99,56 +85,52 @@ $naranja: #ffc107;
 /*Media Queries*/
 
 @media (max-width: 1024px) {
-    body {
-        width: 100%;
-        align-items: center;
-    }
     .indexGrid {
-        margin: 0 auto;
+        margin: 5px;
+        p {
+            font-size: calc(0.75em + 1vmin);
+        }
     }
-    .mainGrid { grid-area: mainGrid;
-        display: grid;
+    .mainGrid {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-auto-columns: auto;
         gap: 10px;
-        margin: 20px auto;
+        margin: 20px 0px;
+        padding: 0px 10px;
         grid-template-areas:
             "indexImagen"
             "titleContainer"
             "indexTexto1";
-        .indexImagen { 
+        .indexImagen {
             grid-area: indexImagen;
             position: static;
-            margin: 5px auto;
+            max-width: 90%;
+            text-align: center;
             img {
-                max-width: 100%;
+                width: 100%;
                 height: auto;
                 object-fit: cover;
             }
         }
-        .titleContainer { 
+        .titleContainer {
             grid-area: titleContainer;
+            margin: 10px auto;
             justify-content: center;
             p {
                 font-weight: bold;
                 color: $rojo;
                 font-weight: bold;
-                font-size: calc(0.75em + 1vmin);
+                font-size: calc(1em + 1vmin);
                 text-align: center;
                 }
             }
-        .indexTexto1 { 
+        .indexTexto1 {
             grid-area: indexTexto1; 
             overflow: visible;
             .textContainer {
                 p {
-                    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-                    color:white;
-                    width: 100%;    
-                    padding: 5px;
                     line-height: 1.5;
-                    font-size: calc(0.75em + 1vmin);
                     margin-bottom: 10px;
                 }
             }
@@ -158,10 +140,12 @@ $naranja: #ffc107;
 
 @media (max-width: 480px) {
     body {
-        box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        
+        max-width: 480px;
+        min-width: 300px;
+    }
+    .indexImagen {
+        max-width: 100%;
+        margin: 15px 20px;
+        padding: 0;
     }
 }

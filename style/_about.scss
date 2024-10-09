@@ -22,16 +22,13 @@
 }
 .header { grid-area: header; }
 .hr1 { grid-area: hr1; }
-.aboutTitle { grid-area: aboutTitle; 
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(2rem, 4vw, 10rem);
-        margin-top: 2rem;
-        color: $naranja;
-        text-align: center;
-        flex-wrap: wrap;
-        height: auto;
-    }
+.aboutTitle { grid-area: aboutTitle;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: clamp(2rem, 2vw, 6rem);
+    color: $naranja;
+    text-align: center;
+    height: auto;
+    margin: 10px;
 }
 .hr2 { grid-area: hr2; }
 .aboutBanner { grid-area: aboutBanner;
@@ -51,19 +48,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
-    padding: 20px;
-    p {
-        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        max-width: 90vw;
-        font-size: clamp(1.5rem, 5vh, 6rem);
-        color:white;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-        overflow-wrap: break-word;
-        word-break: break-word;
-    }
 }
 .hr4 { grid-area: hr4; }
 .aboutTexto2 { grid-area: aboutTexto2;
@@ -76,7 +60,7 @@
 .footer { grid-area: footer; }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .aboutBanner, .aboutFoto2 {
         display: flex;
         width: auto;
@@ -90,18 +74,18 @@
         max-height: none;
         padding: 20px;
         flex-grow: 1;
-        p {
-            width: 100%;
-            text-align: center;
-            font-size: calc(0.75em + 1vmin);
-            padding: 20px;
-            white-space: normal;
-        }
     }
 }
 
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
+    }
+    .aboutBanner, .aboutFoto2 {
+        img {
+            &:hover {
+                transform: none;
+            }
+        }
     }
 }

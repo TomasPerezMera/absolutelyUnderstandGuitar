@@ -19,10 +19,9 @@
 .header { grid-area: header; }
 .title404 { grid-area: title404;
     justify-content: center;
-    margin: 40px auto 20px;
+    margin: 20px auto 20px;
         h2 {
-            font-weight: bold;
-            color: $rojo;
+            color: $rojo-fuerte;
             font-weight: bold;
             font-size: clamp(3rem, 2vw, 6rem);            
             height: 100%;
@@ -30,10 +29,9 @@
             }
 }
 .hr1 { grid-area: hr1; }
-.scotty404 { grid-area: scotty404; 
+.scotty404 { grid-area: scotty404;
     text-align: center;
-    margin: auto;
-    padding: 20px;
+    margin: 20px auto;
     width: 100%;
     img {
         width: 50%;
@@ -52,15 +50,8 @@
     padding: 20px;
     letter-spacing: 0.10em;
     p {
-        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        max-width: 90vw;
-        font-size: clamp(1.5rem, 5vh, 6rem);
-        color:white;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-        overflow-wrap: break-word;
-        word-break: break-word;
+        max-width: 80vw;
+        font-size: clamp(2.5rem, 2vh, 5rem);
     }
 }
 .hr2 { grid-area: hr2; }
@@ -72,7 +63,7 @@
     }
     .caption404 {
         p {
-            font-size: calc(0.75em + 1vmin);
+            font-size: calc(1em + 1vmin);
         }
     }
 }
@@ -80,6 +71,5 @@
 @media (max-width: 480px) {
     body {
         box-sizing: border-box;
-        
     }
 }

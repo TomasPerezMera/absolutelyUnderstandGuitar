@@ -25,7 +25,7 @@
 .header { grid-area: header; }
 .scottyI1 { grid-area: scottyI1;
     text-align: center;
-    margin: 50px auto 20px;
+    margin: 20px auto;
     img {
         max-width: 100%;
         height: auto;
@@ -41,12 +41,7 @@
     flex-direction: column;
     height: auto;
     align-items: center;
-    height: auto;
     p {
-        font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-        font-size: clamp(1rem, 2vw, 4rem);
-        margin: 40px 40px;
-        color:white;
         font-style: italic;
     }
 }
@@ -58,10 +53,8 @@
 .scottyCarousel { grid-area: scottyCarousel;
     .carousel {
         box-sizing: border-box;
-        max-width: 50%;
         .carousel-inner {
             .carousel-item {
-                margin: auto;
                 img {
                     height:auto;
                     margin:auto;
@@ -98,7 +91,7 @@
 @media (max-width: 1024px) {
     .scottyT1 {
         p {
-            font-size: calc(0.75em + 1vmin);
+            font-size: calc(1em + 1vmin);
         }
     }
 }
@@ -110,5 +103,12 @@
         margin-left: 0;
         margin-right: 0;
         
+    }
+    .scottyI1 {
+        img {
+            &:hover {
+                transform: none;
+            }
+        }
     }
 }

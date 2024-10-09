@@ -70,11 +70,15 @@
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {
-    .videoT1 {
-        p {
-            font-size: calc(0.75em + 1vmin);
-        }
+    .video1, .video2, .video3 {
+        display: flex;
+        flex-shrink: 1;
+        
+        iframe {
+            flex: 1 1 100%;
+            }
     }
+
 }
 
 @media (max-width: 480px) {
