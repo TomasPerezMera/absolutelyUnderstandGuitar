@@ -19,13 +19,14 @@
 .header { grid-area: header; }
 .title404 { grid-area: title404;
     justify-content: center;
-    margin: 20px auto 20px;
+    margin: 20px auto;
         h2 {
             color: $rojo-fuerte;
             font-weight: bold;
-            font-size: clamp(3rem, 2vw, 6rem);            
+            font-size: clamp(2.5rem, 2vw, 6rem);            
             height: 100%;
             text-align: center;
+            margin: 0px;
             }
 }
 .hr1 { grid-area: hr1; }
@@ -34,7 +35,7 @@
     margin: 20px auto;
     width: 100%;
     img {
-        width: 50%;
+        width: 100%;
         transition: 2s ease;
         &:hover {
             transform: scale(1.2);
@@ -51,7 +52,7 @@
     letter-spacing: 0.10em;
     p {
         max-width: 80vw;
-        font-size: clamp(2.5rem, 2vh, 5rem);
+        font-size: clamp(2rem, 2vh, 4rem);
     }
 }
 .hr2 { grid-area: hr2; }
@@ -72,4 +73,8 @@
     body {
         box-sizing: border-box;
     }
+    .title404
+        h2 {
+            margin: 0px auto 10px;
+        }
 }
