@@ -302,6 +302,8 @@ nav .navbar-toggler {
 }
 .scotty404 img {
   width: 100%;
+  max-width: 80vw;
+  height: auto;
   transition: 2s ease;
 }
 .scotty404 img:hover {
@@ -338,13 +340,19 @@ nav .navbar-toggler {
   .caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3 {
     font-size: calc(1em + 1vmin);
   }
+  .title404 {
+    margin: 10px auto;
+  }
 }
 @media (max-width: 480px) {
   body {
     box-sizing: border-box;
   }
-  .title404 h2 {
-    margin: 0px auto 10px;
+  .title404 {
+    margin: 10px auto 20px;
+  }
+  .scotty404 img:hover {
+    transform: none;
   }
 }
 /*Styling of the About webpage*/
