@@ -44,16 +44,24 @@ $naranja2: #896805;
 }
 .hr2 { grid-area: hr2; }
 .programText { grid-area: programText;
+    display: flex;
+    flex-direction: column;
     p {
         margin: 20px auto;
     }
     hr {
         margin: 15px auto;
+        width: 80%;
+        height: 2px;
+        border: none;
+    }
+    h2 {
+        @extend p
     }
 }
 .hr3 { grid-area: hr3; }
 .tableTitle { grid-area: tableTitle;
-            font-size: clamp(2rem, 3vh, 5rem);
+            font-size: clamp(2.5rem, 3vh, 5rem);
             color: $naranja;
             margin: 0px auto 25px auto;
             text-align: center;
@@ -66,7 +74,7 @@ $naranja2: #896805;
 }
 .table { grid-area: table; 
     max-width: 85%;
-    margin: 0 auto;
+    margin: 20px auto;
     tbody {
         tr {
             &:nth-child(odd) {
@@ -108,7 +116,7 @@ $naranja2: #896805;
 @media (max-width: 1024px) {
     .table {
         max-width: 95%;
-        margin: 0 auto;
+        margin: 10px auto;
         tbody {
             tr {
                 &:nth-child(odd) {

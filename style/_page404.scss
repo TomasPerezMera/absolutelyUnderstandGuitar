@@ -32,11 +32,11 @@
 .hr1 { grid-area: hr1; }
 .scotty404 { grid-area: scotty404;
     text-align: center;
+    width: 50%;
     margin: 20px auto;
-    width: 100%;
+    max-width: 60vw;
     img {
         width: 100%;
-        max-width: 80vw;
         height: auto;
         transition: 2s ease;
         &:hover {

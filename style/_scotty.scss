@@ -44,6 +44,9 @@
     p {
         font-style: italic;
     }
+    h2 {
+        @extend p
+    }
 }
 .hr2 { grid-area: hr2; }
 .scottyT2 { grid-area: scottyT2; 
@@ -103,7 +106,6 @@
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-        
     }
     .scottyI1 {
         img {
@@ -112,4 +114,13 @@
             }
         }
     }
+    main {
+        .scottyT1 {
+            h2 {
+                font-size: calc(1.15em + 1vmin);
+                margin: 20px 15px;
+            }
+        }
+    }
+
 }
