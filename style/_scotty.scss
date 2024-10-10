@@ -53,6 +53,7 @@
 .scottyCarousel { grid-area: scottyCarousel;
     .carousel {
         box-sizing: border-box;
+        max-width: 50%;
         .carousel-inner {
             .carousel-item {
                 img {

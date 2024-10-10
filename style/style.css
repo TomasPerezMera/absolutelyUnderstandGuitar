@@ -75,7 +75,7 @@ hr {
 }
 
 nav {
-  width: 80%;
+  width: 90%;
   margin: 5px auto;
   background-color: #000000;
 }
@@ -129,11 +129,7 @@ nav .navbar-toggler {
 
 /*Global Media Queries*/
 @media (max-width: 1024px) {
-  html {
-    background-color: #000000;
-  }
   body {
-    background-color: #000000;
     min-width: 500px;
     max-width: 1024px;
     margin: 2vh 2vw;
@@ -168,6 +164,9 @@ nav .navbar-toggler {
   .header hr {
     margin: 15px auto;
   }
+  nav {
+    margin: 10px auto;
+  }
   p, .mainGrid h3 {
     font-size: clamp(1.5rem, 2vw, 4rem);
   }
@@ -175,9 +174,37 @@ nav .navbar-toggler {
     width: 80%;
   }
 }
+@media (max-width: 991px) {
+  body nav #navbarContent .navbar-nav {
+    flex-direction: column !important;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+  }
+  body #programCarousel {
+    max-width: 90vw;
+    max-height: 90%;
+    margin: 10px;
+  }
+  body #programCarousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  body #scottyCarousel {
+    max-width: 90vw;
+    max-height: 80%;
+    margin: 10px;
+  }
+  body #scottyCarousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 80%;
+    object-fit: cover;
+  }
+}
 @media (max-width: 480px) {
   body {
-    background-color: #000000;
     max-width: 480px;
     min-width: 300px;
     margin: 2vh 4vw;
@@ -214,6 +241,23 @@ nav .navbar-toggler {
   }
   .footer a img {
     width: 80%;
+    transition: none;
+  }
+  .footer a img:hover {
+    transform: none;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    max-width: 300px;
+    min-width: 2500px;
+    width: 100%;
+    margin: 2vh 2vw;
+    height: 100%;
+  }
+  body p, body .mainGrid h3, .mainGrid body h3 {
+    font-size: calc(0.65em + 1vmin);
+    margin: 15px;
   }
 }
 /*404 Page Styling*/
@@ -438,7 +482,7 @@ nav .navbar-toggler {
 }
 
 #programCarousel {
-  margin: 40px 0px 0px;
+  margin: 20px 0px;
 }
 
 .hr2 {
@@ -599,6 +643,7 @@ nav .navbar-toggler {
 }
 .scottyCarousel .carousel {
   box-sizing: border-box;
+  max-width: 50%;
 }
 .scottyCarousel .carousel .carousel-inner .carousel-item img {
   height: auto;
@@ -678,7 +723,7 @@ nav .navbar-toggler {
   text-align: center;
 }
 .videoT1 h2 a, .videoT3 h2 a, .videoT2 h2 a {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-family: "Verdana", "Geneva", sans-serif;
   font-size: clamp(2rem, 2vw, 4rem);
   color: #ffc107;
   font-weight: bold;
@@ -752,10 +797,38 @@ nav .navbar-toggler {
     min-height: 200px;
     margin: 10px auto;
   }
+  .videoT1, .videoT2, .videoT3 {
+    margin: 15px;
+  }
 }
 @media (max-width: 480px) {
-  body {
-    box-sizing: border-box;
+  body .videosGrid {
+    max-width: 100%;
+  }
+  body .video1, body .video2, body .video3 {
+    margin: 10px 5px;
+  }
+  body .video1 iframe, body .video2 iframe, body .video3 iframe {
+    min-height: 100px;
+    width: auto;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  body .videoT1 h2 a, body .videoT2 h2 a, body .videoT3 h2 a {
+    font-size: calc(0.75em + 1vmin);
+    margin: 10px auto;
+    transition: color 2s ease;
+  }
+  body .videoT1 h2 a:hover, body .videoT2 h2 a:hover, body .videoT3 h2 a:hover {
+    transform: none;
+  }
+}
+@media (max-width: 350px) {
+  body .video1 iframe, body .video2 iframe, body .video3 iframe {
+    width: auto;
+    min-width: 250px;
+    max-width: 100%;
+    margin: 10px auto;
   }
 }
 /*Styling of the Main webpage*/
