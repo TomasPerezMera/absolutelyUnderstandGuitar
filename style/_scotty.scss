@@ -44,8 +44,11 @@
     p {
         font-style: italic;
     }
-    h2 {
-        @extend p
+    .scottyH2 {
+        @extend p ;
+        b {
+            font-size: clamp(2.5rem, 2vw, 4rem);
+        }
     }
 }
 .hr2 { grid-area: hr2; }
@@ -97,6 +100,12 @@
         p {
             font-size: calc(1em + 1vmin);
         }
+        .scottyH2 {
+            b {
+                font-size: calc(1.10em + 1vmin);
+                margin: 20px 15px;
+            }
+        }
     }
 }
 
@@ -116,11 +125,7 @@
     }
     main {
         .scottyT1 {
-            h2 {
-                font-size: calc(1.15em + 1vmin);
-                margin: 20px 15px;
-            }
+            color: white;
         }
     }
-
 }

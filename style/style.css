@@ -15,7 +15,7 @@ body {
   height: 100%;
   align-items: center;
 }
-body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 h2, body .scottyT3 h2, body .scottyT2 h2, .scottyT1 body h2, .scottyT3 body h2, .scottyT2 body h2, body .programText h2, .programText body h2 {
+body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
   font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
   max-width: 90vw;
@@ -135,7 +135,7 @@ nav .navbar-toggler {
     margin: 2vh 2vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 h2, body .scottyT3 h2, body .scottyT2 h2, .scottyT1 body h2, .scottyT3 body h2, .scottyT2 body h2, body .programText h2, .programText body h2 {
+  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: clamp(2rem, 2vw, 3.5rem);
     margin: 20px 30px;
   }
@@ -167,7 +167,7 @@ nav .navbar-toggler {
   nav {
     margin: 10px auto;
   }
-  p, .mainGrid h3, .scottyT1 h2, .scottyT3 h2, .scottyT2 h2, .programText h2 {
+  p, .mainGrid h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .programText h2, .programText p, .aboutTexto h2, .aboutTexto p {
     font-size: clamp(1.5rem, 2vw, 4rem);
   }
   .footer a img {
@@ -210,7 +210,7 @@ nav .navbar-toggler {
     margin: 2vh 4vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 h2, body .scottyT3 h2, body .scottyT2 h2, .scottyT1 body h2, .scottyT3 body h2, .scottyT2 body h2, body .programText h2, .programText body h2 {
+  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: calc(0.75em + 1vmin);
     margin: 20px 15px;
   }
@@ -259,7 +259,7 @@ nav .navbar-toggler {
     margin: 2vh 2vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 h2, body .scottyT3 h2, body .scottyT2 h2, .scottyT1 body h2, .scottyT3 body h2, .scottyT2 body h2, body .programText h2, .programText body h2 {
+  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: calc(0.75em + 1vmin);
     margin: 15px;
   }
@@ -328,7 +328,7 @@ nav .navbar-toggler {
   padding: 20px;
   letter-spacing: 0.1em;
 }
-.caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 h2, .caption404 .scottyT3 h2, .caption404 .scottyT2 h2, .scottyT1 .caption404 h2, .scottyT3 .caption404 h2, .scottyT2 .caption404 h2, .caption404 .programText h2, .programText .caption404 h2 {
+.caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
   max-width: 80vw;
   font-size: clamp(2rem, 2vh, 4rem);
 }
@@ -345,7 +345,7 @@ nav .navbar-toggler {
   .title404 {
     font-size: calc(1.5em + 1vmin);
   }
-  .caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 h2, .caption404 .scottyT3 h2, .caption404 .scottyT2 h2, .scottyT1 .caption404 h2, .scottyT3 .caption404 h2, .scottyT2 .caption404 h2, .caption404 .programText h2, .programText .caption404 h2 {
+  .caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
     font-size: calc(1em + 1vmin);
   }
   .title404 {
@@ -371,29 +371,30 @@ nav .navbar-toggler {
   gap: 5px;
   margin: 20px;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "aboutTitle" "hr1" "aboutBanner" "hr2" "aboutTexto1" "hr3" "aboutTexto2" "hr4" "aboutFoto2" "hr5" "footer";
+  grid-template-areas: "header" "aboutTitle" "hr1" "aboutBanner" "hr2" "aboutTexto" "hr3" "aboutFoto2" "hr4" "footer";
 }
 
 .header {
   grid-area: header;
 }
 
-.hr1 {
-  grid-area: hr1;
-}
-
 .aboutTitle {
   grid-area: aboutTitle;
   font-family: Trebuchet MS, sans-serif;
-  font-size: clamp(2.5rem, 2vw, 6rem);
+  font-size: clamp(2.5rem, 2vw, 5rem);
   color: #ffc107;
   text-align: center;
   height: auto;
+  font-weight: bold;
   margin: 10px;
 }
+.aboutTitle:hover {
+  transition: color 2s ease;
+  color: #896805;
+}
 
-.hr2 {
-  grid-area: hr2;
+.hr1 {
+  grid-area: hr1;
 }
 
 .aboutBanner, .aboutFoto2 {
@@ -409,32 +410,37 @@ nav .navbar-toggler {
   transform: scale(1.15);
 }
 
+.hr2 {
+  grid-area: hr2;
+}
+
+.aboutTexto {
+  grid-area: aboutTexto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutTexto hr {
+  margin: 15px auto;
+  width: 80%;
+  height: 2px;
+  border: none;
+}
+.aboutTexto h2 span {
+  font-size: calc(1.1em + 1vmin);
+}
+
 .hr3 {
   grid-area: hr3;
 }
 
-.aboutTexto1, .aboutTexto2 {
-  grid-area: aboutTexto1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.aboutFoto2 {
+  grid-area: aboutFoto2;
 }
 
 .hr4 {
   grid-area: hr4;
-}
-
-.aboutTexto2 {
-  grid-area: aboutTexto2;
-}
-
-.hr5 {
-  grid-area: hr5;
-}
-
-.aboutFoto2 {
-  grid-area: aboutFoto2;
 }
 
 .footer {
@@ -449,13 +455,17 @@ nav .navbar-toggler {
     max-width: 90vw;
     align-self: center;
   }
-  .aboutTexto1, .aboutTexto2 {
+  .aboutTexto {
     align-items: center;
     width: 100%;
     max-height: none;
     flex-grow: 1;
   }
+  .aboutTexto h2 span {
+    font-size: calc(1em + 1vmin);
+  }
   .aboutTitle {
+    font-size: calc(2em + 1vmin);
     margin: 0px auto 30px;
   }
 }
@@ -516,15 +526,17 @@ nav .navbar-toggler {
   display: flex;
   flex-direction: column;
 }
-.programText p, .programText .mainGrid h3, .mainGrid .programText h3, .programText h2 {
-  margin: 20px auto;
-}
 .programText hr {
   margin: 15px auto;
   width: 80%;
   height: 2px;
   border: none;
 }
+.programText h2 .programTitle {
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-style: italic;
+}
+
 .hr3 {
   grid-area: hr3;
 }
@@ -539,8 +551,8 @@ nav .navbar-toggler {
   text-decoration: underline;
 }
 .tableTitle:hover {
-  transition: color ease;
-  color: #dc3545;
+  transition: color ease-in-out;
+  color: #896805;
 }
 
 .table {
@@ -598,6 +610,10 @@ nav .navbar-toggler {
   .table tbody tr:nth-child(even) {
     font-size: calc(0.75em + 1vmin);
   }
+  .programText h2 .programTitle {
+    font-size: calc(1.1em + 1vmin);
+    font-style: italic;
+  }
 }
 @media (max-width: 480px) {
   .carousel {
@@ -651,9 +667,13 @@ nav .navbar-toggler {
   height: auto;
   align-items: center;
 }
-.scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT1 h2, .scottyT3 h2, .scottyT2 h2 {
+.scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .scottyT1 .aboutTexto h2, .scottyT3 .aboutTexto h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT1 h2, .aboutTexto .scottyT3 h2, .aboutTexto .scottyT2 h2, .scottyT1 .programText h2, .scottyT3 .programText h2, .scottyT2 .programText h2, .programText .scottyT1 h2, .programText .scottyT3 h2, .programText .scottyT2 h2 {
   font-style: italic;
 }
+.scottyT1 .scottyH2 b, .scottyT3 .scottyH2 b, .scottyT2 .scottyH2 b {
+  font-size: clamp(2.5rem, 2vw, 4rem);
+}
+
 .hr2 {
   grid-area: hr2;
 }
@@ -714,8 +734,12 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
-  .scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT1 h2, .scottyT2 h2, .scottyT3 h2 {
+  .scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT1 .aboutTexto h2, .aboutTexto .scottyT1 h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT2 h2, .scottyT3 .aboutTexto h2, .aboutTexto .scottyT3 h2, .scottyT1 .programText h2, .programText .scottyT1 h2, .scottyT2 .programText h2, .programText .scottyT2 h2, .scottyT3 .programText h2, .programText .scottyT3 h2, .scottyT1 .scottyH2, .scottyT2 .scottyH2, .scottyT3 .scottyH2 {
     font-size: calc(1em + 1vmin);
+  }
+  .scottyT1 .scottyH2 b, .scottyT2 .scottyH2 b, .scottyT3 .scottyH2 b {
+    font-size: calc(1.1em + 1vmin);
+    margin: 20px 15px;
   }
 }
 @media (max-width: 480px) {
@@ -728,9 +752,8 @@ nav .navbar-toggler {
   .scottyI1 img:hover {
     transform: none;
   }
-  main .scottyT1 h2, main .scottyT2 h2, main .scottyT3 h2 {
-    font-size: calc(1.15em + 1vmin);
-    margin: 20px 15px;
+  main .scottyT1, main .scottyT2, main .scottyT3 {
+    color: white;
   }
 }
 /*Styling of the Videos webpage*/
@@ -804,7 +827,7 @@ nav .navbar-toggler {
 .videoT3 {
   grid-area: videoT3;
 }
-.videoT3 p a span, .videoT3 .mainGrid h3 a span, .mainGrid .videoT3 h3 a span, .videoT3 .programText h2 a span, .programText .videoT3 h2 a span, .videoT3 .scottyT1 h2 a span, .scottyT1 .videoT3 h2 a span, .videoT3 .scottyT2 h2 a span, .scottyT2 .videoT3 h2 a span, .videoT3 .scottyT3 h2 a span, .scottyT3 .videoT3 h2 a span {
+.videoT3 p a span, .videoT3 .mainGrid h3 a span, .mainGrid .videoT3 h3 a span, .videoT3 .aboutTexto h2 a span, .aboutTexto .videoT3 h2 a span, .videoT3 .programText h2 a span, .programText .videoT3 h2 a span, .videoT3 .scottyT1 .scottyH2 a span, .scottyT1 .videoT3 .scottyH2 a span, .videoT3 .scottyT2 .scottyH2 a span, .scottyT2 .videoT3 .scottyH2 a span, .videoT3 .scottyT3 .scottyH2 a span, .scottyT3 .videoT3 .scottyH2 a span {
   font-style: italic;
 }
 
@@ -922,12 +945,12 @@ nav .navbar-toggler {
   height: auto;
   overflow: visible;
 }
-.indexTexto2 p a, .indexTexto2 .programText h2 a, .programText .indexTexto2 h2 a, .indexTexto2 .scottyT1 h2 a, .scottyT1 .indexTexto2 h2 a, .indexTexto2 .scottyT2 h2 a, .scottyT2 .indexTexto2 h2 a, .indexTexto2 .scottyT3 h2 a, .scottyT3 .indexTexto2 h2 a, .indexTexto2 .mainGrid h3 a, .mainGrid .indexTexto2 h3 a {
+.indexTexto2 p a, .indexTexto2 .aboutTexto h2 a, .aboutTexto .indexTexto2 h2 a, .indexTexto2 .programText h2 a, .programText .indexTexto2 h2 a, .indexTexto2 .scottyT1 .scottyH2 a, .scottyT1 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT2 .scottyH2 a, .scottyT2 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT3 .scottyH2 a, .scottyT3 .indexTexto2 .scottyH2 a, .indexTexto2 .mainGrid h3 a, .mainGrid .indexTexto2 h3 a {
   text-decoration: none;
   display: inline-block;
   transition: all 0.5s ease;
 }
-.indexTexto2 p a:hover, .indexTexto2 .programText h2 a:hover, .programText .indexTexto2 h2 a:hover, .indexTexto2 .scottyT1 h2 a:hover, .scottyT1 .indexTexto2 h2 a:hover, .indexTexto2 .scottyT2 h2 a:hover, .scottyT2 .indexTexto2 h2 a:hover, .indexTexto2 .scottyT3 h2 a:hover, .scottyT3 .indexTexto2 h2 a:hover, .indexTexto2 .mainGrid h3 a:hover, .mainGrid .indexTexto2 h3 a:hover {
+.indexTexto2 p a:hover, .indexTexto2 .aboutTexto h2 a:hover, .aboutTexto .indexTexto2 h2 a:hover, .indexTexto2 .programText h2 a:hover, .programText .indexTexto2 h2 a:hover, .indexTexto2 .scottyT1 .scottyH2 a:hover, .scottyT1 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT2 .scottyH2 a:hover, .scottyT2 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT3 .scottyH2 a:hover, .scottyT3 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .mainGrid h3 a:hover, .mainGrid .indexTexto2 h3 a:hover {
   color: #dc3545;
 }
 
@@ -944,7 +967,7 @@ nav .navbar-toggler {
   .indexGrid {
     margin: 5px;
   }
-  .indexGrid p, .indexGrid .programText h2, .programText .indexGrid h2, .indexGrid .scottyT1 h2, .scottyT1 .indexGrid h2, .indexGrid .scottyT2 h2, .scottyT2 .indexGrid h2, .indexGrid .scottyT3 h2, .scottyT3 .indexGrid h2, .indexGrid .mainGrid h3, .mainGrid .indexGrid h3 {
+  .indexGrid p, .indexGrid .aboutTexto h2, .aboutTexto .indexGrid h2, .indexGrid .programText h2, .programText .indexGrid h2, .indexGrid .scottyT1 .scottyH2, .scottyT1 .indexGrid .scottyH2, .indexGrid .scottyT2 .scottyH2, .scottyT2 .indexGrid .scottyH2, .indexGrid .scottyT3 .scottyH2, .scottyT3 .indexGrid .scottyH2, .indexGrid .mainGrid h3, .mainGrid .indexGrid h3 {
     font-size: calc(0.75em + 1vmin);
   }
   .mainGrid {
@@ -971,7 +994,7 @@ nav .navbar-toggler {
     margin: 10px auto;
     justify-content: center;
   }
-  .mainGrid .titleContainer p, .mainGrid .titleContainer .programText h2, .programText .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT1 h2, .scottyT1 .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT2 h2, .scottyT2 .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT3 h2, .scottyT3 .mainGrid .titleContainer h2, .mainGrid .titleContainer h3 {
+  .mainGrid .titleContainer p, .mainGrid .titleContainer .aboutTexto h2, .aboutTexto .mainGrid .titleContainer h2, .mainGrid .titleContainer .programText h2, .programText .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer h3 {
     font-weight: bold;
     color: #dc3545;
     font-weight: bold;
@@ -982,7 +1005,7 @@ nav .navbar-toggler {
     grid-area: indexTexto1;
     overflow: visible;
   }
-  .mainGrid .indexTexto1 .textContainer p, .mainGrid .indexTexto1 .textContainer .programText h2, .programText .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT1 h2, .scottyT1 .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT2 h2, .scottyT2 .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT3 h2, .scottyT3 .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer h3 {
+  .mainGrid .indexTexto1 .textContainer p, .mainGrid .indexTexto1 .textContainer .aboutTexto h2, .aboutTexto .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .programText h2, .programText .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer h3 {
     line-height: 1.5;
     margin-bottom: 10px;
   }

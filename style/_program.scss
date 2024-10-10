@@ -1,7 +1,4 @@
 /*Styling of the Program webpage*/
-$rojo2: #5c0211;
-$naranja2: #896805;
-
 
 .programGrid {  display: grid;
     grid-template-columns: 1fr;
@@ -47,7 +44,7 @@ $naranja2: #896805;
     display: flex;
     flex-direction: column;
     p {
-        margin: 20px auto;
+        @extend p ;
     }
     hr {
         margin: 15px auto;
@@ -56,7 +53,11 @@ $naranja2: #896805;
         border: none;
     }
     h2 {
-        @extend p
+        @extend p ;
+        .programTitle {
+            font-size: clamp(2rem, 2vw, 4rem);
+            font-style: italic;
+        }
     }
 }
 .hr3 { grid-area: hr3; }
@@ -68,8 +69,8 @@ $naranja2: #896805;
             font-weight: bold;
             text-decoration: underline;            
             &:hover {
-                transition: color ease;
-                color: $rojo;
+                transition: color ease-in-out;
+                color: $naranja2;
             }
 }
 .table { grid-area: table; 
@@ -125,6 +126,14 @@ $naranja2: #896805;
                 &:nth-child(even) {
                     font-size: calc(0.75em + 1vmin);
                 }            
+            }
+        }
+    }
+    .programText {
+        h2 {
+            .programTitle {
+                font-size: calc(1.1em + 1vmin);
+                font-style: italic;
             }
         }
     }
