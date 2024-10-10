@@ -41,9 +41,17 @@
 }
 .video1 { grid-area: video1;
     display: flex;
-    justify-content: center;
+    min-height: 100%;
+    flex-grow: 1;
+    align-items: center;
     margin: 20px;
-    padding-bottom: 10px;
+    iframe {
+        aspect-ratio: 4 / 3;
+        min-height: 300px;
+        margin: 10px auto;
+        width: auto;
+        height: auto;
+    }
 }
 .hr1 { grid-area: hr1; }
 .videoT2 { grid-area: videoT2; 
@@ -73,9 +81,9 @@
     .video1, .video2, .video3 {
         display: flex;
         flex-shrink: 1;
-        
         iframe {
-            flex: 1 1 100%;
+            min-height: 200px;
+            margin: 10px auto;
             }
     }
 

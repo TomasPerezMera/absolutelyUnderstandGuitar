@@ -33,7 +33,6 @@ $naranja: #ffc107;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-auto-rows: auto;
     gap: 10px;
     margin: 20px;
     grid-template-areas:
@@ -42,6 +41,7 @@ $naranja: #ffc107;
     .indexImagen { grid-area: indexImagen;
         position: sticky;
         align-self: start;
+        top: 20px;
         img {
             max-width: 100%;
             height: auto;
@@ -97,7 +97,6 @@ $naranja: #ffc107;
         grid-auto-columns: auto;
         gap: 10px;
         margin: 20px 0px;
-        padding: 0px 10px;
         grid-template-areas:
             "indexImagen"
             "titleContainer"

@@ -321,7 +321,7 @@ nav .navbar-toggler {
 .aboutTitle {
   grid-area: aboutTitle;
   font-family: Trebuchet MS, sans-serif;
-  font-size: clamp(2rem, 2vw, 6rem);
+  font-size: clamp(2.5rem, 2vw, 6rem);
   color: #ffc107;
   text-align: center;
   height: auto;
@@ -695,9 +695,17 @@ nav .navbar-toggler {
 .video1, .video3, .video2 {
   grid-area: video1;
   display: flex;
-  justify-content: center;
+  min-height: 100%;
+  flex-grow: 1;
+  align-items: center;
   margin: 20px;
-  padding-bottom: 10px;
+}
+.video1 iframe, .video3 iframe, .video2 iframe {
+  aspect-ratio: 4/3;
+  min-height: 300px;
+  margin: 10px auto;
+  width: auto;
+  height: auto;
 }
 
 .hr1 {
@@ -741,7 +749,8 @@ nav .navbar-toggler {
     flex-shrink: 1;
   }
   .video1 iframe, .video2 iframe, .video3 iframe {
-    flex: 1 1 100%;
+    min-height: 200px;
+    margin: 10px auto;
   }
 }
 @media (max-width: 480px) {
@@ -770,7 +779,6 @@ nav .navbar-toggler {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-auto-rows: auto;
   gap: 10px;
   margin: 20px;
   grid-template-areas: "indexImagen titleContainer" "indexImagen indexTexto1";
@@ -779,6 +787,7 @@ nav .navbar-toggler {
   grid-area: indexImagen;
   position: sticky;
   align-self: start;
+  top: 20px;
 }
 .mainGrid .indexImagen img {
   max-width: 100%;
@@ -839,7 +848,6 @@ nav .navbar-toggler {
     grid-auto-columns: auto;
     gap: 10px;
     margin: 20px 0px;
-    padding: 0px 10px;
     grid-template-areas: "indexImagen" "titleContainer" "indexTexto1";
   }
   .mainGrid .indexImagen {
