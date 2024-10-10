@@ -45,7 +45,10 @@ $naranja2: #896805;
 .hr2 { grid-area: hr2; }
 .programText { grid-area: programText;
     p {
-        margin: 10px;
+        margin: 20px auto;
+    }
+    hr {
+        margin: 15px auto;
     }
 }
 .hr3 { grid-area: hr3; }

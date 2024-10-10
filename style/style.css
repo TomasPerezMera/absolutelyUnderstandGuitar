@@ -212,7 +212,7 @@ nav .navbar-toggler {
   }
   body p, body .mainGrid h3, .mainGrid body h3 {
     font-size: calc(0.75em + 1vmin);
-    margin: 20px;
+    margin: 20px 15px;
   }
   hr {
     margin: 10px auto;
@@ -433,8 +433,10 @@ nav .navbar-toggler {
     align-items: center;
     width: 100%;
     max-height: none;
-    padding: 20px;
     flex-grow: 1;
+  }
+  .aboutTitle {
+    margin: 0px auto 30px;
   }
 }
 @media (max-width: 480px) {
@@ -493,7 +495,10 @@ nav .navbar-toggler {
   grid-area: programText;
 }
 .programText p, .programText .mainGrid h3, .mainGrid .programText h3 {
-  margin: 10px;
+  margin: 20px auto;
+}
+.programText hr {
+  margin: 15px auto;
 }
 
 .hr3 {
