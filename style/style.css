@@ -15,7 +15,7 @@ body {
   height: 100%;
   align-items: center;
 }
-body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
+body p, body .indexTexto2 h2, .indexTexto2 body h2, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
   font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
   max-width: 90vw;
@@ -135,7 +135,7 @@ nav .navbar-toggler {
     margin: 2vh 2vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
+  body p, body .indexTexto2 h2, .indexTexto2 body h2, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: clamp(2rem, 2vw, 3.5rem);
     margin: 20px 30px;
   }
@@ -167,7 +167,7 @@ nav .navbar-toggler {
   nav {
     margin: 10px auto;
   }
-  p, .mainGrid h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .programText h2, .programText p, .aboutTexto h2, .aboutTexto p {
+  p, .indexTexto2 h2, .mainGrid h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .programText h2, .programText p, .aboutTexto h2, .aboutTexto p {
     font-size: clamp(1.5rem, 2vw, 4rem);
   }
   .footer a img {
@@ -210,7 +210,7 @@ nav .navbar-toggler {
     margin: 2vh 4vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
+  body p, body .indexTexto2 h2, .indexTexto2 body h2, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: calc(0.75em + 1vmin);
     margin: 20px 15px;
   }
@@ -259,7 +259,7 @@ nav .navbar-toggler {
     margin: 2vh 2vw;
     height: 100%;
   }
-  body p, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
+  body p, body .indexTexto2 h2, .indexTexto2 body h2, body .mainGrid h3, .mainGrid body h3, body .scottyT1 .scottyH2, body .scottyT3 .scottyH2, body .scottyT2 .scottyH2, .scottyT1 body .scottyH2, .scottyT3 body .scottyH2, .scottyT2 body .scottyH2, body .programText h2, .programText body h2, body .programText p, .programText body p, body .aboutTexto h2, .aboutTexto body h2, body .aboutTexto p, .aboutTexto body p {
     font-size: calc(0.75em + 1vmin);
     margin: 15px;
   }
@@ -328,7 +328,7 @@ nav .navbar-toggler {
   padding: 20px;
   letter-spacing: 0.1em;
 }
-.caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
+.caption404 p, .caption404 .indexTexto2 h2, .indexTexto2 .caption404 h2, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
   max-width: 80vw;
   font-size: clamp(2rem, 2vh, 4rem);
 }
@@ -345,7 +345,7 @@ nav .navbar-toggler {
   .title404 {
     font-size: calc(1.5em + 1vmin);
   }
-  .caption404 p, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
+  .caption404 p, .caption404 .indexTexto2 h2, .indexTexto2 .caption404 h2, .caption404 .mainGrid h3, .mainGrid .caption404 h3, .caption404 .scottyT1 .scottyH2, .caption404 .scottyT3 .scottyH2, .caption404 .scottyT2 .scottyH2, .scottyT1 .caption404 .scottyH2, .scottyT3 .caption404 .scottyH2, .scottyT2 .caption404 .scottyH2, .caption404 .programText h2, .programText .caption404 h2, .caption404 .aboutTexto h2, .aboutTexto .caption404 h2 {
     font-size: calc(1em + 1vmin);
   }
   .title404 {
@@ -667,7 +667,7 @@ nav .navbar-toggler {
   height: auto;
   align-items: center;
 }
-.scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .scottyT1 .aboutTexto h2, .scottyT3 .aboutTexto h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT1 h2, .aboutTexto .scottyT3 h2, .aboutTexto .scottyT2 h2, .scottyT1 .programText h2, .scottyT3 .programText h2, .scottyT2 .programText h2, .programText .scottyT1 h2, .programText .scottyT3 h2, .programText .scottyT2 h2 {
+.scottyT1 p, .scottyT1 .indexTexto2 h2, .indexTexto2 .scottyT1 h2, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT3 p, .scottyT3 .indexTexto2 h2, .indexTexto2 .scottyT3 h2, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT2 p, .scottyT2 .indexTexto2 h2, .indexTexto2 .scottyT2 h2, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2, .scottyT1 .aboutTexto h2, .scottyT3 .aboutTexto h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT1 h2, .aboutTexto .scottyT3 h2, .aboutTexto .scottyT2 h2, .scottyT1 .programText h2, .scottyT3 .programText h2, .scottyT2 .programText h2, .programText .scottyT1 h2, .programText .scottyT3 h2, .programText .scottyT2 h2 {
   font-style: italic;
 }
 .scottyT1 .scottyH2 b, .scottyT3 .scottyH2 b, .scottyT2 .scottyH2 b {
@@ -734,7 +734,7 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
-  .scottyT1 p, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT2 p, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT3 p, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT1 .aboutTexto h2, .aboutTexto .scottyT1 h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT2 h2, .scottyT3 .aboutTexto h2, .aboutTexto .scottyT3 h2, .scottyT1 .programText h2, .programText .scottyT1 h2, .scottyT2 .programText h2, .programText .scottyT2 h2, .scottyT3 .programText h2, .programText .scottyT3 h2, .scottyT1 .scottyH2, .scottyT2 .scottyH2, .scottyT3 .scottyH2 {
+  .scottyT1 p, .scottyT1 .indexTexto2 h2, .indexTexto2 .scottyT1 h2, .scottyT1 .mainGrid h3, .mainGrid .scottyT1 h3, .scottyT2 p, .scottyT2 .indexTexto2 h2, .indexTexto2 .scottyT2 h2, .scottyT2 .mainGrid h3, .mainGrid .scottyT2 h3, .scottyT3 p, .scottyT3 .indexTexto2 h2, .indexTexto2 .scottyT3 h2, .scottyT3 .mainGrid h3, .mainGrid .scottyT3 h3, .scottyT1 .aboutTexto h2, .aboutTexto .scottyT1 h2, .scottyT2 .aboutTexto h2, .aboutTexto .scottyT2 h2, .scottyT3 .aboutTexto h2, .aboutTexto .scottyT3 h2, .scottyT1 .programText h2, .programText .scottyT1 h2, .scottyT2 .programText h2, .programText .scottyT2 h2, .scottyT3 .programText h2, .programText .scottyT3 h2, .scottyT1 .scottyH2, .scottyT2 .scottyH2, .scottyT3 .scottyH2 {
     font-size: calc(1em + 1vmin);
   }
   .scottyT1 .scottyH2 b, .scottyT2 .scottyH2 b, .scottyT3 .scottyH2 b {
@@ -827,7 +827,7 @@ nav .navbar-toggler {
 .videoT3 {
   grid-area: videoT3;
 }
-.videoT3 p a span, .videoT3 .mainGrid h3 a span, .mainGrid .videoT3 h3 a span, .videoT3 .aboutTexto h2 a span, .aboutTexto .videoT3 h2 a span, .videoT3 .programText h2 a span, .programText .videoT3 h2 a span, .videoT3 .scottyT1 .scottyH2 a span, .scottyT1 .videoT3 .scottyH2 a span, .videoT3 .scottyT2 .scottyH2 a span, .scottyT2 .videoT3 .scottyH2 a span, .videoT3 .scottyT3 .scottyH2 a span, .scottyT3 .videoT3 .scottyH2 a span {
+.videoT3 p a span, .videoT3 .indexTexto2 h2 a span, .indexTexto2 .videoT3 h2 a span, .videoT3 .mainGrid h3 a span, .mainGrid .videoT3 h3 a span, .videoT3 .aboutTexto h2 a span, .aboutTexto .videoT3 h2 a span, .videoT3 .programText h2 a span, .programText .videoT3 h2 a span, .videoT3 .scottyT1 .scottyH2 a span, .scottyT1 .videoT3 .scottyH2 a span, .videoT3 .scottyT2 .scottyH2 a span, .scottyT2 .videoT3 .scottyH2 a span, .videoT3 .scottyT3 .scottyH2 a span, .scottyT3 .videoT3 .scottyH2 a span {
   font-style: italic;
 }
 
@@ -945,13 +945,16 @@ nav .navbar-toggler {
   height: auto;
   overflow: visible;
 }
-.indexTexto2 p a, .indexTexto2 .aboutTexto h2 a, .aboutTexto .indexTexto2 h2 a, .indexTexto2 .programText h2 a, .programText .indexTexto2 h2 a, .indexTexto2 .scottyT1 .scottyH2 a, .scottyT1 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT2 .scottyH2 a, .scottyT2 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT3 .scottyH2 a, .scottyT3 .indexTexto2 .scottyH2 a, .indexTexto2 .mainGrid h3 a, .mainGrid .indexTexto2 h3 a {
+.indexTexto2 p a, .indexTexto2 h2 a, .indexTexto2 .scottyT1 .scottyH2 a, .scottyT1 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT2 .scottyH2 a, .scottyT2 .indexTexto2 .scottyH2 a, .indexTexto2 .scottyT3 .scottyH2 a, .scottyT3 .indexTexto2 .scottyH2 a, .indexTexto2 .mainGrid h3 a, .mainGrid .indexTexto2 h3 a {
   text-decoration: none;
   display: inline-block;
   transition: all 0.5s ease;
 }
-.indexTexto2 p a:hover, .indexTexto2 .aboutTexto h2 a:hover, .aboutTexto .indexTexto2 h2 a:hover, .indexTexto2 .programText h2 a:hover, .programText .indexTexto2 h2 a:hover, .indexTexto2 .scottyT1 .scottyH2 a:hover, .scottyT1 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT2 .scottyH2 a:hover, .scottyT2 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT3 .scottyH2 a:hover, .scottyT3 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .mainGrid h3 a:hover, .mainGrid .indexTexto2 h3 a:hover {
+.indexTexto2 p a:hover, .indexTexto2 h2 a:hover, .indexTexto2 .scottyT1 .scottyH2 a:hover, .scottyT1 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT2 .scottyH2 a:hover, .scottyT2 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .scottyT3 .scottyH2 a:hover, .scottyT3 .indexTexto2 .scottyH2 a:hover, .indexTexto2 .mainGrid h3 a:hover, .mainGrid .indexTexto2 h3 a:hover {
   color: #dc3545;
+}
+.indexTexto2 h2 {
+  display: inline;
 }
 
 .hr2 {
@@ -967,7 +970,7 @@ nav .navbar-toggler {
   .indexGrid {
     margin: 5px;
   }
-  .indexGrid p, .indexGrid .aboutTexto h2, .aboutTexto .indexGrid h2, .indexGrid .programText h2, .programText .indexGrid h2, .indexGrid .scottyT1 .scottyH2, .scottyT1 .indexGrid .scottyH2, .indexGrid .scottyT2 .scottyH2, .scottyT2 .indexGrid .scottyH2, .indexGrid .scottyT3 .scottyH2, .scottyT3 .indexGrid .scottyH2, .indexGrid .mainGrid h3, .mainGrid .indexGrid h3 {
+  .indexGrid p, .indexGrid .aboutTexto h2, .aboutTexto .indexGrid h2, .indexGrid .programText h2, .programText .indexGrid h2, .indexGrid .scottyT1 .scottyH2, .scottyT1 .indexGrid .scottyH2, .indexGrid .scottyT2 .scottyH2, .scottyT2 .indexGrid .scottyH2, .indexGrid .scottyT3 .scottyH2, .scottyT3 .indexGrid .scottyH2, .indexGrid .mainGrid h3, .mainGrid .indexGrid h3, .indexGrid .indexTexto2 h2, .indexTexto2 .indexGrid h2 {
     font-size: calc(0.75em + 1vmin);
   }
   .mainGrid {
@@ -994,7 +997,7 @@ nav .navbar-toggler {
     margin: 10px auto;
     justify-content: center;
   }
-  .mainGrid .titleContainer p, .mainGrid .titleContainer .aboutTexto h2, .aboutTexto .mainGrid .titleContainer h2, .mainGrid .titleContainer .programText h2, .programText .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer h3 {
+  .mainGrid .titleContainer p, .mainGrid .titleContainer .aboutTexto h2, .aboutTexto .mainGrid .titleContainer h2, .mainGrid .titleContainer .programText h2, .programText .mainGrid .titleContainer h2, .mainGrid .titleContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .titleContainer .scottyH2, .mainGrid .titleContainer h3, .mainGrid .titleContainer .indexTexto2 h2, .indexTexto2 .mainGrid .titleContainer h2 {
     font-weight: bold;
     color: #dc3545;
     font-weight: bold;
@@ -1005,7 +1008,7 @@ nav .navbar-toggler {
     grid-area: indexTexto1;
     overflow: visible;
   }
-  .mainGrid .indexTexto1 .textContainer p, .mainGrid .indexTexto1 .textContainer .aboutTexto h2, .aboutTexto .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .programText h2, .programText .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer h3 {
+  .mainGrid .indexTexto1 .textContainer p, .mainGrid .indexTexto1 .textContainer .aboutTexto h2, .aboutTexto .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .programText h2, .programText .mainGrid .indexTexto1 .textContainer h2, .mainGrid .indexTexto1 .textContainer .scottyT1 .scottyH2, .scottyT1 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT2 .scottyH2, .scottyT2 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer .scottyT3 .scottyH2, .scottyT3 .mainGrid .indexTexto1 .textContainer .scottyH2, .mainGrid .indexTexto1 .textContainer h3, .mainGrid .indexTexto1 .textContainer .indexTexto2 h2, .indexTexto2 .mainGrid .indexTexto1 .textContainer h2 {
     line-height: 1.5;
     margin-bottom: 10px;
   }

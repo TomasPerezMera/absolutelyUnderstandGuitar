@@ -1,7 +1,4 @@
 /*Partials y Variables*/
-$fondo: #030104;
-$rojo: #dc3545;
-$naranja: #ffc107;
 
 @import "global";
 @import "page404";
@@ -77,6 +74,10 @@ $naranja: #ffc107;
                 color: $rojo;
             }
         }
+    }
+    h2 {
+        display: inline;
+        @extend p ;
     }
 }
 .hr2 { grid-area: hr2; }
