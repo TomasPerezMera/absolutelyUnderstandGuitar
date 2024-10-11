@@ -1,3 +1,5 @@
+/*Variables*/
+
 $fondo: #000000;
 $rojo: #dc3545;
 $naranja: #ffc107;
@@ -5,6 +7,8 @@ $rojo2: #5c0211;
 $naranja2: #896805;
 $link: #0d6efd;
 $rojo-fuerte: #e60127;
+
+/*Global Styling*/
 
 * {
     margin: 0;
@@ -22,14 +26,14 @@ body {
     height: 100%;
     align-items: center;
     p {
-        font-size: clamp(1.5rem, 2vw, 4rem);
-        font-family: "Verdana", "Geneva", sans-serif;
-        max-width: 90vw;
-        color:white;
-        margin: 30px 40px;
-        text-align: center;
-        overflow-wrap: break-word;
-        word-break: break-word;
+            font-size: clamp(1.5rem, 2vw, 4rem);
+            font-family: "Verdana", "Geneva", sans-serif;
+            max-width: 90vw;
+            color:white;
+            margin: 30px 40px;
+            text-align: center;
+            overflow-wrap: break-word;
+            word-break: break-word;
     }
 }
 
@@ -88,10 +92,17 @@ nav {
     .navbar-toggler {
         background-color: $fondo;
         border-color: $naranja;
+        margin: 10px auto;
     }
     #navbarContent {
         .navbar-nav {
-            flex-wrap: wrap;            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
             .nav-link {
                 font-size: clamp(1.5rem, 2vw, 5rem);
                 color: $naranja;
@@ -119,18 +130,21 @@ nav {
     height: 100%;
     text-align: center;
     margin: 10px auto 20px auto;
-    a {
-        color: $link;
-        font-size: clamp(1rem, 2vw, 4rem);
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-        img {
-            width: 80%;
-            height: auto;
-            transition: transform 2s ease;
-            &:hover {
-                transform: scale(1.2);
+    figure {
+        a {
+            color: $link;
+            font-size: clamp(1rem, 2vw, 4rem);
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            .footerLogo {
+                width: 80%;
+                height: auto;
+                margin: 0px auto;
+                transition: transform 2s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -198,6 +212,9 @@ nav {
                     flex-flow: column;
                     align-items: center;
                     justify-items: center;
+                    line-height: 0;
+                    margin: 10px auto;
+
                 }
             }
         }
@@ -276,12 +293,13 @@ nav {
         }
     }
     .footer {
-        a {
-            img {
-                width: 80%;
-                transition: none;
-                &:hover {
-                    transform: none;
+        figure {
+            a {
+                .footerLogo {
+                    transition: none;
+                    &:hover {
+                        transform: none;
+                    }
                 }
             }
         }
