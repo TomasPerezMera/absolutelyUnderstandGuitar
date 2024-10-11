@@ -1,11 +1,7 @@
 /*Styling of the About webpage*/
 
 .aboutGrid {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto 1fr auto 1fr auto auto;
-    gap: 5px;
-    margin: 20px;
-    overflow-wrap: break-word;
+    @include grid;
     grid-template-areas:
         "header"
         "aboutTitle"
@@ -41,6 +37,8 @@
     justify-content: center;
     align-items: center;
     @include text;
+    max-width: 100%;
+    margin: 0px auto;
     hr {
         margin: 15px auto;
         width: 80%;

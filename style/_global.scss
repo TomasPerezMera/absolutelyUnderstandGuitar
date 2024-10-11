@@ -45,6 +45,17 @@ html {
     }
 }
 
+@mixin grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap: 5px;
+    margin: 20px auto;
+    padding: 0px 10px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
 body {
     background-color: $fondo;
     margin: 2vh 2vw;

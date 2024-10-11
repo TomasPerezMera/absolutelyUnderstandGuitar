@@ -1,13 +1,7 @@
 /*Styling of the Scotty Bio webpage*/
 
 .scottyGrid {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    gap: 5px;
-    margin: 20px;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
+    @include grid;
     grid-template-areas:
         "header"
         "scottyI1"

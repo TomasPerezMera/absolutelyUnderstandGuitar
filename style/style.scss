@@ -12,12 +12,7 @@
 
 .indexGrid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    gap: 5px;
-    margin: 20px;
-    overflow-wrap: break-word;
+    @include grid;
     grid-template-areas:
         "header"
         "mainGrid"
