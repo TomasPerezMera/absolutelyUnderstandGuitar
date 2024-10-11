@@ -43,9 +43,6 @@
 .programText { grid-area: programText;
     display: flex;
     flex-direction: column;
-    p {
-        @extend p ;
-    }
     hr {
         margin: 15px auto;
         width: 80%;
@@ -53,7 +50,7 @@
         border: none;
     }
     h2 {
-        @extend p ;
+        @include text;
         .programTitle {
             font-size: clamp(2rem, 2vw, 4rem);
             font-style: italic;
@@ -62,16 +59,9 @@
 }
 .hr3 { grid-area: hr3; }
 .tableTitle { grid-area: tableTitle;
-            font-size: clamp(2.5rem, 3vh, 5rem);
-            color: $naranja;
-            margin: 0px auto 25px auto;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: underline;            
-            &:hover {
-                transition: color ease-in-out;
-                color: $naranja2;
-            }
+    @include title;
+    margin: 0px auto 25px auto;
+    text-decoration: underline;
 }
 .table { grid-area: table; 
     max-width: 85%;

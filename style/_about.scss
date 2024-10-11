@@ -20,17 +20,7 @@
 }
 .header { grid-area: header; }
 .aboutTitle { grid-area: aboutTitle;
-    font-family: Trebuchet MS, sans-serif;
-    font-size: clamp(2.5rem, 2vw, 5rem);
-    color: $naranja;
-    text-align: center;
-    height: auto;
-    font-weight: bold;
-    margin: 10px;
-    &:hover {
-        transition: color 2s ease;
-        color: $naranja2;
-    }
+    @include title;
 }
 .hr1 { grid-area: hr1; }
 .aboutBanner { grid-area: aboutBanner;
@@ -50,9 +40,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    p {
-        @extend p ;
-    }
+    @include text;
     hr {
         margin: 15px auto;
         width: 80%;
@@ -60,7 +48,7 @@
         border: none;
     }
     h2 {
-        @extend p ;
+        @include text;
         span {
             font-size: calc(1.10em + 1vmin);
         }

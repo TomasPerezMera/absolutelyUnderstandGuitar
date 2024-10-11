@@ -53,8 +53,8 @@
     padding: 20px;
     letter-spacing: 0.10em;
     p {
+        @include text;
         max-width: 80vw;
-        font-size: clamp(2rem, 2vh, 4rem);
     }
 }
 .hr2 { grid-area: hr2; }
