@@ -77,8 +77,11 @@
         flex-grow: 1;
         h2 {
             span {
-                font-size: calc(1em + 1vmin);
+                font-size: calc(1.1em + 1vmin);
             }
+        }
+        p {
+            font-size: calc(0.8em + 1vmin);
         }
     }
     .aboutTitle {

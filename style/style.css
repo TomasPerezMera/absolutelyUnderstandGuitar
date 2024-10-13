@@ -248,7 +248,7 @@ nav .navbar-toggler {
     margin: 20px auto;
   }
   .header .headerImage {
-    margin: 35px auto;
+    margin: 25px auto;
     width: 100%;
   }
   .header .headerImage img {
@@ -396,6 +396,10 @@ nav .navbar-toggler {
   .scotty404 img:hover {
     transform: none;
   }
+  .footer {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 /*Styling of the About webpage*/
 .aboutGrid {
@@ -521,7 +525,10 @@ nav .navbar-toggler {
     flex-grow: 1;
   }
   .aboutTexto h2 span {
-    font-size: calc(1em + 1vmin);
+    font-size: calc(1.1em + 1vmin);
+  }
+  .aboutTexto p {
+    font-size: calc(0.8em + 1vmin);
   }
   .aboutTitle {
     font-size: calc(2em + 1vmin);
@@ -823,6 +830,11 @@ nav .navbar-toggler {
     margin: 20px 15px;
   }
 }
+@media (max-width: 700px) {
+  .scottyI1 {
+    width: 80%;
+  }
+}
 @media (max-width: 480px) {
   body {
     width: 100%;
@@ -952,7 +964,7 @@ nav .navbar-toggler {
     margin: 10px auto;
   }
   body .videoT1 h2 a, body .videoT2 h2 a, body .videoT3 h2 a {
-    font-size: calc(0.75em + 1vmin);
+    font-size: calc(0.8em + 1vmin);
     margin: 10px auto;
     transition: color 2s ease;
   }
@@ -1219,7 +1231,7 @@ nav .navbar-toggler {
     margin: 5px;
   }
   .indexGrid p {
-    font-size: calc(0.75em + 1vmin);
+    font-size: calc(0.8em + 1vmin);
   }
   .mainGrid {
     grid-template-columns: 1fr;
@@ -1265,17 +1277,24 @@ nav .navbar-toggler {
   body {
     max-width: 480px;
     min-width: 300px;
+    width: 100%;
   }
   .indexImagen {
-    max-width: 100%;
-    margin: 15px 20px;
+    width: 100%;
+    margin: 15px auto;
     padding: 0;
+    text-align: center;
   }
   .indexTexto2 {
-    font-size: calc(0.75em + 1vmin);
+    font-size: calc(0.8em + 1vmin);
   }
   .indexTexto2 h2 {
     font-size: calc(1em + 1vmin);
+  }
+}
+@media (max-width: 400px) {
+  .indexImagen {
+    width: 80%;
   }
 }
 

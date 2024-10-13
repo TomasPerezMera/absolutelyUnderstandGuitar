@@ -85,7 +85,7 @@
     .indexGrid {
         margin: 5px;
         p {
-            font-size: calc(0.75em + 1vmin);
+            font-size: calc(0.8em + 1vmin);
         }
     }
     .mainGrid {
@@ -138,16 +138,24 @@
     body {
         max-width: 480px;
         min-width: 300px;
+        width: 100%
     }
     .indexImagen {
-        max-width: 100%;
-        margin: 15px 20px;
+        width: 100%;
+        margin: 15px auto;
         padding: 0;
+        text-align: center;
     }
     .indexTexto2 {
-        font-size: calc(0.75em + 1vmin);
+        font-size: calc(0.8em + 1vmin);
         h2 {
             font-size: calc(1em + 1vmin);
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .indexImagen {
+        width: 80%;
     }
 }
