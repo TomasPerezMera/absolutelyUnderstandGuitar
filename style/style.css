@@ -115,6 +115,9 @@ nav #navbarContent .navbar-nav .nav-link:hover {
   color: #e60127;
   transform: scale(1.2);
 }
+nav #navbarContent .navbar-nav .nav-link.active {
+  color: #896805;
+}
 nav .navbar-toggler {
   display: flex;
   justify-content: center;
@@ -253,13 +256,13 @@ nav .navbar-toggler {
     height: auto;
   }
   .header h1 {
-    font-size: clamp(2.5rem, 2vw, 5rem);
+    font-size: calc(3rem + 1vmin);
     letter-spacing: 0.15em;
     line-height: 1.5;
     margin: 15px auto;
   }
   .header h2 {
-    font-size: clamp(2rem, 2vw, 3.5rem);
+    font-size: calc(2rem + 1vmin);
     letter-spacing: 0.15em;
     line-height: 1.5;
     margin-top: 25px;
@@ -280,8 +283,6 @@ nav .navbar-toggler {
 }
 @media (max-width: 300px) {
   body {
-    max-width: 300px;
-    min-width: 2500px;
     width: 100%;
     margin: 2vh 2vw;
     height: 100%;
@@ -389,9 +390,6 @@ nav .navbar-toggler {
   }
 }
 @media (max-width: 480px) {
-  body {
-    box-sizing: border-box;
-  }
   .title404 {
     margin: 10px auto 20px;
   }
@@ -531,9 +529,6 @@ nav .navbar-toggler {
   }
 }
 @media (max-width: 480px) {
-  body {
-    box-sizing: border-box;
-  }
   .aboutBanner img:hover, .aboutFoto2 img:hover {
     transform: none;
   }
@@ -721,7 +716,7 @@ nav .navbar-toggler {
 .scottyI1 {
   grid-area: scottyI1;
   text-align: center;
-  margin: 20px auto;
+  margin: 40px auto 20px;
 }
 .scottyI1 img {
   max-width: 100%;
@@ -830,10 +825,8 @@ nav .navbar-toggler {
 }
 @media (max-width: 480px) {
   body {
-    box-sizing: border-box;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .scottyI1 img:hover {
     transform: none;
@@ -1277,6 +1270,12 @@ nav .navbar-toggler {
     max-width: 100%;
     margin: 15px 20px;
     padding: 0;
+  }
+  .indexTexto2 {
+    font-size: calc(0.75em + 1vmin);
+  }
+  .indexTexto2 h2 {
+    font-size: calc(1em + 1vmin);
   }
 }
 

@@ -88,9 +88,6 @@
 }
 
 @media (max-width: 480px) {
-    body {
-        box-sizing: border-box;
-    }
     .aboutBanner, .aboutFoto2 {
         img {
             &:hover {
