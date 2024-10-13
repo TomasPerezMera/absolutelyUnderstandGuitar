@@ -38,7 +38,7 @@ html {
     text-align: center;
     height: auto;
     font-weight: bold;
-    margin: 10px auto;
+    margin: 30px auto;
     &:hover {
         transition: color 2s ease;
         color: $naranja2;
@@ -109,8 +109,7 @@ hr {
         overflow-wrap: break-word;
     }
     hr {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin: 5px auto;
     }
 }
 
@@ -119,9 +118,21 @@ nav {
     margin: 5px auto;
     background-color: $fondo;
     .navbar-toggler {
-        background-color: $fondo;
-        border-color: $naranja;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to left, $naranja, $rojo);
+        border-image-slice: 1;
         margin: 10px auto;
+        .navbar-toggler-icon {
+            background-image: none;
+        }
+        .navbar-toggler-icon::before, .navbar-toggler-icon::after, .navbar-toggler-icon span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            margin: 6px auto;
+            background-color: $naranja2;
+            content: '';
+        }
     }
     #navbarContent {
         .navbar-nav {
@@ -294,11 +305,11 @@ nav {
         }
     }
     hr {
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .header {
         .headerImage {
-            margin: 20px auto;
+            margin: 50px auto;
             width: 100%;
             img {
                 width: 100%;
@@ -307,18 +318,23 @@ nav {
         }
         h1 {
             font-size: clamp(2.5rem, 2vw, 5rem);
-            letter-spacing: 0.10em;
-            margin: 15px 0;
+            letter-spacing: 0.15em;
+            line-height: 1.5;
+            margin: 15px auto;
         }
         h2 {
             font-size: clamp(2rem, 2vw, 3.5rem);
-            letter-spacing: 0.10em;
-            margin-top: 15px;
-            margin-bottom: 30px;
+            letter-spacing: 0.15em;
+            line-height: 1.5;
+            margin-top: 25px;
+            margin-bottom: 40px;
         }
         hr {
             margin: 15px auto;            
         }
+    }
+    nav {
+        margin: 20px auto;
     }
     .footer {
         figure {
