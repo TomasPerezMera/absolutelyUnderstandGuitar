@@ -1,6 +1,6 @@
 # Absolutely Understand Guitar
 
-![Picture of Scotty West](/absolutelyUnderstandGuitar/images/indexScotty.jpg "")
+![Picture of Scotty West](/images/indexScotty.jpg "")
 
 ### Hello! This is a fan-made project featuring the **Absolutely Understand Guitar** video series by *Scotty West*, which can be found at https://www.absolutelyunderstandguitar.com .
 
