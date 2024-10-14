@@ -22,7 +22,7 @@
 .hr1 { grid-area: hr1; }
 .aboutBanner { grid-area: aboutBanner;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
     width: 90%;
     img {
         transition: 2s linear;
@@ -63,12 +63,12 @@
 
 
 @media (max-width: 1024px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
     .aboutBanner, .aboutFoto2 {
-        display: flex;
-        width: auto;
-        height: auto;
-        max-width: 90vw;
-        align-self: center;
+        width: 80%;
     }
     .aboutTexto {
         align-items: center;
@@ -90,8 +90,15 @@
     }
 }
 
+@media (max-width: 768px) {
+    .aboutBanner, .aboutFoto2 {
+        width: 85%;
+    }
+}
+
 @media (max-width: 480px) {
     .aboutBanner, .aboutFoto2 {
+        width: 90%;
         img {
             &:hover {
                 transform: none;

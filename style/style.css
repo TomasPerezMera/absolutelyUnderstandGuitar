@@ -13,7 +13,8 @@ html {
 
 body {
   background-color: #000000;
-  margin: 2vh 2vw;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
   height: 100%;
   align-items: center;
 }
@@ -43,7 +44,7 @@ hr {
 }
 .header .headerImage {
   text-align: center;
-  margin: 30px auto;
+  margin: 20px auto;
   width: 60%;
 }
 .header .headerImage img {
@@ -58,7 +59,7 @@ hr {
   text-align: center;
   overflow-wrap: break-word;
   height: auto;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .header h2 {
   font-family: Trebuchet MS, sans-serif;
@@ -67,8 +68,7 @@ hr {
   color: #e60127;
   font-style: italic;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin: 15px auto 30px;
   overflow-wrap: break-word;
 }
 .header hr {
@@ -126,13 +126,16 @@ nav .navbar-toggler {
 }
 
 .footer {
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  margin: 10px auto 20px auto;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 30px;
+  padding: 10px;
+}
+.footer figure {
+  margin: 0 auto;
 }
 .footer figure a {
   color: #0d6efd;
@@ -274,6 +277,9 @@ nav .navbar-toggler {
   nav {
     margin: 20px auto;
   }
+  .footer {
+    margin: 20px auto;
+  }
   .footer figure a .footerLogo {
     transition: none;
   }
@@ -304,7 +310,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "title404" "hr1" "scotty404" "caption404" "hr2" "footer";
@@ -320,12 +326,19 @@ nav .navbar-toggler {
   margin: 20px auto;
 }
 .title404 h2 {
-  color: #e60127;
-  font-weight: bold;
-  font-size: clamp(2.5rem, 2vw, 6rem);
-  height: 100%;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: clamp(2.5rem, 2vw, 5rem);
+  color: #ffc107;
   text-align: center;
-  margin: 0px;
+  height: auto;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 30px auto;
+  color: #e60127;
+}
+.title404 h2:hover {
+  transition: color 2s ease;
+  color: #896805;
 }
 
 .hr1 {
@@ -396,10 +409,6 @@ nav .navbar-toggler {
   .scotty404 img:hover {
     transform: none;
   }
-  .footer {
-    width: 80%;
-    margin: 10px auto;
-  }
 }
 /*Styling of the About webpage*/
 .aboutGrid {
@@ -409,7 +418,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "aboutTitle" "hr1" "aboutBanner" "hr2" "aboutTexto" "hr3" "aboutFoto2" "hr4" "footer";
@@ -427,6 +436,7 @@ nav .navbar-toggler {
   text-align: center;
   height: auto;
   font-weight: bold;
+  letter-spacing: 0.1em;
   margin: 30px auto;
   margin: 30px auto 10px;
 }
@@ -442,7 +452,7 @@ nav .navbar-toggler {
 .aboutBanner, .aboutFoto2 {
   grid-area: aboutBanner;
   text-align: center;
-  margin: auto;
+  margin: 20px auto;
   width: 90%;
 }
 .aboutBanner img, .aboutFoto2 img {
@@ -511,12 +521,12 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 1024px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
   .aboutBanner, .aboutFoto2 {
-    display: flex;
-    width: auto;
-    height: auto;
-    max-width: 90vw;
-    align-self: center;
+    width: 80%;
   }
   .aboutTexto {
     align-items: center;
@@ -535,7 +545,15 @@ nav .navbar-toggler {
     margin: 0px auto 30px;
   }
 }
+@media (max-width: 768px) {
+  .aboutBanner, .aboutFoto2 {
+    width: 85%;
+  }
+}
 @media (max-width: 480px) {
+  .aboutBanner, .aboutFoto2 {
+    width: 90%;
+  }
   .aboutBanner img:hover, .aboutFoto2 img:hover {
     transform: none;
   }
@@ -548,7 +566,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "programCarousel" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
@@ -623,6 +641,7 @@ nav .navbar-toggler {
   text-align: center;
   height: auto;
   font-weight: bold;
+  letter-spacing: 0.1em;
   margin: 30px auto;
   margin: 0px auto 25px auto;
   text-decoration: underline;
@@ -710,7 +729,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "scottyI1" "hr1" "scottyT1" "hr2" "scottyT2" "hr3" "scottyCarousel" "hr4" "scottyT3" "hr5" "footer";
@@ -723,7 +742,7 @@ nav .navbar-toggler {
 .scottyI1 {
   grid-area: scottyI1;
   text-align: center;
-  margin: 40px auto 20px;
+  margin: 50px auto 20px;
 }
 .scottyI1 img {
   max-width: 100%;
@@ -829,6 +848,10 @@ nav .navbar-toggler {
     font-size: calc(1.1em + 1vmin);
     margin: 20px 15px;
   }
+  .scottyI1 {
+    width: 80%;
+    margin: 40px auto 40px;
+  }
 }
 @media (max-width: 700px) {
   .scottyI1 {
@@ -855,7 +878,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "videoT1" "video1" "hr1" "videoT2" "video2" "hr2" "videoT3" "video3" "hr3" "footer";
@@ -988,7 +1011,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "contactText" "formContainer" "hr" "footer";
@@ -1023,6 +1046,7 @@ nav .navbar-toggler {
   text-align: center;
   height: auto;
   font-weight: bold;
+  letter-spacing: 0.1em;
   margin: 30px auto;
   margin: 20px auto 40px;
 }
@@ -1057,8 +1081,8 @@ nav .navbar-toggler {
   margin: 15px auto;
 }
 .formContainer .contactDisclaimer {
-  width: 60%;
-  margin: 5px auto;
+  width: 80%;
+  margin: 10px auto;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease;
@@ -1133,7 +1157,7 @@ nav .navbar-toggler {
   grid-auto-rows: auto;
   gap: 5px;
   margin: 20px auto;
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
   grid-template-areas: "header" "mainGrid" "hr1" "indexTexto2" "hr2" "footer";

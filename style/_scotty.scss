@@ -19,7 +19,7 @@
 .header { grid-area: header; }
 .scottyI1 { grid-area: scottyI1;
     text-align: center;
-    margin: 40px auto 20px;
+    margin: 50px auto 20px;
     img {
         max-width: 100%;
         height: auto;
@@ -100,6 +100,10 @@
                 margin: 20px 15px;
             }
         }
+    }
+    .scottyI1 {
+        width: 80%;
+        margin: 40px auto 40px;
     }
 }
 

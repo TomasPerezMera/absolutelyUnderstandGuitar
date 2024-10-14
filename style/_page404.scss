@@ -16,12 +16,8 @@
     justify-content: center;
     margin: 20px auto;
         h2 {
+            @include title;
             color: $rojo-fuerte;
-            font-weight: bold;
-            font-size: clamp(2.5rem, 2vw, 6rem);            
-            height: 100%;
-            text-align: center;
-            margin: 0px;
             }
 }
 .hr1 { grid-area: hr1; }
@@ -79,9 +75,5 @@
                 transform: none;
             }
         }
-    }
-    .footer {
-        width: 80%;
-        margin: 10px auto;
     }
 }

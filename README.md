@@ -12,6 +12,7 @@ Here's a page breakdown of the project;
 * [Video Courses](https://tomasperezmera.github.io/absolutelyUnderstandGuitar/pages/videos.html)
 * [Program Description](https://tomasperezmera.github.io/absolutelyUnderstandGuitar/pages/program.html)
 * [About Scotty](https://tomasperezmera.github.io/absolutelyUnderstandGuitar/pages/scotty.html)
+* [Contact](https://tomasperezmera.github.io/absolutelyUnderstandGuitar/pages/contact.html)
 
 
 ![Page Footer Logo](/images/footerLogo.png)
