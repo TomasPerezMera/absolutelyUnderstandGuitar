@@ -38,6 +38,7 @@ hr {
   background: linear-gradient(to left, #ffc107, #dc3545);
   margin: 40px auto;
   border: none;
+  opacity: 0.8;
 }
 
 .header {
