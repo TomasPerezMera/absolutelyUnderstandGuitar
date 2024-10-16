@@ -17,7 +17,7 @@
 .header { grid-area: header; }
 .aboutTitle { grid-area: aboutTitle;
     @include title;
-    margin: 30px auto 10px;
+    margin: 10px auto;
 }
 .hr1 { grid-area: hr1; }
 .aboutBanner { grid-area: aboutBanner;
@@ -86,7 +86,7 @@
     }
     .aboutTitle {
         font-size: calc(2em + 1vmin);
-        margin: 0px auto 30px;
+        margin: 10px auto;
     }
 }
 

@@ -114,7 +114,7 @@ hr {
         overflow-wrap: break-word;
     }
     hr {
-        margin: 5px auto;
+        margin: 0px auto;
     }
 }
 
@@ -216,7 +216,7 @@ nav {
         margin: 20px auto;
     }
     .header {
-        margin: 10px auto 20px;
+        margin: 10px auto 30px;
         .headerImage {
             margin: 20px 10px;
             width: 100%;
@@ -232,9 +232,6 @@ nav {
         h2 {
             letter-spacing: 0.05em;
             margin: 15px auto;
-        }
-        hr {
-            margin: 15px auto;            
         }
     }
     nav {
@@ -335,9 +332,6 @@ nav {
             line-height: 1.5;
             margin-top: 25px;
             margin-bottom: 40px;
-        }
-        hr {
-            margin: 15px auto;            
         }
     }
     nav {
