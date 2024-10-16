@@ -15,7 +15,7 @@
 }
 .contactText {grid-area: contactText;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     h2 {
         @include text;
         margin: 0px auto;
@@ -27,7 +27,10 @@
     }
 }
 .formContainer {grid-area: formContainer;
+    padding: 5px;
     .contactForm {
+        margin: 5px auto;
+        padding: 10px;
         form {
             width: 80%;
             margin: 10px auto;
@@ -40,14 +43,20 @@
                 color:white;
             }
             div {
-                margin: 1.5rem auto;
+                margin: 1rem auto;
                 input, textarea {
                     background-color: $fondo;
                     color: white;
                 }
             }
-            button {
-                margin: 15px auto;
+            .formCheck {
+                margin: 10px auto;
+                div {
+                    margin: 5px 10px;
+                }
+                button {
+                    margin: 5px 0px 5px 10px;
+                }
             }
         }
     }
@@ -95,6 +104,12 @@
                 width: 100%;
             }
         }
+        .contactDisclaimer {
+            margin: 5px auto;
+        }
+    }
+    .contactDisclaimer {
+        margin: 5px auto;
     }
 }
 
@@ -116,6 +131,7 @@
             }
         }
         .contactDisclaimer {
+            margin: 0px auto;
             span {
                 width: 100%;
                 a {

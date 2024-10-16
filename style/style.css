@@ -28,6 +28,9 @@ body p {
   overflow-wrap: break-word;
   word-break: break-word;
 }
+body .container-fluid {
+  padding: 0px;
+}
 
 hr {
   width: 80%;
@@ -234,13 +237,11 @@ nav .navbar-toggler {
 }
 @media (max-width: 480px) {
   body {
-    max-width: 480px;
-    min-width: 300px;
     margin: 2vh 4vw;
     height: 100%;
   }
   body p {
-    font-size: calc(0.75em + 1vmin);
+    font-size: calc(0.8em + 1vmin);
     margin: 20px 15px;
   }
   body h2 {
@@ -290,7 +291,7 @@ nav .navbar-toggler {
 @media (max-width: 300px) {
   body {
     width: 100%;
-    margin: 2vh 2vw;
+    margin: 1vh 1vw;
     height: 100%;
   }
   body p {
@@ -408,6 +409,9 @@ nav .navbar-toggler {
   }
   .scotty404 img:hover {
     transform: none;
+  }
+  .footer a img {
+    height: auto;
   }
 }
 /*Styling of the About webpage*/
@@ -1025,7 +1029,7 @@ nav .navbar-toggler {
 .contactText {
   grid-area: contactText;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
 }
 .contactText h2 {
   font-size: clamp(1.5rem, 2vw, 4rem);
@@ -1057,6 +1061,11 @@ nav .navbar-toggler {
 
 .formContainer {
   grid-area: formContainer;
+  padding: 5px;
+}
+.formContainer .contactForm {
+  margin: 5px auto;
+  padding: 10px;
 }
 .formContainer .contactForm form {
   width: 80%;
@@ -1071,14 +1080,20 @@ nav .navbar-toggler {
   color: white;
 }
 .formContainer .contactForm form div {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 .formContainer .contactForm form div input, .formContainer .contactForm form div textarea {
   background-color: #000000;
   color: white;
 }
-.formContainer .contactForm form button {
-  margin: 15px auto;
+.formContainer .contactForm form .formCheck {
+  margin: 10px auto;
+}
+.formContainer .contactForm form .formCheck div {
+  margin: 5px 10px;
+}
+.formContainer .contactForm form .formCheck button {
+  margin: 5px 0px 5px 10px;
 }
 .formContainer .contactDisclaimer {
   width: 80%;
@@ -1126,6 +1141,12 @@ nav .navbar-toggler {
   .formContainer .contactForm form {
     width: 100%;
   }
+  .formContainer .contactDisclaimer {
+    margin: 5px auto;
+  }
+  .contactDisclaimer {
+    margin: 5px auto;
+  }
 }
 @media (max-width: 480px) {
   .contactText h2 {
@@ -1140,6 +1161,9 @@ nav .navbar-toggler {
   }
   .formContainer .contactForm form {
     width: 100%;
+  }
+  .formContainer .contactDisclaimer {
+    margin: 0px auto;
   }
   .formContainer .contactDisclaimer span {
     width: 100%;
@@ -1219,7 +1243,6 @@ nav .navbar-toggler {
   display: flex;
   flex-direction: column;
   height: auto;
-  overflow: visible;
 }
 .indexTexto2 p a {
   text-decoration: none;
@@ -1255,7 +1278,7 @@ nav .navbar-toggler {
     margin: 5px;
   }
   .indexGrid p {
-    font-size: calc(0.8em + 1vmin);
+    font-size: calc(1em + 1vmin);
   }
   .mainGrid {
     grid-template-columns: 1fr;
@@ -1278,7 +1301,7 @@ nav .navbar-toggler {
   }
   .mainGrid .titleContainer {
     grid-area: titleContainer;
-    margin: 10px auto;
+    margin: 40px auto 10px;
     justify-content: center;
   }
   .mainGrid .titleContainer p {
@@ -1302,6 +1325,9 @@ nav .navbar-toggler {
     max-width: 480px;
     min-width: 300px;
     width: 100%;
+  }
+  body p {
+    font-size: calc(1em + 1vmin);
   }
   .indexImagen {
     width: 100%;
