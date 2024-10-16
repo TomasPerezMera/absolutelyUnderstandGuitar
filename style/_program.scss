@@ -7,10 +7,9 @@
         "programCarousel"
         "hr2"
         "programText"
-        "hr3"
         "tableTitle"
         "table"
-        "hr4"
+        "hr3"
         "footer";
 }
 .header { grid-area: header; }
@@ -51,10 +50,9 @@
         }
     }
 }
-.hr3 { grid-area: hr3; }
 .tableTitle { grid-area: tableTitle;
     @include title;
-    margin: 0px auto 25px auto;
+    margin: 15px auto;
     text-decoration: underline;
 }
 .table { grid-area: table; 
@@ -95,7 +93,7 @@
         }
     }
 }
-.hr4 { grid-area: hr4; }
+.hr3 { grid-area: hr3; }
 .footer { grid-area: footer; }
 
 @media (max-width: 1024px) {

@@ -19,8 +19,8 @@ body {
   align-items: center;
 }
 body p {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -233,6 +233,11 @@ nav .navbar-toggler {
     object-fit: cover;
   }
 }
+@media (max-width: 768px) {
+  body p {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+  }
+}
 @media (max-width: 480px) {
   body {
     margin: 2vh 4vw;
@@ -368,8 +373,8 @@ nav .navbar-toggler {
   letter-spacing: 0.1em;
 }
 .caption404 p {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -471,8 +476,8 @@ nav .navbar-toggler {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -489,8 +494,8 @@ nav .navbar-toggler {
   border: none;
 }
 .aboutTexto h2 {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -568,7 +573,7 @@ nav .navbar-toggler {
   padding: 10px;
   width: 100%;
   overflow-wrap: break-word;
-  grid-template-areas: "header" "programCarousel" "hr2" "programText" "hr3" "tableTitle" "table" "hr4" "footer";
+  grid-template-areas: "header" "programCarousel" "hr2" "programText" "tableTitle" "table" "hr3" "footer";
 }
 
 .header {
@@ -614,8 +619,8 @@ nav .navbar-toggler {
   border: none;
 }
 .programText h2 {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -628,10 +633,6 @@ nav .navbar-toggler {
   font-style: italic;
 }
 
-.hr3 {
-  grid-area: hr3;
-}
-
 .tableTitle {
   grid-area: tableTitle;
   font-family: Trebuchet MS, sans-serif;
@@ -642,7 +643,7 @@ nav .navbar-toggler {
   font-weight: bold;
   letter-spacing: 0.1em;
   margin: 30px auto;
-  margin: 0px auto 25px auto;
+  margin: 15px auto;
   text-decoration: underline;
 }
 .tableTitle:hover {
@@ -686,8 +687,8 @@ nav .navbar-toggler {
   vertical-align: middle;
 }
 
-.hr4 {
-  grid-area: hr4;
+.hr3 {
+  grid-area: hr3;
 }
 
 .footer {
@@ -767,8 +768,8 @@ nav .navbar-toggler {
   font-style: italic;
 }
 .scottyT1 .scottyH2, .scottyT3 .scottyH2, .scottyT2 .scottyH2 {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -1026,8 +1027,8 @@ nav .navbar-toggler {
   margin: 10px 5px 10px;
 }
 .contactText h2 {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -1218,8 +1219,8 @@ nav .navbar-toggler {
   grid-area: indexTexto1;
 }
 .mainGrid .indexTexto1 h3 {
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;
@@ -1248,8 +1249,8 @@ nav .navbar-toggler {
 }
 .indexTexto2 h2 {
   display: inline;
-  font-size: clamp(1.5rem, 2vw, 4rem);
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 4rem);
   max-width: 90vw;
   color: white;
   margin: 30px 40px;

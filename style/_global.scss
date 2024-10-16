@@ -21,8 +21,8 @@ html {
 }
 
 @mixin text{
-    font-size: clamp(1.5rem, 2vw, 4rem);
     font-family: "Verdana", "Geneva", sans-serif;
+    font-size: clamp(1.5rem, 2vw, 4rem);
     max-width: 90vw;
     color:white;
     margin: 30px 40px;
@@ -291,6 +291,14 @@ nav {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        p {
+            font-size: clamp(1.5rem, 2vw, 2.5rem);
         }
     }
 }
