@@ -742,7 +742,7 @@ nav .navbar-toggler {
 .scottyI1 {
   grid-area: scottyI1;
   text-align: center;
-  margin: 50px auto 20px;
+  margin: 20px auto;
 }
 .scottyI1 img {
   max-width: 100%;
@@ -850,7 +850,7 @@ nav .navbar-toggler {
   }
   .scottyI1 {
     width: 80%;
-    margin: 40px auto 40px;
+    margin: 40px auto;
   }
 }
 @media (max-width: 700px) {
@@ -1192,7 +1192,8 @@ nav .navbar-toggler {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 10px;
-  margin: 20px;
+  margin: 20px auto;
+  padding: 0px 20px;
   grid-template-areas: "indexImagen titleContainer" "indexImagen indexTexto1";
 }
 .mainGrid .indexImagen {
@@ -1281,6 +1282,7 @@ nav .navbar-toggler {
     grid-auto-columns: auto;
     gap: 10px;
     margin: 20px 0px;
+    padding: 0px;
     grid-template-areas: "indexImagen" "titleContainer" "indexTexto1";
   }
   .mainGrid .indexImagen {

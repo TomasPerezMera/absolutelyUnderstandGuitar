@@ -27,7 +27,8 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    padding: 0px 20px;
     grid-template-areas:
         "indexImagen titleContainer"
         "indexImagen indexTexto1";
@@ -93,6 +94,7 @@
         grid-auto-columns: auto;
         gap: 10px;
         margin: 20px 0px;
+        padding: 0px;
         grid-template-areas:
             "indexImagen"
             "titleContainer"
