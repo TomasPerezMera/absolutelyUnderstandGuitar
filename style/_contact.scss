@@ -10,12 +10,10 @@
         "hr"
         "footer"
 }
-.header {grid-area: header;
-    margin: 10px auto;
-}
+.header {grid-area: header; }
 .contactText {grid-area: contactText;
     padding: 5px;
-    margin: 5px;
+    margin: 10px 5px 10px;
     h2 {
         @include text;
         margin: 0px auto;
